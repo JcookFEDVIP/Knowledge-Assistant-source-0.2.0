@@ -1,0 +1,145 @@
+# Free-form agent phrasings (narrative, slang, fragments, rambling, negation, reversed order).
+# Format: id|style|question|expected text 1|expected text 2...  (any one expected text must be shown).
+# Expected texts are verbatim job-aid wording. Lines starting with '#gap' are known gaps, not yet tested.
+F1|NARR|so she enrolled yesterday because she got married and now she wants to undo it, can she still cancel|following business day
+F1|Q|how long after a QLE enrollment can someone change their mind|following business day
+F1|SLANG|guy says he signed up for vision last week after his baby was born and basically he wants to back out of it|following business day
+F2|FRAG|enrolled friday, wants to cancel monday?|following business day
+F2|RAMB|ok so um the enrollment went through on saturday I think and she's calling now and she was saying she picked the wrong carrier, is it too late to switch|following business day
+F2|REV|change carrier, enrolled over the weekend, still allowed?|following business day
+F3|NARR|account inactivated for nonpay, caller says check is in the mail, is there a grace period|5-day grace|5 days of inactivation
+F3|FRAG|grace period non-pay how many days|5-day grace|5 days of inactivation
+F3|SLANG|her coverage got cut off cuz she didnt pay but she says she mailed it before the due date|5-day grace|5 days of inactivation|prior to the due date
+#gap F4|Q|how many I codes before someone goes to direct bill|two I-codes
+F4|NARR|why did the annuitant get switched to direct bill when their annuity was too small|two I-codes|insufficient funds
+F4|RAMB|um so basically the lady's annuity check is tiny and she says they're not taking out the dental anymore|insufficient funds
+F4|FRAG|not enough money in paycheck for premium what happens|insufficient funds
+F5|FRAG|POA fax #?|1-833-889-3666
+F5|NARR|where does the son mail his power of attorney paperwork for his dad|P.O. Box 797
+F5|PASS|the daughter has a power of attorney for her mom and wants to know how to get it to us|P.O. Box 797|1-833-889-3666
+F6|Q|what fax number does the ABW authorization form go to|1-603-433-3834
+F6|FRAG|ABW auth form fax|1-603-433-3834
+F6|NARR|he filled out the bank withdrawal form and wants to fax it in, where to|1-603-433-3834
+#gap F7|Q|can a customer overnight a premium payment and where do they send it|Express Mail
+F7|SLANG|she wants to fedex a check so she doesn't get kicked off, what address|Express Mail
+F7|FRAG|overnight address checks fedvip|Express Mail|414095
+F8|Q|how long is an ADI good for after the enrollment ends|up to one year after
+F8|FRAG|ADI expiration?|up to one year after
+F8|NARR|caller's mom's coverage ended a few months ago and she has the disclosure form on file, can I still talk to her about billing|up to one year after
+#gap F9|NARR|a dad is calling to check whether his kid is covered on the mom's dental, he's not the enrollee|parent of a minor dependent
+F9|Q|does a parent of a minor dependent need paperwork to discuss the child's coverage|parent of a minor dependent
+F9|SLANG|stepdad wants to know if the little one is on the plan, no POA or anything|parent of a minor dependent|self-certified
+F10|Q|how many pieces of security do I need from a third party making an ACH payment|Two pieces of security are needed from third-parties|ACH payment information may be provided by an unauthorized third party
+F10|NARR|her son is on the line and wants to pay her past due bill with his bank account|Two pieces of security are needed from third-parties|ACH payments may be processed without authorization|ACH payment information may be provided by an unauthorized third party
+F10|FRAG|3rd party paying premium, security needed?|Two pieces of security are needed from third-parties|ACH payments may be processed without authorization|ACH payment information may be provided by an unauthorized third party
+F11|NARR|lady on the line, her husband passed last month, she's reporting it, what do I tell her happens next|within 10 business days
+F11|Q|how long until the survivor annuitant notification letter goes out after a death is reported|within 10 business days
+F11|SLANG|wife says her hubby kicked the bucket and she's calling to let us know|within 10 business days
+F12|Q|will the deceased's family get a refund of premiums|estate of the deceased
+F12|NARR|the son says his dad died in june and they kept taking money out, he wants it back|estate of the deceased
+F12|FRAG|deceased overpayment refund where does it go|estate of the deceased
+F13|NARR|caller says her son is turning 22 next month and wants to know if he stays on her plan, she's a fed employee|until age 22
+F13|Q|until what age can a civilian employee cover their kids|until age 22
+F13|PASS|a letter was received about the dependent aging off and the mom works for the post office|until age 22|60 days before
+F14|NARR|caller says her son is starting college in the fall and wants to know if he stays on her plan, she's a retired army sponsor|23rd birthday|until age 21
+F14|FRAG|military dependent age limit full time student|23rd birthday|until age 21
+F14|SLANG|navy guy, kid's 21 and in college, can the kid stay on the dental|23rd birthday|until age 21|Full‑Time Student
+F15|Q|is there an appeal if a USM student dependent's certification comes in after 60 days|no appeals process
+F15|NEG|the military family missed the 60 day window to recertify the student, can they appeal|no appeals process
+F15|NARR|sponsor says they forgot to answer the letter about their daughter being in school and she got dropped 3 months ago|no appeals process|Exceptions
+F16|NARR|ex-wife is calling, she's still on her ex-husband's dental and wants her own plan, divorce final last week|service@benefeds.gov
+F16|FRAG|divorce decree email address|service@benefeds.gov
+F16|Q|how many days does research wait for the divorce decree before closing the ticket|19 days
+F16|SLANG|she just got divorced and her ex won't take her off his plan, she wants to sign up herself|service@benefeds.gov
+F17|Q|how many pieces of security does an L1 need before transferring to a senior rep|gather 3 pieces of security before transferring
+F17|REV|transferring to SR, security first? how many pieces|gather 3 pieces of security before transferring
+F17|NARR|I need to send this guy to a senior agent, do I have to verify him first|gather 3 pieces of security before transferring
+F18|Q|how long can I leave a caller on hold before checking back|two minutes
+F18|FRAG|hold time check back limit|two minutes
+F18|RAMB|so like I've been researching this account forever and the customer's just sitting on hold, how long am I supposed to wait before I go back to her|two minutes
+F19|Q|which countries are blocked from accessing the website|Ukraine, China, Russia
+F19|NARR|guy says he lives in russia and can't get on benefeds.gov|Ukraine, China, Russia|entire LTCFEDS.gov
+F19|SLANG|overseas caller website won't load, he's in china|Ukraine, China, Russia
+F20|NARR|caller just told me she's going to hurt herself, what do I do|threatened self-harm
+F20|SLANG|guy says he's gonna end it all, he sounds serious|threatened self-harm
+F20|FRAG|suicidal caller procedure|threatened self-harm
+F21|NARR|this customer keeps cussing at me and screaming, can I hang up on him|offensive behavior
+F21|Q|when can I disconnect an abusive caller|offensive behavior
+F21|SLANG|dude is cursing me out nonstop|offensive behavior
+F22|NARR|someone from the washington post called asking about our contract|media@fedpointusa.com
+F22|Q|where do I send a reporter who has questions|media@fedpointusa.com
+F22|FRAG|journalist inquiry email|media@fedpointusa.com
+F23|NARR|lady wants to know why her FSA allotment amount is wrong on her paycheck|transfer the call to Research|transfer them to our research
+F23|Q|what's the phone number for FSAFEDS|1-877-372-3337
+F23|SLANG|flex spending reimbursement question, who handles it|contact FSAFEDS directly
+F24|NARR|the caller is deaf and wants to know how she can reach us|711
+F24|SLANG|hard of hearing customer how do they call in|711
+F24|Q|how do I handle a relay operator call|relay operator
+F25|NARR|caller only speaks vietnamese, I'm L1, who do I send him to|FEDVIP Senior
+F25|Q|what's the access code for the tele-interpreter line|54045
+F25|SLANG|customer no hablo ingles, wants spanish|xFEDVIP Spanish
+F26|NARR|her husband is getting deployed overseas next month and she wants to drop the vision|31 days prior to the event date, and up to 60 days after
+F26|Q|can a service member cancel FEDVIP when they get deployed|31 days prior to the event date, and up to 60 days after
+F26|SLANG|soldier shipping out wants to cancel dental|31 days prior to the event date, and up to 60 days after
+F27|NEG|he just retired and doesn't want the dental anymore, can he drop it|cancel your coverage because you retired|cannot cancel due to retirement
+F27|Q|is retirement a reason to cancel FEDVIP|cancel your coverage because you retired|cannot cancel due to retirement
+F27|FRAG|retired, cancel dental?|cancel your coverage because you retired|cannot cancel due to retirement
+F28|NARR|caller moved to an agency that has its own dental plan that pays half, wants to cancel fedvip|BENEFEDSPAT@benefeds.gov
+F28|Q|where does HR email confirmation for agency-sponsored dental cancellation|BENEFEDSPAT@benefeds.gov
+F28|FRAG|new agency own dental 50% cancel|BENEFEDSPAT@benefeds.gov|50% or more
+F29|NARR|she's on leave without pay and got a bill in the mail, why is she being billed directly|after the first two L-codes
+F29|SLANG|postal worker on unpaid leave, how does he pay his dental|after the first two L-codes|direct bill
+F29|NEG|he's not getting a paycheck right now cause he's on LWOP, can he sign up during open season|on LWOP during Open Season will not be able to enroll
+F30|Q|how many days does a civilian have to reinstate after being terminated for non-payment|within 30 days
+F30|NARR|fed employee got a DV35 letter saying her dental was terminated, how long does she have to pay|within 30 days
+F30|FRAG|DV82 letter reinstatement timeframe|within 30 days
+F31|NARR|she doesn't know if she has medicare, what do I put|mark their enrollment as "No"
+F31|Q|why are we asking customers about Medicare and Medicaid|coordinating your benefits
+F31|FRAG|medicaid popup unsure answer|mark their enrollment as "No"
+F32|Q|how long does a member have to act after their BAR is approved|30 days from the date on the letter
+F32|NARR|caller got a letter saying her belated request was approved, how long does she have|30 days from the date on the letter
+F32|SLANG|late enrollment got the OK, deadline?|30 days from the date on the letter
+F33|NEG|she was dropped for not paying and has both dental and vision, does she have to pay both to get back|can make payment on either
+F33|Q|does someone inactivated for non-pay need to pay both dental and vision to reinstate|can make payment on either
+F33|RAMB|so his account got shut off because they weren't paying, and it's like both plans, dental and vision, and he only wants the dental back, does he gotta pay the vision too|can make payment on either
+#gap F34|NARR|the customer called a while ago and I need to call back but the call isn't recorded, what do I do|unrecorded|Refusal of call recording|refuses call recording
+F35|Q|what's the BENEFEDS international phone number|571-730-5942
+F35|NARR|guy is calling from germany and the 800 number doesn't work for him|571-730-5942
+F35|SLANG|overseas customer toll free not working|571-730-5942
+F36|Q|what is the TTY number for BENEFEDS|1-877-889-5680
+F36|FRAG|TTY #|1-877-889-5680
+F37|NARR|caller got married last month and wants to add her new husband to her dental|60
+F38|NARR|enrollee says the delta dental office said she isn't covered, who does she call|1-855-410-3255
+F38|Q|what's the phone number for MetLife dental|1-888-865-6854
+F38|SLANG|VSP number?|1-800-807-0764
+X1|NARR|her husband passed last month and she wants to keep the dental|Survivor Annuitant Notification|Retroactive Enrollment|Prospective Enrollment
+X2|SLANG|the enrollee went belly up, I mean died, and the executor wants the post tax statement|financial statements
+X3|NARR|my caller says her dad's in a nursing home and she handles his bills, she wants to talk about his account|POA|verbal authorization
+X4|PASS|the account was closed because premiums weren't paid|5-day grace|within 30 days|Past Due Reinstatement
+X5|NARR|army retiree's grandson is 22 and in school can he stay|23rd birthday|until age 21
+X6|NARR|postal worker's daughter is 22 and in college, can she stay on|until age 22
+X7|SLANG|caller's kid is 22, still a student, mom's a fed, can the kid stay on|until age 22
+X8|Q|can a fed civ dependent stay on until 23 as a full time student|until age 22
+X9|NARR|she says she's gonna kill herself|threatened self-harm
+X10|NARR|caller threatened to come to the office and hurt somebody|Harm an Individual or Property
+X11|SLANG|bounced check what happens|reversal|10 business days|insufficient
+X12|NARR|he wants to pay with a card over the phone|ACH
+X13|FRAG|ex-spouse kids dental divorce final last week|service@benefeds.gov|former spouse
+X14|NARR|her ex-husband is the sponsor and wants to kick her off the FAD account after the divorce|Sponsors may request inactivation|Sponsors may only request inactivation
+X15|PASS|a call was received from a VSO asking about a veteran's coverage|treated as not authenticated
+#gap X16|NARR|the carrier is on the line asking about one of our members' enrollment|treated as not authenticated
+F5|RAMB|ok so this gentleman, um, he's got power of attorney over his mother, she's got dementia, and he's basically asking where he can fax the paperwork so we can talk to him|1-833-889-3666
+#gap F8|RAMB|so like her mom's plan ended back in the spring and the sister's on the line, she says there's an authorization form on file, I'm not sure if it's still good|up to one year after
+F11|RAMB|um so her husband, he passed away, she's like really upset and she wants to know when she gets something in the mail about it|within 10 business days
+F13|NEG|her son isn't 22 yet but will be in two months, she doesn't want him to lose the dental, she's a civilian employee|until age 22|60 days before
+#gap F17|SLANG|gotta warm transfer this guy to a senior, what do I need from him first|gather 3 pieces of security before transferring
+F19|REV|can't log in from Ukraine, blocked?|Ukraine, China, Russia
+F22|SLANG|news lady on the phone wants a comment|media@fedpointusa.com
+F24|NEG|she can't hear on the phone at all, she's deaf, what options does she have other than calling|711
+F26|REV|deployed in two weeks, cancel vision, how early can he do it|31 days prior to the event date, and up to 60 days after
+F29|Q|when does someone on LWOP start getting direct bills|after the first two L-codes
+F30|SLANG|fed got booted for not paying, how long to get back on|within 30 days
+F33|FRAG|nonpay inactivated both dental vision pay one?|can make payment on either
+F36|NARR|deaf caller wants our TTY number|1-877-889-5680
+F25|FRAG|L1 non spanish language transfer|FEDVIP Senior
+F16|NEG|she's divorced now and doesn't want to be on her ex's plan anymore, she wants her own|service@benefeds.gov|former spouse

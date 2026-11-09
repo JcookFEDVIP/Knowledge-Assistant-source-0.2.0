@@ -1,0 +1,50 @@
+/* Design tokens derived from "Certification Instructions.pptx" (see _planning/knowledge_assistant/11_VISUAL_DESIGN_SYSTEM.md). */
+:root {
+  --color-navy-900: #0D1B3E;
+  --color-navy-800: #1B2F66;
+  --color-navy-700: #1F3B7A;
+  --color-red-600:  #C8102E;
+  --color-red-50:   #FFE3E6;
+  --color-blue-300: #9DB6EA;
+  --color-blue-100: #D5DFF3;
+  --color-blue-75:  #E4EAF6;
+  --color-blue-50:  #E8EEF9;
+  --color-white:    #FFFFFF;
+
+  --color-primary: var(--color-navy-800);
+  --color-accent: var(--color-red-600);
+  --gradient-band: linear-gradient(135deg, var(--color-navy-700), var(--color-navy-900));
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F4F7FC;
+  --color-surface-on-navy: rgba(255, 255, 255, .10);
+  --color-text-primary: #1E2A44;
+  --color-text-heading: var(--color-navy-800);
+  --color-text-secondary: #56658A;           /* darkened from deck #6B7A99 for WCAG AA */
+  --color-text-on-navy: #FFFFFF;
+  --color-text-on-navy-secondary: var(--color-blue-100);
+  --color-eyebrow-on-navy: var(--color-blue-300);
+  --color-border: var(--color-blue-75);
+  --color-highlight-bg: var(--color-blue-100);
+  --color-focus-on-light: var(--color-navy-800);
+  --color-focus-on-navy: #FFFFFF;
+
+  --font-heading: "Segoe UI Semibold", "Segoe UI", "Segoe UI Variable Text", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Segoe UI", "Segoe UI Variable Text", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI Black", "Segoe UI", system-ui, sans-serif;
+  --weight-regular: 400; --weight-semibold: 600; --weight-black: 900;
+  --text-label: 12px; --tracking-label: .2em;
+  --text-body: 15px; --leading-body: 1.5;
+  --text-heading: 19px; --leading-heading: 1.3;
+  --text-title: 28px;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px;
+  --gap-cards: 12px;
+  --radius-card: 12px; --radius-pill: 999px;
+  --shadow-panel: 0 4px 16px rgba(13, 27, 62, .18);
+  --shadow-critical: 0 3px 12px rgba(0, 0, 0, .25);
+  --motion-fast: 120ms; --motion-base: 200ms; --motion-gentle: 400ms;
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; --motion-base: 0ms; --motion-gentle: 0ms; }
+}

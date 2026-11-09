@@ -1,0 +1,341 @@
+# One natural question per job aid (foundation swarm, 10/2026): role|season|question|expected job-aid title.
+# Measured as coverage (expected job aid in the first 3 shown passages); the test ratchets the pass rate.
+L1|STEADY_STATE|what do I have to read to the caller when I set up their bank draft for premiums|ABW Scripting
+L1|STEADY_STATE|caller wants to pay their premiums faster with extra deductions from their paycheck, can I set that up|Accelerated Payments
+L1|STEADY_STATE|I got an email invite to join the fedpoint team chat as a guest, how do I get in|Accessing FedPoint Teams Chat as a Guest
+L1|STEADY_STATE|how do I join my virtual training class meeting from learn|Accessing MS Teams Through LEARN
+L1|STEADY_STATE|how do I join the webex session for training|Accessing WebEx Training in LEARN
+L1|STEADY_STATE|where are the practice accounts we use to create a test account in training|Account Creation Training Template
+L1|STEADY_STATE|caller says the agent last time told them something different than what actually happened on the account, they want it reviewed|Account Review Request
+L1|STEADY_STATE|caller got married, how many days do they have to enroll and when is it effective|ACED Chart (L1)
+SR|STEADY_STATE|can an enrollee decrease from self and family to self only when a child ages out and what pay period is it effective|ACED Chart (Senior Representative) (v2)
+L1|STEADY_STATE|how do I add a dependent to next year's plan from the pending enrollment|Adding and Removing Dependents
+L1|STEADY_STATE|member already has a family plan and wants to add their new baby to it|Adding or Removing Family Members in a Self and Family Plan
+L1|STEADY_STATE|sponsor accidentally set himself up as the sponsor but wanted to be the primary enrollee, it's after open season|Adding Sponsors Outside of Open Season
+SME|STEADY_STATE|who is responsible for updating attendance in IEX by 10:30, admin or workforce|Admin Responsibilities Matrix
+L1|STEADY_STATE|employee is on excused absence from their agency, does that affect their dental coverage|Administrative Leave
+L1|STEADY_STATE|caller wants to know how long their ticket will take to process|Advising of AWD Processing Timeframes
+L1|STEADY_STATE|member is moving from a civilian job to the military, how do I change their affiliation|Affiliation Changes
+L1|STEADY_STATE|how do I change the affiliation on an account that has no enrollment|Affiliation Changes for Inactive Accounts
+L1|STEADY_STATE|employee moved to an agency that has its own dental plan, can they cancel FEDVIP|Agencies That Offer Their Own Dental and Vision
+L1|STEADY_STATE|customer changed from one federal agency to another, what ticket do I submit|Agency Name Change and Claim Number AWD Ticket
+SME|STEADY_STATE|how do I approve an agent's request for extra hours in webstation|Approving or Denying Extra Hours (EH) and Voluntary Time Off (VTO)
+SME|STEADY_STATE|agent was two minutes late for their shift, how do I code it|Attendance Updates
+L1|STEADY_STATE|caller got a letter saying their authorization form was rejected, what do I tell them|Authorization (ADI) - Denial Letters
+L1|STEADY_STATE|what is the tool that listens to the call and writes the comment for me|AutoSummary FAQ
+L1|STEADY_STATE|what are the options under the three dots in a ticket tagline|AWD Action Menu
+L1|STEADY_STATE|I started a ticket by mistake, how do I get rid of it|AWD Cancelling a Work Item
+L1|STEADY_STATE|how do I add a note to a ticket without opening it|AWD Commenting on a Work Item
+L1|STEADY_STATE|how do I start a new ticket using quick create|AWD Creating a Work Item
+L1|STEADY_STATE|how do I upload a document and attach it to a ticket|AWD Creating and Linking Attachments
+L1|STEADY_STATE|can I change which details show on my work item summary line|AWD Customizing Taglines
+L1|STEADY_STATE|customer wants their registration removed but I can't delete it in the system|AWD Delete Registration Ticket
+L1|STEADY_STATE|how do I separate pages of an attachment into their own document|AWD Document Splitter
+L1|STEADY_STATE|the carrier doesn't show the member's enrollment but BENEFEDS does, what ticket do I send|AWD Enrollment Verification Ticket
+L1|STEADY_STATE|what browser should I use for AWD and how do I change my password|AWD Known Issues
+L1|STEADY_STATE|the lock on my ticket is grey and the cursor shows a red circle, what does that mean|AWD Locking Work Items
+L1|STEADY_STATE|where do I find workspaces and portals in analytics|AWD Navigating Analytics
+L1|STEADY_STATE|member never cashed their refund check and got a letter about it|AWD Outstanding Refund Premium Ticket
+L1|STEADY_STATE|how do I save my member ID search so I don't have to set it up every time|AWD Saving a BENEFEDS Search
+L1|STEADY_STATE|how do I look up a ticket using the member ID|AWD Searching for a Work Item
+L1|STEADY_STATE|how is the ticket number formatted with the insured's initials|AWD Taglines
+L1|STEADY_STATE|which department handles the employment status change tickets|AWD Ticket Flow
+L1|STEADY_STATE|which type of ticket do I use when the customer wants the terms and conditions mailed|AWD Work Item Types
+L1|STEADY_STATE|how do I move or resize a window in AWD|AWD Working with Cards
+L1|STEADY_STATE|what does the get work icon do in my worklist|AWD Worklist Icons
+L1|STEADY_STATE|caller missed their enrollment window, how long do they have to request a late enrollment|Belated Action Request Form
+SR|STEADY_STATE|the member's late request was approved, how many days do they have and how do I verify the approval|Belated Enrollments
+L1|STEADY_STATE|customer wants to change plans but open season already ended, what do I say|Belated Open Season Actions (L1)
+SR|STEADY_STATE|customer wants to change plans but open season already ended, what do I say|Belated Open Season Actions (L2)
+L1|STEADY_STATE|first time logging into the customer service system, how do I do the multi factor|BENEFEDS CSS Authentication Process
+L1|STEADY_STATE|how do I acknowledge my quality evaluation outside open season|BENEFEDS CXone Steady State QA Processes
+L1|STEADY_STATE|what options does the phone menu give callers before they reach us|BENEFEDS IVR
+L1|STEADY_STATE|caller can't get into their account through login.gov even though it's linked, what can I do|BENEFEDS Login.gov Support
+L1|OPEN_SEASON|what do I need to do on the call opening to meet expectations on my QA during open season|BENEFEDS Open Season QA Companion Guide
+L1|STEADY_STATE|caller has a question about long term care insurance, what does BENEFEDS handle for that|BENEFEDS Role in FLTCIP
+L1|STEADY_STATE|what are the QA expectations for greeting the caller and verifying security|BENEFEDS Steady State QA Companion Guide
+L1|STEADY_STATE|can the customer change their social security number on the website themselves|BENEFEDS.gov Can and Cannot Do
+L1|OPEN_SEASON|what can a customer do on the website during open season and what do they need to call for|BENEFEDS.gov Can and Cannot Do DURING OPEN SEASON
+L1|STEADY_STATE|after open season what can customers still do online|BENEFEDS.gov Can and Cannot Do DURING Post Open Season
+L1|STEADY_STATE|customer doesn't have an account yet, how do they make one on the website|BENEFEDS.gov Create Account
+L1|STEADY_STATE|where can the customer find legal documents like privacy notices on the website|BENEFEDS.gov Legal Documents
+L1|STEADY_STATE|how does a member sign in when their login.gov is already connected|BENEFEDS.gov Linked Account Sign In
+L1|STEADY_STATE|customer thinks someone hacked into their online account|BENEFEDS.gov Unauthorized Login Attempt
+L1|STEADY_STATE|customer has a my benefeds account but never connected it to login.gov|BENEFEDS.gov Unlinked Account Sign In
+L1|STEADY_STATE|caller has a question about their payroll deduction, who do I transfer them to|Billing & Deduction Questions
+SME|STEADY_STATE|how many breaks and lunches for a 9 hour shift|Break and Lunch Rules for Admins
+L1|STEADY_STATE|what do I say to end the call before offering the survey|Call Closing Process - Inbound Calls
+L1|STEADY_STATE|caller came through the phone menu fully authenticated, what greeting do I use|Call Opening Decision Tree
+L1|STEADY_STATE|what is the greeting script when I answer a call|Call Opening Process & Scripting
+L1|STEADY_STATE|customer wants to stop a one time bank payment they scheduled|Canceling ACH Payments (L1)
+L1|STEADY_STATE|member is being deployed on active duty, can they cancel their dental|Cancelling FEDVIP Coverage Talking Points
+L1|STEADY_STATE|when does the carrier get the new year's enrollment information after open season|Carrier Communication After Open Season
+L1|STEADY_STATE|dentist won't do the work because the predetermination wasn't approved by united concordia|Carrier Concerns
+L1|STEADY_STATE|member needs dental work tomorrow and the carrier can't find their coverage|Carrier Emergency Update
+L1|STEADY_STATE|when will the member get their new ID card after changing plans|Carrier Information
+L1|STEADY_STATE|my schedule shows the wrong time zone in webstation|Changing Your Time Zone in IEX
+L1|STEADY_STATE|chorus is down and I can't submit tickets, what do I do|Chorus - Agent Workaround
+L1|STEADY_STATE|what does the end process step mean on a ticket|Chorus - Process Steps Explained
+L1|STEADY_STATE|my systems are acting up, how do I clear the browser cache|Clearing MS Edge Cache
+L1|STEADY_STATE|after the call how do I paste the generated comment into the account|Commenting with AutoSummary
+L1|STEADY_STATE|caller is hard of hearing, what options do they have to contact us|Communication Options for the Deaf
+L1|STEADY_STATE|customer wants to know how much a crown would cost out of pocket under different plans|Compare Dental Service Costs Tool
+L1|STEADY_STATE|caller says they are going to contact their congressman|Complaints
+L1|STEADY_STATE|customer wants their confirmation letter re-sent by mail|Correspondence AWD Ticket
+L1|STEADY_STATE|what should I check before setting up a new account for a caller|Creating a BENEFEDS Account Checklist
+SME|STEADY_STATE|how do I set up a report in webstation to run automatically|Creating Automated Reports in Webstation
+L1|STEADY_STATE|there's a banner on the deduction info tab saying there is a pending modification|CSS Agency Name Change
+L1|STEADY_STATE|member sees a red dot on their dental card, what does it mean|Customer Alerts in a BENEFEDS Account
+L1|STEADY_STATE|member's bank draft keeps bouncing over and over|Customers with Multiple ABW Reversals
+L1|STEADY_STATE|what status do I use for my 10 minute pre-shift|CXone Agent Statuses
+L1|STEADY_STATE|which statuses am I allowed to use during my shift in the softphone|CXone Agent Statuses (WCX)
+L1|STEADY_STATE|how long do we keep call recordings|CXone Call Storage and Retrieval
+L1|STEADY_STATE|I got a call where the system says this is a callback, what do I say|CXone Callbacks & Scripting
+L1|STEADY_STATE|how do I blind transfer a caller to an outside phone number|CXone Cold Transfers (External)
+L1|STEADY_STATE|how do I do an instant transfer to another workgroup with transfer notes|CXone Cold Transfers (Internal)
+L1|STEADY_STATE|how do I get three people on the line at the same time|CXone Conference Call
+L1|STEADY_STATE|how do I look up the history of a call by its contact ID in reporting|CXone Contact History
+L1|STEADY_STATE|the caller hung up in the middle of the call, do I have to call them back|CXone Disconnected Calls
+L1|STEADY_STATE|caller wants a manager, how do I get my supervisor on the call|CXone Escalation Procedures
+SR|STEADY_STATE|as a supervisor how do I join a call that an agent escalated to me|CXone Handling Escalated Calls (Supervisor)
+L1|STEADY_STATE|how do I work the overnight voicemails assigned to me|CXone Handling Voicemail
+L1|STEADY_STATE|how can I listen back to my own recorded calls|CXone How to Listen to Your Calls
+L1|STEADY_STATE|how do I dial out to a customer from the softphone|CXone How to Make an Outbound Call
+L1|STEADY_STATE|first time setting up my softphone, what settings do I pick|CXone Initial Preferences and Setup
+L1|STEADY_STATE|the softphone is asking me to install an extension, how do I do it|CXone Installing Browser Extension
+L1|STEADY_STATE|how do I search interactions to listen to an agent's recorded call|CXone Listening to Recordings
+SR|STEADY_STATE|how do I listen in on an agent's live call|CXone Live Monitoring (Supervisor)
+L1|STEADY_STATE|how do I send the caller to the after-call survey|CXone Offering the Survey
+L1|STEADY_STATE|how many days do I have to acknowledge my QA evaluation|CXone QA Process for OS and Post OS
+L1|STEADY_STATE|I forgot my password for the phone system|CXone Resetting Your Password
+L1|STEADY_STATE|I can't find the interaction ID for my comment|CXone Retrieving a Contact ID
+SR|STEADY_STATE|agent didn't come back from lunch, how do I change their status|CXone Softphone Changing Agent State
+L1|STEADY_STATE|how do I log into the softphone and connect the agent leg|CXone Softphone Logging In and Out
+L1|STEADY_STATE|what steps do I follow at the end of my shift so I don't get another call|CXone Starting and Ending Your Day
+L1|STEADY_STATE|caller says they can hear background noise on my end|CXone Troubleshooting Audio
+SR|STEADY_STATE|customer doesn't want to be recorded, how can we call them back without recording|CXone Unrecorded Outbound Calls
+L1|STEADY_STATE|how do I launch the agent app from the hub|CXone User Hub
+L1|STEADY_STATE|how can I see how long the wait is in the queue before I transfer|CXone Viewing Call Queue Wait Times
+L1|STEADY_STATE|where do I see my evaluations and request a review|CXone Viewing QA Evaluations
+L1|STEADY_STATE|should a transfer to research be warm or cold and how do I do it|CXone Warm Transfers
+L1|STEADY_STATE|the account was fully archived, should I retrieve it or create a new one|Database Reduction
+L1|STEADY_STATE|caller is yelling at me, how do I calm them down|De-escalation Techniques
+L1|STEADY_STATE|the daughter of a member who passed away is calling, what can I share with her|Deceased and 3rd Party Callers
+L1|STEADY_STATE|former employee who left before retirement age and will get their annuity later, are they eligible|Deferred vs. Postponed Annuitants
+L1|STEADY_STATE|customer registered under the wrong federal family and has no enrollment, how do I remove the registration|Delete FEDVIP Registration
+L1|STEADY_STATE|I need to reactivate a dependent that was removed last month, what ticket|Dependent AWD Ticket
+L1|STEADY_STATE|military member's son is turning 21 and is a full time student, can he stay on|Dependent Eligibility Age 21 or 23 – USM
+L1|STEADY_STATE|postal worker's daughter is turning 22, when does her coverage end|Dependent Eligibility Age 22 – CIV Employee or USPS
+L1|STEADY_STATE|adult disabled child who can't support himself, can he stay on the plan past the age limit|Dependent Eligibility Incapable of Self Support
+L1|STEADY_STATE|member's coverage was terminated because of an address problem, can we reinstate it|Determining FEDVIP Reinstatement
+L1|STEADY_STATE|employee was involuntarily separated in a reduction in force and gets an immediate annuity, can they keep their coverage|Discontinued Service Retirement (DSR)
+SME|STEADY_STATE|how do I download the customer satisfaction survey results|Downloading CSAT reports
+L1|STEADY_STATE|caller is both a federal employee and a military retiree, which one do they enroll under|Dual Eligibility
+L1|STEADY_STATE|husband and wife both have family plans covering each other, is that allowed|Dual Enrollments
+SR|STEADY_STATE|customer wants to use a different bank account for vision than dental|Edit ABW Information
+L1|STEADY_STATE|how do I add a bank account for automatic withdrawal during an enrollment|Edit ABW Information L1
+L1|STEADY_STATE|the FEHB plan code on the account is wrong, how do I fix it|Edit FEHB
+L1|STEADY_STATE|member has dental coverage through their spouse's employer, where do I record that|Edit Other Insurances
+L1|STEADY_STATE|the sponsor's date of birth is wrong, how do I update it|Edit Sponsor Info
+L1|STEADY_STATE|what is the difference between the premium effective date and the coverage effective date|Effective Dates
+L1|STEADY_STATE|is a gray area reservist under 60 eligible for dental and vision|Eligibility of Uniformed Service Members (USM)
+L1|STEADY_STATE|can a former spouse of a military retiree stay covered|Eligibility of USM Dependents
+L1|STEADY_STATE|my computer crashed, should I submit an incident or a request|Employee Service Center Incident vs Request
+L1|STEADY_STATE|what does carrier code AK mean in the enrollment code|Enrollment Code Translator
+L1|STEADY_STATE|ex wife wants to enroll on her own but she's still listed on her ex husband's plan|Enrollment or Inactivation Due to Divorce
+L1|STEADY_STATE|what does the member agree to when they finish enrolling|Enrollment Terms & Conditions
+L1|STEADY_STATE|caller has a question about their retirement annuity payment, what number do I give them|Escalation OPM Annuity
+SR|STEADY_STATE|customer is threatening to call their senator, can I give them OPM's contact information|Escalation to OPM (TL ONLY)
+L1|STEADY_STATE|sponsor is retiring from active duty and the spouse has a family of active duty account|FAD Account USM Transition from Active Duty
+L1|STEADY_STATE|customer wants to switch their employment status from civilian to uniformed services|Fed Civ to USM Change Employment Status
+L1|OPEN_SEASON|how can people enroll or make changes during open season|Federal Benefits Open Season Overview
+SR|STEADY_STATE|civilian employee is retiring, how do I handle their FEDVIP|Federal Civilian Transition to Retirement
+L1|STEADY_STATE|civilian employee just retired, can they cancel their dental because they retired|Federal Civilian Transition to Retirement (L1)
+L1|STEADY_STATE|when was the dental and vision program created and by what law|FEDVIP Background
+L1|STEADY_STATE|member has a credit on their account, can I tell them when the refund will arrive|FEDVIP Credits & Refunds
+L1|STEADY_STATE|federal employee wants to add their civil union partner, are they eligible|FEDVIP Eligibility - Dependents (FED CIV)
+L1|STEADY_STATE|is a temporary federal employee eligible to enroll|FEDVIP Eligibility - Federal Civilian (FED CIV)
+L1|STEADY_STATE|what's the difference between a dependent that can't be covered now and one that can never be covered|FEDVIP Ineligible vs Never Eligible Dependents
+L1|STEADY_STATE|what is the phone number for aetna dental|FEDVIP Phone and Contact Information
+L1|STEADY_STATE|what are blue cross fep dental's hours and phone number|FEDVIP Phone and Contact Information
+L1|STEADY_STATE|how many hours a month does a federal employee have to work to be eligible|FEDVIP Primary Enrollee Eligibility
+L1|STEADY_STATE|what is OPM's role versus fedpoint in the program|FEDVIP Roles
+L1|STEADY_STATE|customer needs a letter showing premiums paid after tax for their taxes|Financial Document Requests
+L1|STEADY_STATE|caller overseas can't get to the website, is their country blocked|Foreign Blocked Countries
+L1|STEADY_STATE|which payment methods are billed in arrears versus in advance|Forms of Payment
+L1|STEADY_STATE|how do you pronounce GEHA and what does their plan include|GEHA and Common Customer Questions
+SME|STEADY_STATE|how do I run an adherence report by agent|Generating Adherence Reports
+SME|STEADY_STATE|how do I pull a report of agents scheduled work hours|Generating Scheduled Hours Report
+SME|STEADY_STATE|how much time did agents lose to meetings and training, which report shows that|Generating Time Utilization Reports
+L1|STEADY_STATE|if I ask for time off because it's slow, is it guaranteed|Guidelines for VTO (Voluntary Time Off)
+L1|STEADY_STATE|member is on maternity leave unpaid and got a bill, why|Handling a Leave Without Pay Call
+L1|STEADY_STATE|caller asks to speak to a supervisor, what steps do I take|Handling Escalated Calls
+L1|STEADY_STATE|caller has a question about their flexible spending account claim|Handling FSAFEDS Calls
+L1|STEADY_STATE|a reporter from a newspaper is calling asking about our contract|Handling Inquiries From the Media
+L1|OPEN_SEASON|member wants to cancel their plan during open season, when does it end|Handling Open Season Plan Cancellation Call
+L1|OPEN_SEASON|member wants to switch carriers during open season, how do I do it|Handling Open Season Plan Changes
+L1|STEADY_STATE|caller is reporting that the enrollee passed away|Handling Report of Death Calls
+L1|STEADY_STATE|caller refuses to have the call recorded, who do I escalate to|Handling Security Issues
+L1|STEADY_STATE|caller said they want to hurt themselves|Handling Threats and Inappropriate Behavior
+L1|STEADY_STATE|how often should I check back with the caller when they're on hold|Hold and Transfer Procedures and Scripting
+L1|STEADY_STATE|humana website shows a different start date than BENEFEDS|Humana's Alternate Effective Date
+SME|STEADY_STATE|what does the system down activity code mean in IEX|IEX Activity Codes Updates
+SME|STEADY_STATE|how should I arrange IEX windows to review schedule adherence|IEX Setup for Schedule Review
+L1|STEADY_STATE|keyboard shortcut to copy an exact schedule in IEX|IEX Tips and Shortcuts
+L1|STEADY_STATE|what are the password requirements for webstation|IEX Webstation Login and Logout
+L1|STEADY_STATE|QA found the agent disclosed information to the wrong person, is that reported as an incident|Incident Reporting Scenarios
+L1|STEADY_STATE|how quickly must a breach be reported versus an incident|Incident vs Breach
+L1|STEADY_STATE|member was inactivated because of the 2025 layoffs, can we reinstate them|Inquiries Regarding Workforce Changes
+L1|STEADY_STATE|member's paycheck isn't big enough to cover the premium|Insufficient Funds
+L1|STEADY_STATE|member gets paid only some pay periods and has zero deductions in between|Intermittent Payors
+L1|STEADY_STATE|how do I enter an overseas address with a province and postal code|International & Military Information Gathering
+L1|STEADY_STATE|I'm getting an error 403 in learn|LEARN Troubleshooting
+L1|STEADY_STATE|is an employee on unpaid leave still eligible and how are they billed|Leave Without Pay (LWOP)
+L1|STEADY_STATE|how do I search for a member in the customer service system|Locating an Account in the CSS
+L1|STEADY_STATE|where does the military spouse download the payroll authorization form|Locating the Payroll Authorization Form for FAD Accounts
+L1|STEADY_STATE|I got locked out of the customer service system after too many tries|Locked CS System Account
+L1|STEADY_STATE|how do I configure two-factor authentication in service now|Logging into ServiceNow to Set Up MFA
+L1|STEADY_STATE|customer wants plan information mailed to them|Mail Plan Info
+L1|STEADY_STATE|employee was terminated and rehired two days later, what happens to their enrollment|Managing Break in Federal Service
+L1|STEADY_STATE|the medicare pop up came up, do I need to ask those questions|Medicare & Medicaid Questions
+L1|STEADY_STATE|how often does a retired military member pay premiums|Method and Frequency of Pay
+L1|STEADY_STATE|how should I use teams channels to ask floor support questions|Microsoft Teams Best Practices
+L1|STEADY_STATE|member has two accounts because they typed the wrong social security number|Multiple SSN Issues
+L1|STEADY_STATE|caller enrolled yesterday after a QLE and now wants to cancel, can they still|24 Hour Rule
+L1|STEADY_STATE|account was inactivated for not paying, will it come back automatically if the payment arrives a few days later|5-Day Grace Period for Non-Pay Inactivation
+L1|STEADY_STATE|how do I spell out a temporary password letter by letter to the caller|NATO Alphabet
+L1|STEADY_STATE|how do I swap a shift with another agent|NICE Webstation (IEX) Trading Schedules
+L1|STEADY_STATE|widow calling to enroll for the first time after her husband died, do I set up the account|New Survivor Annuitant Create Account
+SR|STEADY_STATE|how long does a surviving spouse have to enroll after the death|New Survivor Enrollment
+L1|STEADY_STATE|surviving spouse wants to enroll, what do I do as a level 1 rep|New Survivor L1
+L1|STEADY_STATE|caller is asking about their medical insurance not dental, what do I tell them|Non FEDVIP Program Information
+L1|STEADY_STATE|is a NAF employee on a military base eligible for FEDVIP|Non-Appropriated Funds
+L1|STEADY_STATE|caller only speaks Vietnamese, how do I get an interpreter|Non-English Speaking TeleInterpreter Tips
+L1|STEADY_STATE|retiree gets pension from the Federal Reserve not OPM, what annuity location|Non-OPM Annuity Locations
+L1|STEADY_STATE|where can a retiree find their CSA number|OPM Claim Numbers and Where to Locate Them
+SME|STEADY_STATE|what are my daily duties as an admin during open season|OS Admin Responsibilities
+SR|STEADY_STATE|agent at WCX has a system issue, how does the team lead open a ticket|OS Vendor Help Desk Support Ticket
+L1|STEADY_STATE|agent disagrees with how their call was scored, how do they dispute it|OS and Post OS QA Appeal Process
+L1|STEADY_STATE|caller wants to switch from high to standard option before open season, when does it take effect|Open Season Current Plan Year Call
+L1|STEADY_STATE|steps to enroll someone on the post open season exception day|Open Season Exception Enrollment Steps
+L1|STEADY_STATE|what do I say when I call a customer back|Outbound Call Scripting
+L1|STEADY_STATE|how do we collect premiums that were missed while they were on leave without pay|Past Due and Retroactive Payments
+L1|STEADY_STATE|how do I set the payment method to direct bill during enrollment|Placing Enrollee on Direct Bill
+L1|STEADY_STATE|caller wants to compare dental plans and rates before choosing|Plan Comparison Tool
+L1|STEADY_STATE|customer wants to schedule a payment for a future date|Postdated ACH Payments
+L1|STEADY_STATE|two enrollees got married and both have self and family, what happens|Potential Dual Enrollment Scenarios
+L1|STEADY_STATE|are annuitant premiums taken out before or after taxes|Pre and Post Tax Deductions
+L1|STEADY_STATE|what does inactivation reason code N mean|Premium Administration Codes
+L1|STEADY_STATE|how does the prenote and bill file process with the payroll office work|Premium Administration Process
+L1|STEADY_STATE|customer disputes the amount being deducted, what ticket do I submit|Premium Inquiry AWD Ticket
+L1|STEADY_STATE|when will the first premium be taken for a newly enrolled annuitant|Premium Payment Collection
+L1|STEADY_STATE|newly retired military member was enrolled but got an ABW offer instead of retirement pay deduction|Prenoting USM New Retirees
+L1|STEADY_STATE|which AWD work item do I use for which situation|Primary AWD Work Item Overview
+L1|STEADY_STATE|I get an error trying to change their plan in the CS system, what ticket|Primary Change Enrollment AWD Ticket
+L1|STEADY_STATE|I can't update the customer's profile because of an error, what do I submit|Primary Change Profile AWD Ticket
+L1|STEADY_STATE|need to merge two accounts after marriage and research is unavailable|Primary Combine Accounts AWD Ticket
+L1|STEADY_STATE|system won't let me enroll the customer, what ticket|Primary Create Enrollment AWD Ticket
+L1|STEADY_STATE|belated cancellation was approved, how do I remove them from the plan|Primary Disenrollment AWD Ticket
+L1|STEADY_STATE|what is the difference between the sponsor and the primary enrollee|Primary Enrollee vs Sponsor
+L1|STEADY_STATE|should I submit an inactivation or a disenrollment ticket|Primary Inactivation & Disenrollment AWD Ticket
+L1|STEADY_STATE|family member reporting the death of the enrollee, what ticket do I create|Primary Inactivation AWD Ticket
+L1|STEADY_STATE|payment posted but the account is still inactive for nonpayment|Primary Reinstate Enrollment AWD Ticket
+SR|STEADY_STATE|how do I take a bank payment over the phone for a direct bill|Processing ACH Payments
+L1|STEADY_STATE|how do I take a bank payment over the phone for a direct bill|Processing an ACH Payment L1
+SME|STEADY_STATE|what is a call check and how is it different from an official evaluation|QA Call Checks
+L1|STEADY_STATE|I think personal information was given to the wrong person, who do I call|QA Incident Reporting
+SME|STEADY_STATE|how many official evaluations do I score per agent each day|QA Reminders - Official Evaluations and Call Checks
+L1|STEADY_STATE|where do I find call recordings to listen to|QA Resources
+SME|STEADY_STATE|agent is over their break by more than 10 minutes, what do I do|RTA Strategy for OS Admins
+L1|STEADY_STATE|why is the customer getting a bill in the mail instead of deductions|Reasons Direct Bills are Sent
+SR|STEADY_STATE|how should I greet a caller transferred to me from level 1|Receiving a Transferred Call
+L1|STEADY_STATE|customer wants their credit balance refunded|Refund Request Premium AWD Ticket
+L1|STEADY_STATE|enrollee was terminated for nonpayment, can they be reinstated within 30 days|Reinstatement for Non Pay
+L1|STEADY_STATE|what happens after an agent gets a third critical error|Repeat Offenders
+L1|STEADY_STATE|caller thinks someone is committing fraud with their account, how do I report it|Reporting Suspected Fraud
+L1|STEADY_STATE|my computer software stopped working, how do I report an IT issue|Reporting an Incident in Employee Service Center
+L1|STEADY_STATE|how do I sign up for VTO|Requesting Voluntary Time Off
+L1|STEADY_STATE|I'm a vendor agent locked out of Image after three tries, how do I change my password|Reset SharePoint Image Password (Vendor Agents)
+L1|STEADY_STATE|forgot my password for the training site LEARN|Resetting LEARN Password
+SME|STEADY_STATE|by what time do previous day schedule adjustments need to be done|Scheduling Adjustment Responsibilities
+SME|STEADY_STATE|how do I pull survey results for one specific agent|Searching Agent CSAT Reports
+L1|STEADY_STATE|where in CSS do I find the date of birth and SSN to verify the caller|Security Information Location
+L1|STEADY_STATE|caller is calling from the phone number on the account, does that count as security|Security Verification Direct Hit
+L1|STEADY_STATE|how many pieces of security do I need before discussing the account|Security Verification
+L1|STEADY_STATE|customer wants premiums taken automatically from their checking account, how do I add the bank|Setup ABW Information
+L1|STEADY_STATE|how should I post a question to floor support in the chat channel|Slack Best Practices
+L1|STEADY_STATE|I need to read the automatic bank withdrawal authorization to a Spanish speaking caller|Spanish Authorization of ABW
+L1|STEADY_STATE|where is the eligibility certification statement in Spanish|Spanish Certification Eligibility
+L1|STEADY_STATE|family member certification script in Spanish|Spanish Certification of Family Members
+L1|STEADY_STATE|what is the Spanish word for carriers or retirement|Spanish Dialects & Keywords
+L1|STEADY_STATE|can an active duty service member enroll themselves in FEDVIP|Sponsor Roles in the FEDVIP
+L1|STEADY_STATE|customer says their late enrollment request was approved, what do I do now|Submitting an Approved Plan Year Belated Action
+L1|STEADY_STATE|survivor got a one time death benefit and no monthly annuity, are they eligible|Survivor Annuitant Lump Sum vs Coupon Program
+SME|STEADY_STATE|agent can't receive calls in CXone, what should I check|System Down Checklist for Admins and SMEs
+L1|STEADY_STATE|my CS system is locked and I can't work, what do I do|System Down Procedures
+L1|STEADY_STATE|federal employee quit their job without retiring, what happens to their dental coverage|Termination or Separation from Federal or USM Services
+L1|STEADY_STATE|what are the steps to connect with the customer and build rapport|The DNA of Customer Service
+L1|STEADY_STATE|the caller is the enrollee's daughter, what can I tell her|Third Party Callers
+L1|STEADY_STATE|how do I request planned time off more than 48 hours ahead|Time Off Requests in IEX WebStation
+L1|STEADY_STATE|my schedule isn't available in IEX yet, how do I request a day off|Time Off Requests in SharePoint
+L1|STEADY_STATE|what do I need to put in the notes when I cold transfer a call|Transfer Notes
+L1|STEADY_STATE|military retiree says DEERS hasn't confirmed their retirement yet and it's been over 60 days|USM Delayed Retirement Log
+L1|STEADY_STATE|military retiree's child aged off but is a full time student, can we reactivate them|USM Dependents Process for Reactivation
+L1|STEADY_STATE|military sponsor got divorced and wants to remove the ex spouse's enrollment|USM Divorce
+L1|STEADY_STATE|what does eligibility code GAR mean|USM Eligibility Codes
+L1|STEADY_STATE|I can't hear the caller, how many times do I try before disconnecting|Unable to Hear
+L1|STEADY_STATE|what does the blue bulb mean on a resource|Understanding LEARN Icons
+L1|STEADY_STATE|what shows on the overview tab when I open the account|Understanding the BENEFEDS Service Portal Dashboard (CSS)
+L1|STEADY_STATE|what is the sequence from billing the payroll office to termination warning|Understanding the Direct Bill Process
+SME|STEADY_STATE|agent schedule is locked in webstation, how do I release it|Unlocking an Agent Schedule
+SME|STEADY_STATE|how do I change the dates on the CSAT dashboard|Updating CSAT Reports Date Range
+L1|STEADY_STATE|customer wants to use a PO box as their home address|Updating Customer Account Information
+L1|STEADY_STATE|which Teams channel do I use for attendance updates|Using Microsoft Teams to Communicate
+L1|STEADY_STATE|account is archived, how do I retrieve the data to add a family member|Using the Data Retrieval Tool
+L1|STEADY_STATE|how do I look up when a payroll office runs deductions|Using the Manage APO Locations Tool
+L1|STEADY_STATE|enrollee was approved for VA dental benefits and wants to cancel|VA Benefits Inactivation
+L1|STEADY_STATE|vendor needs to activate new agents, how do they request credentials|Vendor Agent Credentialing Process
+L1|STEADY_STATE|a FedPoint system is down for my vendor agents, how do I report it|Vendor HelpTicket
+L1|STEADY_STATE|where do I see the latest alerts|Viewing Alerts in LEARN
+L1|STEADY_STATE|how do I download a resource or view it full screen in the training site|Viewing Screen in LEARN
+L1|STEADY_STATE|caller took the deferred resignation, what happens to their FEDVIP|Workforce Changes Resource Compilation
+L1|STEADY_STATE|phonetic alphabet for reading a password to the customer|NATO Alphabet
+L1|STEADY_STATE|widow of a federal retiree wants to enroll, she just got her CSF claim number|New Survivor Annuitant Create Account
+SR|STEADY_STATE|widow of a retired military member wants to enroll, how long does she have|New Survivor Enrollment
+L1|STEADY_STATE|widow of a federal retiree wants to enroll, do I transfer to a senior rep|New Survivor L1
+L1|STEADY_STATE|caller is asking about FEHB health insurance, not dental or vision|Non FEDVIP Program Information
+L1|STEADY_STATE|greeting and security to use when making an outbound call to a customer|Outbound Call Scripting
+L1|STEADY_STATE|default to direct bill instead of adding a bank account during enrollment|Placing Enrollee on Direct Bill
+L1|STEADY_STATE|customer wants to postdate an ACH payment|Postdated ACH Payments
+L1|STEADY_STATE|both spouses are covered under two FEDVIP dental plans, dual enrollment after marriage|Potential Dual Enrollment Scenarios
+L1|STEADY_STATE|which enrollees pay premiums pre-tax|Pre and Post Tax Deductions
+L1|STEADY_STATE|what does billing status U unconfirmed mean in the deduction info|Premium Administration Codes
+L1|STEADY_STATE|federal civilian annuitant just enrolled, what date will the first deduction come out|Premium Payment Collection
+L1|STEADY_STATE|military retiree enrolled but received a 2nd B code and was switched to ABW|Prenoting USM New Retirees
+L1|STEADY_STATE|when do I use change profile versus create enrollment versus combine accounts AWD|Primary AWD Work Item Overview
+L1|STEADY_STATE|enrollee gave wrong eligibility dates and CSS gives an error when I change the enrollment|Primary Change Enrollment AWD Ticket
+L1|STEADY_STATE|what ticket do I submit for a 24 hour rule cancellation|Primary Disenrollment AWD Ticket
+L1|STEADY_STATE|enrollment was inactivated with the wrong deceased code, need to reinstate it with a ticket|Primary Reinstate Enrollment AWD Ticket
+L1|STEADY_STATE|where are QA resources like the critical error tracker and agent assignment spreadsheet|QA Resources
+SME|STEADY_STATE|agent is out of adherence in RTA, what action do I take|RTA Strategy for OS Admins
+L1|STEADY_STATE|why would a customer be direct billed|Reasons Direct Bills are Sent
+L1|STEADY_STATE|customer got a DV35 letter, how long do they have to pay to get reinstated|Reinstatement for Non Pay
+L1|STEADY_STATE|how do I submit an IT incident in the employee center|Reporting an Incident in Employee Service Center
+SME|STEADY_STATE|filter CSAT reports by agent name in feedback management|Searching Agent CSAT Reports
+L1|STEADY_STATE|where do I find the caller's security information in CSS|Security Information Location
+L1|STEADY_STATE|how do I set up ABW on the vision plan|Setup ABW Information
+L1|STEADY_STATE|best practices for asking SMEs questions in Slack|Slack Best Practices
+L1|STEADY_STATE|Spanish ABW script|Spanish Authorization of ABW
+L1|STEADY_STATE|widow of a federal employee who got a lump sum basic employee death benefit, can she enroll|Survivor Annuitant Lump Sum vs Coupon Program
+SME|STEADY_STATE|troubleshooting checklist when agents go into system down status|System Down Checklist for Admins and SMEs
+L1|STEADY_STATE|what to do when systems are down during a call|System Down Procedures
+L1|STEADY_STATE|engage clarify build customer service model|The DNA of Customer Service
+L1|STEADY_STATE|someone other than the enrollee is calling about the account, what can I disclose|Third Party Callers
+L1|STEADY_STATE|submit time off request in SharePoint when IEX schedule isn't posted|Time Off Requests in SharePoint
+L1|STEADY_STATE|what do the icons in LEARN mean|Understanding LEARN Icons
+L1|STEADY_STATE|what are the tabs on the customer dashboard in CSS|Understanding the BENEFEDS Service Portal Dashboard (CSS)
+SME|STEADY_STATE|change the date range for CSAT reports|Updating CSAT Reports Date Range
+L1|STEADY_STATE|can the residential address be a PO box|Updating Customer Account Information
+L1|STEADY_STATE|where do I find an agency payroll office's deduction schedule|Using the Manage APO Locations Tool
+L1|STEADY_STATE|how do I submit a vendor help ticket|Vendor HelpTicket
+L1|STEADY_STATE|where are the FEDVIP alerts in LEARN|Viewing Alerts in LEARN

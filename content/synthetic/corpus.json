@@ -1,0 +1,208 @@
+{
+  "_notice": "SYNTHETIC TRAINING DATA. Fictional program, fictional rules, fictional numbers. NOT BENEFEDS or FEDVIP policy. Owner records below are fabricated test fixtures, not approvals.",
+  "program": "Synthetic Dental & Vision Program (SDVP)",
+  "knowledgeVersion": "synthetic-2026.10.27-a",
+  "defaultSeason": "STEADY_STATE",
+  "owners": [
+    { "id": "OWN-SYN-1", "role": "Synthetic content owner (test fixture)", "date": "2026-10-27" }
+  ],
+  "sources": [
+    {
+      "id": "S01", "title": "Dependent Age Limits – Civilian and Postal Enrollees", "printedRevision": "Reviewed on 09/14/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-ELIG",
+      "facets": { "affiliation": ["FED_CIV", "USPS"] },
+      "slides": [
+        { "n": 1, "title": "Who is covered", "units": [
+          { "heading": "Age limit", "text": "Children of civilian and postal enrollees are covered until their 24th birthday.", "concepts": ["DEPENDENT_AGE_LIMIT"], "numeric": [{ "subject": "age", "op": "<", "value": 24, "text": "covered until the 24th birthday" }] },
+          { "heading": "Student status", "text": "Full-time student status does not extend coverage for children of civilian or postal enrollees.", "conditions": ["NOTE: There is no student extension for civilian or postal enrollees."], "concepts": ["DEPENDENT_AGE_LIMIT", "FULL_TIME_STUDENT"] }
+        ]},
+        { "n": 2, "title": "Coverage-end notice", "units": [
+          { "heading": "Notice timing", "text": "The program mails a coverage-end notice 45 days before the child's 24th birthday.", "concepts": ["DEPENDENT_AGE_LIMIT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S02", "title": "Dependent Age Limits – Uniformed Members", "printedRevision": "Reviewed on 09/22/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-ELIG",
+      "facets": { "affiliation": ["USM"] },
+      "slides": [
+        { "n": 1, "title": "Who is covered", "units": [
+          { "heading": "Age limit", "text": "Children of uniformed members are covered until their 20th birthday.", "concepts": ["DEPENDENT_AGE_LIMIT"], "numeric": [{ "subject": "age", "op": "<", "value": 20, "text": "covered until the 20th birthday" }] },
+          { "heading": "Full-time students", "text": "A child who is a full-time student at an accredited school remains covered until the 24th birthday or graduation, whichever comes first.", "conditions": ["ONLY IF the sponsor registered the student status in the member records system before the child's 20th birthday."], "concepts": ["DEPENDENT_AGE_LIMIT", "FULL_TIME_STUDENT"], "numeric": [{ "subject": "age", "op": "<", "value": 24, "text": "students covered until the 24th birthday" }] }
+        ]},
+        { "n": 2, "title": "Documentation", "units": [
+          { "heading": "Proof of enrollment", "text": "The carrier may request proof of full-time enrollment each school term.", "concepts": ["FULL_TIME_STUDENT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S03", "title": "Dependents Unable to Self-Support", "printedRevision": "Revised on 08/02/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-ELIG",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Coverage past the age limit", "units": [
+          { "heading": "Who qualifies", "text": "A child of any age who cannot self-support because of a condition that began before the age limit may stay covered.", "conditions": ["EXCEPTION: A physician statement must be sent within 60 days of the request."], "concepts": ["INCAPABLE_SELF_SUPPORT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S04", "title": "Security Verification", "printedRevision": "Reviewed on 08/20/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-SEC",
+      "facets": { "callerRole": ["PRIMARY"] },
+      "slides": [
+        { "n": 1, "title": "Verifying the enrollee", "units": [
+          { "heading": "Information requests", "text": "Verify two approved security items before sharing account details with the enrollee.", "concepts": ["SECURITY_ITEMS"] },
+          { "heading": "Account changes", "text": "Verify three approved security items before making any change to the account.", "concepts": ["SECURITY_ITEMS"] }
+        ]},
+        { "n": 2, "title": "Payments by others", "units": [
+          { "heading": "Payer is not the enrollee", "text": "A payment may be accepted from another person without authorization if the payer's name is on the bank account.", "conditions": ["NOTE: Do not discuss any other account details with the payer."], "concepts": ["THIRD_PARTY_PAYMENT"], "facets": { "callerRole": ["THIRD_PARTY"] }, "conflictGroup": "CG-01" }
+        ]}
+      ]
+    },
+    {
+      "id": "S05", "title": "Third-Party Callers", "printedRevision": "Reviewed on 08/11/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-SEC",
+      "facets": { "callerRole": ["THIRD_PARTY"] },
+      "slides": [
+        { "n": 1, "title": "Checking authorization", "units": [
+          { "heading": "Documents on file", "text": "Before discussing an account with someone other than the enrollee, check the account for a power of attorney (POA) or an authorization to disclose information (ADI).", "concepts": ["THIRD_PARTY_AUTH"] },
+          { "heading": "POA compared with ADI", "text": "A POA holder may make changes to the account. An ADI holder may discuss coverage and billing but may not make changes.", "concepts": ["THIRD_PARTY_AUTH"] }
+        ]},
+        { "n": 2, "title": "Verbal authorization", "units": [
+          { "heading": "No document on file", "text": "If no document is on file, the enrollee may give verbal authorization for this call only, after the enrollee verifies three security items.", "conditions": ["NOTE: Verbal authorization ends when the call ends."], "concepts": ["THIRD_PARTY_AUTH", "SECURITY_ITEMS"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S06", "title": "Third-Party Payments", "printedRevision": "Revised on 09/11/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-PAY",
+      "facets": { "callerRole": ["THIRD_PARTY"] },
+      "slides": [
+        { "n": 1, "title": "Accepting a payment from a third party", "units": [
+          { "heading": "Security before payment", "text": "Collect two security items from a third party before accepting a payment from them.", "concepts": ["THIRD_PARTY_PAYMENT"], "conflictGroup": "CG-01" },
+          { "heading": "Bank details", "text": "Do not save the third party's bank details to the account.", "concepts": ["THIRD_PARTY_PAYMENT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S07", "title": "Reporting a Death", "printedRevision": "Revised on 09/08/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-TERM",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Caller reporting a death", "units": [
+          { "heading": "What to collect", "text": "Record the caller's name and relationship to the enrollee. Legal documents are not required to report a death.", "concepts": ["DEATH_REPORT"] },
+          { "heading": "Next steps", "text": "Submit an inactivation request and tell the caller a survivor letter will be mailed within 10 business days.", "conditions": ["DO NOT quote refund amounts or refund dates."], "concepts": ["DEATH_REPORT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S08", "title": "Reporting a Death (2025 edition)", "printedRevision": "Revised on 03/02/25",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "superseded", "supersededBy": "S07", "riskCategory": "HR-TERM",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Caller reporting a death", "units": [
+          { "heading": "Documents", "text": "Require a certified death certificate before submitting any inactivation.", "concepts": ["DEATH_REPORT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S09", "title": "Divorce – Civilian and Postal Enrollees", "printedRevision": "Reviewed on 10/21/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-TERM",
+      "facets": { "affiliation": ["FED_CIV", "USPS"] },
+      "slides": [
+        { "n": 1, "title": "Removing a former spouse", "units": [
+          { "heading": "Process", "text": "Remove a former spouse effective the date the divorce is final. Ask the enrollee to email the divorce decree to the Records team.", "concepts": ["DIVORCE"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S10", "title": "Divorce – Uniformed Members", "printedRevision": "Revised on 02/11/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-TERM",
+      "facets": { "affiliation": ["USM"] },
+      "slides": [
+        { "n": 1, "title": "Removing a former spouse", "units": [
+          { "heading": "Process", "text": "The uniformed sponsor mails the divorce decree to the Sponsor Services unit. Removal takes 3 to 5 business days, and the sponsor must call back to confirm.", "concepts": ["DIVORCE"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S11", "title": "Cold Transfers", "printedRevision": "Revised on 11/06/25",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "standard",
+      "facets": { "audience": ["L1"] },
+      "slides": [
+        { "n": 1, "title": "Transferring to Research", "units": [
+          { "heading": "Cold transfer steps", "text": "Use a cold transfer to send a caller to the Research team. Add the caller's member ID and the reason for the transfer to the transfer notes.", "conditions": ["NOTE: Tell the caller they may wait on hold before you transfer."], "concepts": ["TRANSFER"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S12", "title": "Senior Representative Escalations", "printedRevision": "Revised on 09/30/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "standard",
+      "facets": { "audience": ["SR"] },
+      "slides": [
+        { "n": 1, "title": "Escalating to Policy", "units": [
+          { "heading": "Warm transfer", "text": "Senior representatives escalate to Policy with a warm transfer and stay on the line to introduce the caller.", "concepts": ["TRANSFER"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S13", "title": "Hold Procedure", "printedRevision": "Updated on 09/11/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "standard",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Placing a caller on hold", "units": [
+          { "heading": "Check-back", "text": "Check back with the caller before 2 minutes of hold time pass.", "concepts": ["HOLD"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S14", "title": "Hold Check-Back (QA draft)", "printedRevision": "(none printed)",
+      "approval": "unknown", "lifecycle": "current", "riskCategory": "standard",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Hold scoring", "units": [
+          { "heading": "Check-back", "text": "Check back with the caller after 4 minutes on hold.", "concepts": ["HOLD"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S15", "title": "Plan Changes", "printedRevision": "Reviewed on 10/01/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-DATE",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Changing plans", "units": [
+          { "heading": "During open season", "text": "During open season, enrollees may change plans for any reason. The change takes effect January 1.", "concepts": ["PLAN_CHANGE"], "facets": { "season": ["OPEN_SEASON"] } },
+          { "heading": "Outside open season", "text": "Outside open season, a plan change requires a qualifying life event reported within 60 days of the event.", "conditions": ["NOTE: The qualifying life event must be on the approved event list."], "concepts": ["PLAN_CHANGE"], "facets": { "season": ["STEADY_STATE"] } }
+        ]}
+      ]
+    },
+    {
+      "id": "S16", "title": "Workforce Reinstatements", "printedRevision": "Revised on 04/06/26",
+      "approval": "unknown", "lifecycle": "current", "riskCategory": "HR-TERM",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "Reinstating coverage", "units": [
+          { "heading": "Reinstatement", "text": "Reinstate previous coverage for enrollees affected by workforce changes.", "concepts": ["REINSTATEMENT"] }
+        ]}
+      ]
+    },
+    {
+      "id": "S17", "title": "Effective Dates", "printedRevision": "Reviewed on 07/15/26",
+      "approval": "approved", "approvalRecord": "OWN-SYN-1", "lifecycle": "current", "riskCategory": "HR-DATE",
+      "facets": {},
+      "slides": [
+        { "n": 1, "title": "When coverage starts", "units": [
+          { "heading": "New enrollments", "text": "New enrollments begin on the first day of the first pay period after the request is received.", "concepts": ["EFFECTIVE_DATE"] }
+        ]}
+      ]
+    }
+  ],
+  "conflictGroups": [
+    { "id": "CG-01", "status": "open", "concept": "THIRD_PARTY_PAYMENT", "classification": "A1", "decidedBy": "OWN-SYN-1",
+      "note": "Two current approved sources disagree on whether a third party must give security items before paying." }
+  ],
+  "classifications": [
+    { "a": "S04#s2#u1", "b": "S06#s1#u2", "classification": "NOT_A_CONFLICT", "decidedBy": "OWN-SYN-1",
+      "reason": "Synthetic fixture: accepting a payer's payment and not saving the payer's bank details are complementary steps, not competing rules." }
+  ]
+}

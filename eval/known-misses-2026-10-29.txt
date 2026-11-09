@@ -1,0 +1,72 @@
+# Questions the app still MISSED in the independent holdout of 2026-10-29 (212 new agent questions; 70% top-3, 57% top-1).
+# Format: role|season|question|expected job-aid title. A worklist: fix with aliases/vocab, then move fixed lines into tests/fixtures/golden.txt.
+# Score it: npm run score -- eval/known-misses-2026-10-29.txt
+L1|STEADY_STATE|lady asks if her connection dental plan also covers hearing aids, how do i say the carrier name|GEHA and Common Customer Questions
+ADMIN|STEADY_STATE|need to pull a report showing whether my team stuck to their schedules yesterday|Generating Adherence Reports
+L1|STEADY_STATE|guy is yelling and demanding my manager right now what do i give the sup|Handling Escalated Calls
+L1|STEADY_STATE|she signed up for a new plan last week during open season and now wants to undo it|Handling Open Season Plan Cancellation Call
+L1|STEADY_STATE|daughter calling to say her dad passed away last month, he had vision|Handling Report of Death Calls
+L1|STEADY_STATE|cant verify the caller at all and they are getting pushy, who do i escalate to|Handling Security Issues
+L1|STEADY_STATE|active duty spouse enrolled but cant find the form to set up payroll deduction|Locating the Payroll Authorization Form for FAD Accounts
+L1|STEADY_STATE|how often do direct bill people pay, monthly?|Method and Frequency of Pay
+L1|STEADY_STATE|where do i post a quick question for the SMEs during my shift|Microsoft Teams Best Practices
+L1|STEADY_STATE|reading out a temp password, how do i spell letters so caller doesnt mix up b and d|NATO Alphabet
+L1|STEADY_STATE|widow calling, husband died 3 weeks ago, she wants to keep the dental|New Survivor L1
+L1|STEADY_STATE|works at the base exchange, paid from store revenue not govt, is she eligible|Non-Appropriated Funds
+L1|STEADY_STATE|retired from the state department, does his pension come from opm|Non-OPM Annuity Locations
+ADMIN|STEADY_STATE|what am i supposed to update by 10:30 each morning as admin|OS Admin Responsibilities
+L1|STEADY_STATE|agent at the WCX site has a system problem, how does the TL get a ticket in|OS Vendor Help Desk Support Ticket
+L1|STEADY_STATE|i think my QA score is wrong how do i dispute it|OS and Post OS QA Appeal Process
+L1|STEADY_STATE|when does open season start this year and when does the new coverage begin|Open Season Current Plan Year Call
+L1|STEADY_STATE|calling a member back, what do i say when they pick up|Outbound Call Scripting
+L1|STEADY_STATE|what does inactivation reason N mean on the account|Premium Administration Codes
+L1|STEADY_STATE|how does the agency find out to start taking the deduction after someone enrolls|Premium Administration Process
+L1|STEADY_STATE|cant update his date of birth, system throws an error|Primary Change Profile AWD Ticket
+L1|STEADY_STATE|enrolled yesterday from a qle and wants to cancel within the day, what ticket|Primary Disenrollment AWD Ticket
+L1|STEADY_STATE|left federal service 4 months ago but no termination code came through|Primary Inactivation AWD Ticket
+L1|STEADY_STATE|payment posted but enrollment still says inactive for nonpayment|Primary Reinstate Enrollment AWD Ticket
+L1|STEADY_STATE|acct got shut off for not paying but she says she mailed the check before it was due, will it turn back on by itself|5-Day Grace Period for Non-Pay Inactivation
+L1|STEADY_STATE|what happens if an agent keeps getting zeros on evals over and over|Repeat Offenders
+L1|STEADY_STATE|they're offering unpaid time off today, where do I sign up to leave early|Requesting Voluntary Time Off
+L1|STEADY_STATE|ivr says caller fully authenticated bc the phone matched, do i still need to ask anything|Security Verification Direct Hit
+L1|STEADY_STATE|woman on the line claims to be the account holder but i'm pretty sure it's her husband, how do i handle the name check (scored rewording; the first version 'caller says shes the enrollee but sounds like a man, what do i ask' turned out to nearly duplicate a tuning alias)|Security Verification
+L1|STEADY_STATE|tips for making the customer feel heard and building rapport|The DNA of Customer Service
+L1|STEADY_STATE|want a day off 2 weeks out, my schedule is already published in the scheduling tool|Time Off Requests in IEX WebStation
+L1|STEADY_STATE|dead air after i greet, nobody talking, how many tries before i can release the call|Unable to Hear
+L1|STEADY_STATE|what do the little lightbulb symbols next to resources mean|Understanding LEARN Icons
+L1|STEADY_STATE|changed my cell # and the sharepoint code keeps going to my old number|Update Phone or Email MFA Registration (Vendor Agents)
+L1|STEADY_STATE|adding a newborn to self and family but the old account looks archived, cant see dependents|Using the Data Retrieval Tool
+L1|STEADY_STATE|where do i find the newest announcements that got posted today|Viewing Alerts in LEARN
+ADMIN|STEADY_STATE|agent is 15 min over their lunch during open season, what do i do|RTA Strategy for OS Admins
+SR|STEADY_STATE|just got a call from an L1, what should i check before i start talking|Receiving a Transferred Call
+L1|STEADY_STATE|member faxed a pdf and i need it hooked to the work item|AWD Creating and Linking Attachments
+L1|STEADY_STATE|one fax has three diff peoples forms in it, how do i seperate them into their own docs|AWD Document Splitter
+L1|STEADY_STATE|our screen has her enrolled fine but metlife insists she has no coverage with them|AWD Enrollment Verification Ticket
+L1|STEADY_STATE|my awd panels are all over the screen, how do i drag them back or make one bigger|AWD Working with Cards
+L1|STEADY_STATE|retiree on annuity wants to prepay so it comes out faster instead of spread out, already enrolled|Accelerated Payments
+L1|STEADY_STATE|enrollee on a family plan wants to take her adult daughter off mid year|Adding or Removing Family Members in a Self and Family Plan
+L1|STEADY_STATE|fed employee put on paid leave pending an investigation, does his dental keep going|Administrative Leave
+L1|STEADY_STATE|left the army and now works for the VA as a civilian, need to switch his account type|Affiliation Changes
+L1|STEADY_STATE|son got a letter saying the form he sent to act for his mom got rejected|Authorization (ADI) - Denial Letters
+L1|STEADY_STATE|why are we switching to the tool that writes the call notes for us|AutoSummary FAQ
+L1|STEADY_STATE|what choices do callers hear when they first dial in before reaching an agent|BENEFEDS IVR
+L1|STEADY_STATE|caller asking if we sell coverage for nursing home care for her husband|BENEFEDS Role in FLTCIP
+L1|STEADY_STATE|where on the site can she read the privacy policy|BENEFEDS.gov Legal Documents
+L1|STEADY_STATE|meant to switch to the high option back in november but forgot, its february now|Belated Open Season Actions (L1)
+L1|STEADY_STATE|thinks his premium went way up this year, who do i send him to|Billing & Deduction Questions
+L1|STEADY_STATE|how do i send the caller straight over to delta dental without staying on|CXone Cold Transfers (External)
+L1|STEADY_STATE|how do i get a three way going with the member and humana|CXone Conference Call
+L1|STEADY_STATE|caller demanding a manager rn how do i get a sup|CXone Escalation Procedures
+L1|STEADY_STATE|qa wants my contact number for a call and softphone isnt showing it|CXone Retrieving a Contact ID
+L1|STEADY_STATE|member says she hears a ton of noise behind me|CXone Troubleshooting Audio
+L1|STEADY_STATE|how long is the hold for research before i send someone over|CXone Viewing Call Queue Wait Times
+L1|STEADY_STATE|sending this guy over to research, am i supposed to introduce him first|CXone Warm Transfers
+L1|STEADY_STATE|she set up a payment from checking yesterday by accident and wants it reversed before it pulls|Canceling ACH Payments (L1)
+L1|STEADY_STATE|member wants us to email her the link to the terms|Correspondence AWD Ticket
+L1|STEADY_STATE|left federal service years ago and is waiting to start his pension at 62, can he get dental|Deferred vs. Postponed Annuitants
+L1|STEADY_STATE|picked the wrong eligibility when she signed up and has no plan yet|Delete FEDVIP Registration
+L1|STEADY_STATE|marine retirees daughter turning 21, shes in college, still covered?|Dependent Eligibility Age 21 or 23 – USM
+L1|STEADY_STATE|both spouses enrolled separately and each one lists the other as a dependent|Dual Enrollments
+L1|STEADY_STATE|new hire enrolls today, when does coverage actually kick in|Effective Dates
+L1|STEADY_STATE|question about how much his annuity check is, who do i send him to|Escalation OPM Annuity
+L1|STEADY_STATE|what are all the ways someone can pay their premium|Forms of Payment

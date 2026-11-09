@@ -1,0 +1,62 @@
+# Swarm-tested questions (10/2026) that must keep reaching the expected job aid (and slide, if given) in the first 3 shown passages.
+# Format: role|season|question|Title#slide~Other title  (any one expected job aid counts)
+L1|OPEN_SEASON|tricare eligible kid just started full time college mid year, can the usm sponsor add him now|Eligibility of USM Dependents#1
+L1|STEADY_STATE|(overlay integrity) CG-USM-ISS-DEERS member source|Dependent Eligibility Age 21 or 23 – USM
+L1|STEADY_STATE|ISS appeal annuitant OPM delayed paperwork|Dependent Eligibility Age 22 – CIV Employee or USPS#2~Dependent Eligibility Incapable of Self Support#2
+L1|STEADY_STATE|IVR said authenticated full but sounds like a different person|Security Verification#1
+L1|STEADY_STATE|caller has a speech disability, communicates through relay|Communication Options for the Deaf#1
+L1|STEADY_STATE|caller hung up because she didnt like my answer, call back?|CXone Disconnected Calls#1
+L1|STEADY_STATE|caller is not federal civilian, he is army, son 22|Dependent Eligibility Age 21 or 23 – USM#1~Eligibility of USM Dependents
+L1|STEADY_STATE|caller only did partial in the IVR, what else do i need|Call Opening Process & Scripting~Call Opening Decision Tree~Security Verification#1
+L1|STEADY_STATE|caller said he dialed us and got some other company asking for credit card|Reporting Suspected Fraud#2
+L1|STEADY_STATE|caller says he threatened to blow up the building|Handling Threats and Inappropriate Behavior#1
+L1|STEADY_STATE|caller says they dialed us and got some other company, where do they report it|Reporting Suspected Fraud#2
+L1|STEADY_STATE|caller wants an encrypted line|CXone Unrecorded Outbound Calls~Handling Escalated Calls#1~Handling Security Issues#1
+L1|STEADY_STATE|caller wants to hurt his supervisor|Handling Threats and Inappropriate Behavior#1
+L1|STEADY_STATE|cant hear anyone on the line|Unable to Hear#1
+L1|STEADY_STATE|cliente solo habla español transferir|Non-English Speaking TeleInterpreter Tips#1
+L1|STEADY_STATE|customer enrolled friday night and wants to switch plans monday, too late?|24 Hour Rule#1
+L1|STEADY_STATE|customer has no computer and wants plan brochures sent, what's the letter called|Mail Plan Info#1
+L1|STEADY_STATE|customer hung up on me mid call do I have to call back|CXone Disconnected Calls#1
+L1|STEADY_STATE|customer refuses to have the call recorded|CXone Unrecorded Outbound Calls~Handling Escalated Calls#1~Handling Security Issues#1
+L1|STEADY_STATE|customer says he will call his congressman|Complaints#1
+L1|STEADY_STATE|customer wants me to call back tomorrow at 3|CXone Callbacks & Scripting#2
+L1|STEADY_STATE|daughter calling for her mom, mom is not on the line|Third Party Callers#1
+L1|STEADY_STATE|ex wife was married to a marine for 25 years can she get coverage on her own  (also: "ex wife wants coverage", "ex-wife of a marine wants vision", "ex wife was married to him 25 years")|Eligibility of Uniformed Service Members (USM)#1~FEDVIP Eligibility - Dependents (FED CIV)#1~USM Divorce#1
+L1|STEADY_STATE|federal civilian employee resigned, do I submit an inactivation ticket|Termination or Separation from Federal or USM Services#1
+L1|STEADY_STATE|got RIF'd last year, coverage got cut, can we reinstate|Workforce Changes Resource Compilation~Inquiries Regarding Workforce Changes#1
+L1|STEADY_STATE|guy on unpaid leave from the VA, is he still eligible|Leave Without Pay (LWOP)#1
+L1|STEADY_STATE|guy said he is going to come down there and hurt someone|Handling Threats and Inappropriate Behavior#1
+L1|STEADY_STATE|habla espanol|Non-English Speaking TeleInterpreter Tips#1
+L1|STEADY_STATE|hes a vet with VA dental can he drop fedvip|VA Benefits Inactivation#1
+L1|STEADY_STATE|how fast do i need to greet the caller|Call Closing Process - Inbound Calls#1~Call Opening Process & Scripting#1~Transfer Notes#1
+L1|STEADY_STATE|how many critical errors before someone is let go from the project|Repeat Offenders#1
+L1|STEADY_STATE|how many times do i ask for name if i think its third party|Security Verification#1
+L1|STEADY_STATE|how many years of data stay active in the CSS before it gets archived|Database Reduction#1
+L1|STEADY_STATE|hr person from agency calling about an employee's enrollment|Third Party Callers#1
+L1|STEADY_STATE|i accidentally gave account info to the wrong person, what now|QA Incident Reporting~Incident vs Breach#1
+L1|STEADY_STATE|i think this guy is lying about his kids to get coverage|Reporting Suspected Fraud#1
+L1|STEADY_STATE|laid off involuntarily and getting an immediate annuity, is fedvip continued|Discontinued Service Retirement (DSR)#1
+L1|STEADY_STATE|leaving a voicemail on outbound call what can i say|CXone Callbacks & Scripting#2~Outbound Call Scripting#1
+L1|STEADY_STATE|left the army, on ABW, separated not retired|Termination or Separation from Federal or USM Services#1
+L1|STEADY_STATE|member calling back after I left voicemail|CXone Callbacks & Scripting#2~Outbound Call Scripting#1
+L1|STEADY_STATE|new USM retiree asking why they're getting a bank withdrawal offer when they picked annuity|Prenoting USM New Retirees#1
+L1|STEADY_STATE|postal worker kid 22 full time student|Dependent Eligibility Age 22 – CIV Employee or USPS#1~Dependent Eligibility Age 21 or 23 – USM#1
+L1|STEADY_STATE|primary wants to make an ach payment, how much security|Call Opening Process & Scripting~Call Opening Decision Tree~Security Verification#1
+L1|STEADY_STATE|retired navy but now a federal civilian employee wants to enroll|Dual Eligibility#1
+L1|STEADY_STATE|returning a customers call what do i say|CXone Callbacks & Scripting#2~Outbound Call Scripting#1
+L1|STEADY_STATE|she wants to drop her vision|Cancelling FEDVIP Coverage Talking Points#1
+L1|STEADY_STATE|son turning 21 dad is active duty navy can he stay on|Dependent Eligibility Age 21 or 23 – USM#1~Eligibility of USM Dependents#1
+L1|STEADY_STATE|spanish caller just wants to know their plan name|Non-English Speaking TeleInterpreter Tips#1
+L1|STEADY_STATE|sponsor wants to drop his ex off the plan without her ok|Enrollment or Inactivation Due to Divorce#2~USM Divorce#1
+L1|STEADY_STATE|spouse leaving for active duty wants to cancel both dental and vision|Cancelling FEDVIP Coverage Talking Points#1~ACED Chart (L1)~Primary Inactivation & Disenrollment AWD Ticket
+L1|STEADY_STATE|ssn 123456789 caller hung up|CXone Disconnected Calls#1
+L1|STEADY_STATE|transfer caller to OPM retirement line|FEDVIP Phone and Contact Information#2~CXone Cold Transfers (External)#1~Escalation OPM Annuity#1
+L1|STEADY_STATE|usm retired 2 months ago deers not showing retired|USM Delayed Retirement Log#1
+L1|STEADY_STATE|usm retiree is fed up with his deductions|Premium Payment Collection~Prenoting USM New Retirees
+L1|STEADY_STATE|what does GAR mean as an eligibility code|USM Eligibility Codes#1
+L1|STEADY_STATE|what if no one answers after i greet three times|Unable to Hear#1
+L1|STEADY_STATE|what is the greeting when the caller is not authenticated|Call Opening Process & Scripting~Call Opening Decision Tree~Security Verification#1
+L1|STEADY_STATE|where does the sponsor send the divorce decree|Enrollment or Inactivation Due to Divorce#2~USM Divorce#1
+SR|STEADY_STATE|caller is on admin leave, does that mess with her dental deductions|Administrative Leave#1
+SR|STEADY_STATE|so basically the guy is in the army reserves and also works at the VA as a civilian and he wants to know which one he should enroll under|Dual Eligibility#1

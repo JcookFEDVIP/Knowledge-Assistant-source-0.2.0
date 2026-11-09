@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARIA Preview</title>
+<!-- Review page for ARIA's movements. Not part of the app. Uses the built companion (dist/companion.js): run
+     `npm run build` after changing scripts/companion/companion.tpl, then reload this page. -->
+<style>
+  :root { --navy-700: #1F3B7A; --navy-900: #0D1B3E; --text: #fff; --muted: #B9C6E4; --chip: rgba(255,255,255,.10); --chip-on: #fff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--text);
+    background: linear-gradient(135deg, var(--navy-700), var(--navy-900)); }
+  main { max-width: 980px; margin: 0 auto; padding: 28px 16px 40px; }
+  h1 { margin: 0 0 4px; font-size: 24px; font-weight: 600; }
+  p.lead { margin: 0 0 24px; color: var(--muted); }
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: start; }
+  .big { aspect-ratio: 1; width: 100%; max-width: 520px; justify-self: center; }
+  .side { display: grid; gap: 16px; }
+  .panel { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 14px; }
+  .panel h2 { margin: 0 0 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .real { display: flex; gap: 16px; align-items: flex-end; }
+  .real div { display: grid; justify-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+  #small84 { width: 84px; height: 84px; } #small48 { width: 48px; height: 48px; }
+  .buttons { display: grid; gap: 6px; }
+  button { font: inherit; font-size: 14px; text-align: left; color: var(--text); background: var(--chip); border: 1px solid rgba(255,255,255,.18);
+    border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+  button:hover { background: rgba(255,255,255,.16); }
+  button[aria-pressed="true"] { background: var(--chip-on); color: var(--navy-900); }
+  button small { display: block; color: inherit; opacity: .7; font-size: 12px; }
+  .now { font-size: 14px; } .now strong { font-weight: 600; }
+  label { display: flex; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
+  @media (max-width: 760px) { .stage { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>ARIA preview</h1>
+  <p class="lead">Click a moment to see ARIA's reaction. "Results" and "Typing" return to idle after 4 seconds, as in the app.</p>
+  <div class="stage">
+    <div class="big" id="companion" aria-hidden="true"></div>
+    <div class="side">
+      <div class="panel">
+        <h2>Moments</h2>
+        <div class="buttons" id="buttons"></div>
+      </div>
+      <div class="panel">
+        <h2>Real size in the header</h2>
+        <div class="real">
+          <div><span id="small84"></span>desktop (84 px)</div>
+          <div><span id="small48"></span>narrow (48 px)</div>
+        </div>
+      </div>
+      <div class="panel">
+        <p class="now">Showing: <strong id="now">idle</strong></p>
+        <label><input type="checkbox" id="cycle"> Play every moment in turn</label>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  const MOMENTS = [
+    ["idle", "Idle", "nothing happening"],
+    ["ready", "Ready", "agent clicks the search box"],
+    ["typing", "Typing", "agent is typing"],
+    ["searching", "Searching", "search running"],
+    ["results", "Results", "answers found"],
+    ["ambiguous", "Needs a choice", "question is unclear"],
+    ["noresult", "No results", "nothing found"],
+    ["source", "Reading a slide", "agent opened a job aid"],
+    ["error", "Error", "something went wrong"],
+  ];
+  const box = document.getElementById("buttons"), now = document.getElementById("now");
+  const show = (s) => {
+    window.dispatchEvent(new CustomEvent("ka:state", { detail: s }));
+    now.textContent = MOMENTS.find((m) => m[0] === s)[1];
+    box.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.s === s)));
+  };
+  for (const [s, label, hint] of MOMENTS) {
+    const b = document.createElement("button");
+    b.type = "button"; b.dataset.s = s; b.setAttribute("aria-pressed", String(s === "idle"));
+    b.innerHTML = `${label}<small>${hint}</small>`;
+    b.addEventListener("click", () => { document.getElementById("cycle").checked = false; stopCycle(); show(s); });
+    box.appendChild(b);
+  }
+  // when ARIA returns to idle by herself, keep the label honest
+  window.addEventListener("load", () => {
+    const svg = document.querySelector("#companion svg");
+    if (!svg) { now.textContent = "ARIA didn't load: run npm run build, then reload"; return; }
+    // real-size copies mirror the big one's state
+    const copies = ["small84", "small48"].map((id) => { const el = document.getElementById(id); el.innerHTML = svg.outerHTML; return el.firstElementChild; });
+    new MutationObserver(() => {
+      copies.forEach((c) => c.setAttribute("class", svg.getAttribute("class")));
+      const st = (svg.getAttribute("class").match(/s-(\w+)/) || [])[1];
+      if (st === "idle") { now.textContent = "Idle"; box.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.s === "idle"))); }
+    }).observe(svg, { attributes: true, attributeFilter: ["class"] });
+  });
+  let timer;
+  const stopCycle = () => clearInterval(timer);
+  document.getElementById("cycle").addEventListener("change", (e) => {
+    stopCycle();
+    if (!e.target.checked) return;
+    let i = 0; show(MOMENTS[i][0]);
+    timer = setInterval(() => { i = (i + 1) % MOMENTS.length; show(MOMENTS[i][0]); }, 3000);
+  });
+</script>
+<script src="../../dist/companion.js"></script>
+</body>
+</html>

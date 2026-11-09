@@ -1,0 +1,8 @@
+{
+ "_help": "Which job-aid subfolders each role searches. A role sees ONLY the job aids in its folders. 'priority' (optional) is a folder whose job aids rank first when results are comparable. Job aids in a folder no role lists (or loose in the main folder) are left out of the app. Folder names must match the subfolders of the job-aid folder exactly.",
+ "roles": [
+  { "id": "L1", "label": "L1 agent", "folders": ["L1 Job Aids"] },
+  { "id": "SR", "label": "Senior rep", "folders": ["Senior Rep Job Aids", "L1 Job Aids"], "priority": "Senior Rep Job Aids" },
+  { "id": "SME", "label": "SME", "folders": ["L1 Job Aids", "SME Job Aids"] }
+ ]
+}

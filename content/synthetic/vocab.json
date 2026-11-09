@@ -1,0 +1,579 @@
+{
+ "_notice": "Curated vocabulary for the SYNTHETIC corpus. Engineering draft; not SME-reviewed.",
+ "facets": {
+  "affiliation": {
+   "label": "Affiliation",
+   "values": {
+    "FED_CIV": {
+     "label": "Civilian",
+     "cues": [
+      "civilian",
+      "federal employee",
+      "fed civ",
+      "fedciv",
+      "federal civilian",
+      "civil service",
+      "annuitant",
+      "retired federal"
+     ]
+    },
+    "USPS": {
+     "label": "Postal",
+     "cues": [
+      "postal",
+      "usps",
+      "post office",
+      "mail carrier",
+      "letter carrier"
+     ]
+    },
+    "USM": {
+     "label": "Uniformed member",
+     "cues": [
+      "uniformed",
+      "usm",
+      "military",
+      "army",
+      "navy",
+      "air force",
+      "marine",
+      "marines",
+      "coast guard",
+      "retired military",
+      "sponsor",
+      "service member",
+      "servicemember",
+      "active duty"
+     ]
+    }
+   }
+  },
+  "callerRole": {
+   "label": "Caller",
+   "values": {
+    "PRIMARY": {
+     "label": "Enrollee calling",
+     "cues": [
+      "the enrollee",
+      "enrollee is calling",
+      "account holder",
+      "primary",
+      "member themselves",
+      "for themselves",
+      "their own account"
+     ]
+    },
+    "THIRD_PARTY": {
+     "label": "Someone else calling",
+     "cues": [
+      "third party",
+      "3rd party",
+      "someone else",
+      "on behalf",
+      "on their behalf",
+      "for her mother",
+      "for his mother",
+      "for her father",
+      "for his father",
+      "daughter calling",
+      "son calling",
+      "relative",
+      "family member calling",
+      "poa",
+      "power of attorney",
+      "caretaker",
+      "payer"
+     ]
+    }
+   }
+  },
+  "audience": {
+   "label": "Your role",
+   "values": {
+    "L1": {
+     "label": "L1 agent",
+     "cues": [
+      "l1",
+      "level 1",
+      "tier 1"
+     ]
+    },
+    "SR": {
+     "label": "Senior rep",
+     "cues": [
+      "senior rep",
+      "senior representative",
+      "sr rep",
+      "l2",
+      "level 2"
+     ]
+    }
+   }
+  },
+  "season": {
+   "label": "Season",
+   "values": {
+    "OPEN_SEASON": {
+     "label": "Open season",
+     "cues": [
+      "open season",
+      "during os",
+      "annual enrollment"
+     ]
+    },
+    "STEADY_STATE": {
+     "label": "Outside open season",
+     "cues": [
+      "outside open season",
+      "after open season",
+      "mid year",
+      "midyear",
+      "middle of the year",
+      "steady state",
+      "not open season"
+     ]
+    }
+   }
+  }
+ },
+ "concepts": [
+  {
+   "id": "DEPENDENT_AGE_LIMIT",
+   "label": "Dependent child age limit",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "age limit",
+    "aging out",
+    "age out",
+    "ages out",
+    "aged out",
+    "aged off",
+    "too old",
+    "age off",
+    "turns",
+    "turning",
+    "birthday",
+    "year old",
+    "dependent age",
+    "child age",
+    "how old"
+   ],
+   "expand": [
+    "age",
+    "limit",
+    "birthday",
+    "children",
+    "covered"
+   ]
+  },
+  {
+   "id": "FULL_TIME_STUDENT",
+   "label": "Full-time student",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "full time student",
+    "student",
+    "college",
+    "university",
+    "school",
+    "enrolled full time",
+    "graduat"
+   ],
+   "expand": [
+    "student",
+    "full-time"
+   ]
+  },
+  {
+   "id": "INCAPABLE_SELF_SUPPORT",
+   "label": "Dependent unable to self-support",
+   "ruleFacets": [],
+   "risk": "HR-ELIG",
+   "terms": [
+    "self support",
+    "self-support",
+    "incapable",
+    "disabled",
+    "disability",
+    "cannot support",
+    "can't support",
+    "unable to support",
+    "special needs"
+   ],
+   "expand": [
+    "self-support",
+    "condition"
+   ]
+  },
+  {
+   "id": "SECURITY_ITEMS",
+   "label": "Security verification items",
+   "ruleFacets": [
+    "callerRole"
+   ],
+   "risk": "HR-SEC",
+   "terms": [
+    "security",
+    "verify",
+    "verification",
+    "verifying",
+    "authenticate",
+    "authentication",
+    "security items",
+    "security questions",
+    "pieces",
+    "how many items"
+   ],
+   "expand": [
+    "security",
+    "items",
+    "verify"
+   ]
+  },
+  {
+   "id": "THIRD_PARTY_AUTH",
+   "label": "Third-party authorization",
+   "ruleFacets": [],
+   "risk": "HR-SEC",
+   "terms": [
+    "third party",
+    "3rd party",
+    "power of attorney",
+    "poa",
+    "adi",
+    "authorization to disclose",
+    "authorization",
+    "authorized",
+    "verbal authorization",
+    "someone else",
+    "on behalf"
+   ],
+   "expand": [
+    "authorization",
+    "poa",
+    "adi"
+   ]
+  },
+  {
+   "id": "THIRD_PARTY_PAYMENT",
+   "label": "Payment made by a third party",
+   "ruleFacets": [],
+   "risk": "HR-PAY",
+   "terms": [
+    "pay for",
+    "paying for",
+    "make a payment",
+    "payment for",
+    "pay the bill",
+    "pay their",
+    "payment from",
+    "payer",
+    "pays",
+    "ach",
+    "bank account",
+    "someone else pay",
+    "third party payment",
+    "pay her",
+    "pay his",
+    "pay the premium",
+    "pay premiums",
+    "pay a bill",
+    "make the payment",
+    "paying the bill",
+    "pay someone"
+   ],
+   "expand": [
+    "payment",
+    "payer",
+    "bank"
+   ]
+  },
+  {
+   "id": "DEATH_REPORT",
+   "label": "Reporting a death",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "died",
+    "passed away",
+    "death",
+    "dead",
+    "deceased",
+    "funeral",
+    "death certificate",
+    "widow",
+    "widower"
+   ],
+   "expand": [
+    "death",
+    "survivor"
+   ]
+  },
+  {
+   "id": "DIVORCE",
+   "label": "Divorce and former spouses",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-TERM",
+   "terms": [
+    "divorce",
+    "divorced",
+    "ex wife",
+    "ex husband",
+    "ex-wife",
+    "ex-husband",
+    "former spouse",
+    "remove spouse",
+    "remove my spouse",
+    "separated"
+   ],
+   "expand": [
+    "divorce",
+    "spouse",
+    "decree"
+   ]
+  },
+  {
+   "id": "TRANSFER",
+   "label": "Transferring a call",
+   "ruleFacets": [
+    "audience"
+   ],
+   "risk": "standard",
+   "terms": [
+    "transfer",
+    "transferring",
+    "cold transfer",
+    "warm transfer",
+    "escalate",
+    "escalation",
+    "send the caller",
+    "research team",
+    "policy team"
+   ],
+   "expand": [
+    "transfer"
+   ]
+  },
+  {
+   "id": "HOLD",
+   "label": "Placing a caller on hold",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "hold",
+    "on hold",
+    "check back",
+    "dead air"
+   ],
+   "expand": [
+    "hold"
+   ]
+  },
+  {
+   "id": "PLAN_CHANGE",
+   "label": "Changing plans",
+   "ruleFacets": [
+    "season"
+   ],
+   "risk": "HR-DATE",
+   "terms": [
+    "change plan",
+    "change plans",
+    "change their plan",
+    "change my plan",
+    "switch plan",
+    "switch plans",
+    "switch carriers",
+    "change carrier",
+    "new plan",
+    "different plan",
+    "qualifying life event",
+    "qle"
+   ],
+   "expand": [
+    "plan",
+    "change"
+   ]
+  },
+  {
+   "id": "REINSTATEMENT",
+   "label": "Reinstating coverage",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "reinstate",
+    "reinstatement",
+    "reinstated",
+    "restore coverage",
+    "get coverage back"
+   ],
+   "expand": [
+    "reinstate"
+   ]
+  },
+  {
+   "id": "EFFECTIVE_DATE",
+   "label": "Coverage effective dates",
+   "ruleFacets": [],
+   "risk": "HR-DATE",
+   "terms": [
+    "effective date",
+    "when does coverage start",
+    "coverage start",
+    "start date",
+    "when does it start",
+    "begin",
+    "begins",
+    "new enrollment",
+    "new hire"
+   ],
+   "expand": [
+    "effective",
+    "begin",
+    "enrollment"
+   ]
+  }
+ ],
+ "acronyms": {
+  "poa": "power of attorney",
+  "adi": "authorization to disclose information",
+  "ach": "bank payment",
+  "qle": "qualifying life event",
+  "usm": "uniformed member",
+  "usps": "postal",
+  "sr": "senior representative",
+  "os": "open season"
+ },
+ "ambiguityCues": [
+  {
+   "id": "AMB-FULLTIME",
+   "pattern": "full time",
+   "unlessFollowedBy": [
+    "student",
+    "students",
+    "school",
+    "college",
+    "university"
+   ],
+   "note": "“Full time” could mean full-time student status or full-time employment. Confirm with the caller; the tool does not assume either."
+  }
+ ],
+ "fillers": [
+  "someone is calling about",
+  "someone's calling about",
+  "a caller is asking about",
+  "caller is asking",
+  "caller wants to know",
+  "the caller says",
+  "i have a caller",
+  "i've got a caller",
+  "customer is asking",
+  "customer wants to know",
+  "how do i",
+  "what do i do if",
+  "what do i do when",
+  "can you tell me",
+  "i need to know",
+  "quick question"
+ ],
+ "stopwords": [
+  "a",
+  "an",
+  "the",
+  "is",
+  "are",
+  "was",
+  "were",
+  "be",
+  "been",
+  "to",
+  "of",
+  "for",
+  "in",
+  "on",
+  "at",
+  "by",
+  "with",
+  "and",
+  "or",
+  "but",
+  "if",
+  "their",
+  "there",
+  "they",
+  "them",
+  "this",
+  "that",
+  "it",
+  "its",
+  "my",
+  "your",
+  "our",
+  "his",
+  "her",
+  "him",
+  "she",
+  "he",
+  "we",
+  "you",
+  "i",
+  "me",
+  "do",
+  "does",
+  "did",
+  "can",
+  "could",
+  "would",
+  "should",
+  "about",
+  "what",
+  "how",
+  "now",
+  "just",
+  "so",
+  "some",
+  "any",
+  "has",
+  "have",
+  "had",
+  "will",
+  "from",
+  "up",
+  "out",
+  "into",
+  "who",
+  "whom",
+  "which",
+  "when",
+  "where",
+  "why"
+ ],
+ "protected": [
+  "not",
+  "no",
+  "never",
+  "without",
+  "only",
+  "except",
+  "unless",
+  "before",
+  "after",
+  "under",
+  "over",
+  "cannot",
+  "can't",
+  "won't",
+  "isn't",
+  "aren't",
+  "doesn't",
+  "don't"
+ ]
+}

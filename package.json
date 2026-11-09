@@ -1,0 +1,27 @@
+{
+  "name": "knowledge-assistant-m1",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Offline, deterministic job-aid search for BENEFEDS/FEDVIP agents (real job aids, preview). No AI, no server, no network.",
+  "type": "module",
+  "scripts": {
+    "build": "node --experimental-strip-types --no-warnings scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --no-warnings --test \"tests/*.test.ts\"",
+    "smoke": "node --experimental-strip-types --no-warnings scripts/smoke.ts",
+    "check": "npm run typecheck && npm test && npm run build && npm run smoke",
+    "refresh": "node --experimental-strip-types --no-warnings scripts/refresh.ts",
+    "probe": "node --experimental-strip-types --no-warnings scripts/probe.ts",
+    "package": "node --experimental-strip-types --no-warnings scripts/package.ts",
+    "score": "node --experimental-strip-types --no-warnings scripts/score.ts",
+    "quick-eval": "node --experimental-strip-types --no-warnings scripts/quick-eval.ts"
+  },
+  "dependencies": {
+    "minisearch": "7.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "typescript": "5.9.3",
+    "@types/node": "22.18.8"
+  }
+}

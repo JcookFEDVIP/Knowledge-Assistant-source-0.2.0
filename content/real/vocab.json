@@ -1,0 +1,6822 @@
+{
+ "_notice": "Search vocabulary for the real FEDVIP job aids: how agents phrase things -> which job-aid topics. Engineering draft for SME review. This is search configuration, not guidance; answers always come from job-aid text.",
+ "autoTitleConcepts": true,
+ "facets": {
+  "affiliation": {
+   "label": "Affiliation",
+   "values": {
+    "FED_CIV": {
+     "label": "Federal Civilian",
+     "cues": [
+      "fed civ",
+      "fedciv",
+      "federal civilian",
+      "civilian",
+      "federal employee",
+      "civil service",
+      "opm annuitant",
+      "federal annuitant",
+      "federal retiree",
+      "retired federal",
+      "deferred annuitant",
+      "postponed annuitant",
+      "insurable interest",
+      "opm annuity",
+      "opm retiree",
+      "federal worker",
+      "government employee",
+      "civil servant",
+      "fed",
+      "a fed",
+      "fed employee",
+      "fed worker",
+      "csa",
+      "naf",
+      "dsr",
+      "tva",
+      "va employee",
+      "civilian employee",
+      "federal reserve",
+      "tennessee valley authority",
+      "opm retirement",
+      "opm retirement line",
+      "opm retirement office",
+      "retirement services at opm"
+     ]
+    },
+    "USPS": {
+     "label": "USPS",
+     "cues": [
+      "usps",
+      "postal",
+      "post office",
+      "letter carrier",
+      "postal worker",
+      "postal employee",
+      "post office employee",
+      "usps employee",
+      "mail carrier",
+      "mailman",
+      "mail man",
+      "postman",
+      "postal service",
+      "post office worker"
+     ],
+     "implies": [
+      "FED_CIV"
+     ]
+    },
+    "USM": {
+     "label": "Uniformed Service",
+     "cues": [
+      "usm",
+      "uniformed",
+      "uniformed service",
+      "army",
+      "navy",
+      "air force",
+      "marine",
+      "marines",
+      "coast guard",
+      "space force",
+      "retired military",
+      "military retiree",
+      "service member",
+      "servicemember",
+      "military member",
+      "military retiree",
+      "retired military",
+      "fad",
+      "family of active duty",
+      "tei",
+      "moh",
+      "medal of honor",
+      "gray area",
+      "grey area",
+      "national guard",
+      "guard member",
+      "reservist",
+      "reserves",
+      "reserve member",
+      "selected reserve",
+      "tricare",
+      "active duty family",
+      "uniformed services",
+      "soldier",
+      "sailor",
+      "airman",
+      "marine corps",
+      "military",
+      "in the military",
+      "tricare eligible",
+      "active duty soldier",
+      "active duty service member",
+      "active duty member",
+      "retired soldier",
+      "army retiree",
+      "navy retiree",
+      "gar",
+      "fgr",
+      "rpn",
+      "srp",
+      "ufs",
+      "oes",
+      "gray area reservist",
+      "army reserves",
+      "army reserve",
+      "uniform service"
+     ]
+    }
+   }
+  },
+  "callerRole": {
+   "label": "Caller",
+   "values": {
+    "PRIMARY": {
+     "label": "Primary enrollee calling",
+     "cues": [
+      "primary is calling",
+      "enrollee is calling",
+      "account holder is calling",
+      "calling for themselves",
+      "their own account",
+      "calling about their own",
+      "the member is calling",
+      "member calling",
+      "enrollee calling",
+      "primary calling"
+     ]
+    },
+    "THIRD_PARTY": {
+     "label": "Third party calling",
+     "cues": [
+      "third party",
+      "3rd party",
+      "someone else",
+      "on behalf",
+      "on their behalf",
+      "daughter calling",
+      "son calling",
+      "wife calling",
+      "husband calling",
+      "spouse calling",
+      "relative calling",
+      "family member calling",
+      "caregiver",
+      "power of attorney",
+      "poa",
+      "executor",
+      "calling for her",
+      "calling for his",
+      "calling for my",
+      "calling on behalf",
+      "on her behalf",
+      "on his behalf",
+      "says she's his wife",
+      "says she is his wife",
+      "claims to be",
+      "not the account holder",
+      "not the primary",
+      "authorized representative",
+      "dental rep",
+      "vision rep",
+      "carrier rep",
+      "insurance rep",
+      "provider office",
+      "dentist office",
+      "vso",
+      "veteran service officer",
+      "agency benefits officer",
+      "benefits officer",
+      "hr rep",
+      "someone other than",
+      "other than the enrollee",
+      "not the enrollee",
+      "not the member",
+      "enrollee daughter",
+      "enrollee son",
+      "member daughter",
+      "member son",
+      "friend of the enrollee",
+      "friend of the member",
+      "enrollee wife",
+      "enrollee husband"
+     ]
+    }
+   }
+  },
+  "audience": {
+   "label": "Your role",
+   "values": {
+    "L1": {
+     "label": "L1 agent",
+     "cues": [
+      "l1",
+      "level 1",
+      "tier 1"
+     ]
+    },
+    "SR": {
+     "label": "Senior rep / back office",
+     "cues": [
+      "senior rep",
+      "senior representative",
+      "sr rep",
+      "l2",
+      "level 2"
+     ]
+    },
+    "SME": {
+     "label": "SME",
+     "cues": [
+      "as a sme",
+      "as an sme"
+     ],
+     "implies": [
+      "SR"
+     ]
+    }
+   }
+  },
+  "season": {
+   "label": "Season",
+   "values": {
+    "OPEN_SEASON": {
+     "label": "Open Season",
+     "cues": [
+      "open season",
+      "during os",
+      "annual enrollment"
+     ]
+    },
+    "STEADY_STATE": {
+     "label": "Outside Open Season",
+     "cues": [
+      "after open season",
+      "after os",
+      "after the open season",
+      "belated",
+      "exception enrollment",
+      "mid year",
+      "midyear",
+      "missed open season",
+      "missed os",
+      "open season already ended",
+      "open season ended",
+      "open season has ended",
+      "open season has passed",
+      "open season is closed",
+      "open season is over",
+      "outside of open season",
+      "outside of os",
+      "outside open season",
+      "outside os",
+      "post open season",
+      "post os",
+      "since open season",
+      "steady state"
+     ]
+    }
+   }
+  }
+ },
+ "concepts": [
+  {
+   "id": "DEPENDENT_AGE_LIMIT",
+   "label": "Dependent child age limits",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "age limit",
+    "aging out",
+    "age out",
+    "ages out",
+    "aged out",
+    "aged off",
+    "age off",
+    "ages off",
+    "too old",
+    "turns 21",
+    "turns 22",
+    "turns 23",
+    "birthday",
+    "year old",
+    "dependent age",
+    "how old",
+    "age 21",
+    "age 22",
+    "age 23",
+    "until what age",
+    "aging off",
+    "stay on until",
+    "until age",
+    "stay on the plan",
+    "can the kid stay on",
+    "lose the dental",
+    "lose coverage at",
+    "can he stay on",
+    "can she stay on",
+    "stay on her plan",
+    "stay on his plan",
+    "stay on their plan"
+   ],
+   "passageTerms": [
+    "age 21",
+    "age 22",
+    "age 23",
+    "age of 21",
+    "age of 22",
+    "age of 23",
+    "under 22",
+    "under age 22",
+    "21st birthday",
+    "22nd birthday",
+    "23rd birthday",
+    "aged off",
+    "age 22 rules",
+    "until age"
+   ],
+   "titleMatch": [
+    "dependent eligibility age",
+    "eligibility of usm dependents",
+    "fedvip eligibility - dependents"
+   ],
+   "expand": [
+    "age",
+    "dependent",
+    "eligible"
+   ],
+   "prefer": [
+    "Dependent Eligibility Age 22 – CIV Employee or USPS",
+    "Dependent Eligibility Age 21 or 23 – USM"
+   ],
+   "blockPhrases": [
+    "turn on",
+    "turns on",
+    "turn it on",
+    "won't turn on",
+    "wont turn on",
+    "turn off",
+    "turned on",
+    "turned off",
+    "turn on dental",
+    "turn on vision"
+   ]
+  },
+  {
+   "id": "FULL_TIME_STUDENT",
+   "label": "Full-time student dependents",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "full time student",
+    "student",
+    "college",
+    "university",
+    "enrolled full time",
+    "in school",
+    "graduat*",
+    "full-time student",
+    "in college",
+    "goes to college",
+    "attending college",
+    "school verification",
+    "student verification"
+   ],
+   "passageTerms": [
+    "full-time student",
+    "full time student",
+    "student status",
+    "approved student",
+    "unmarried dependent student"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "student"
+   ]
+  },
+  {
+   "id": "INCAPABLE_SELF_SUPPORT",
+   "label": "Dependents incapable of self-support (ISS)",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "incapable of self support",
+    "self support",
+    "iss",
+    "special needs",
+    "cannot support",
+    "can't support",
+    "disabled child",
+    "disabled son",
+    "disabled daughter",
+    "disabled kid",
+    "disabled dependent",
+    "disabled adult child",
+    "child is disabled",
+    "son is disabled",
+    "daughter is disabled",
+    "kid is disabled",
+    "dependent is disabled",
+    "handicapped child",
+    "child with a disability",
+    "son with a disability",
+    "daughter with a disability",
+    "adult disabled child"
+   ],
+   "passageTerms": [
+    "incapable of self-support",
+    "incapable of self support",
+    "(iss)",
+    "iss dependent"
+   ],
+   "titleMatch": [
+    "incapable of self support"
+   ],
+   "expand": [
+    "incapable",
+    "support"
+   ]
+  },
+  {
+   "id": "DEPENDENT_ELIGIBILITY",
+   "label": "Which dependents are eligible",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "eligible dependent",
+    "dependent eligibility",
+    "stepchild",
+    "step child",
+    "foster child",
+    "grandchild",
+    "grandchildren",
+    "adopted",
+    "spouse eligible",
+    "who can be covered",
+    "can be covered",
+    "cover their",
+    "is she eligible",
+    "is he eligible",
+    "eligible dependents",
+    "dependent eligible",
+    "girlfriend",
+    "boyfriend",
+    "fiance",
+    "domestic partner",
+    "mother in law",
+    "father in law",
+    "niece",
+    "nephew",
+    "grandkid",
+    "grandkids",
+    "grandson",
+    "granddaughter",
+    "stepkid",
+    "stepkids",
+    "stepson",
+    "stepdaughter",
+    "sibling",
+    "siblings",
+    "add grandchild",
+    "is my son eligible",
+    "is my daughter eligible",
+    "child eligible",
+    "son eligible",
+    "daughter eligible",
+    "kid eligible",
+    "can my son stay",
+    "can my daughter stay",
+    "as a dependent",
+    "be covered",
+    "cover my",
+    "civil union",
+    "add mom",
+    "add dad",
+    "add mother",
+    "add father",
+    "add parent",
+    "add parents",
+    "add sister",
+    "add brother",
+    "cover mom",
+    "cover parents",
+    "cover mother",
+    "mom be covered",
+    "parents be covered",
+    "parent as a dependent",
+    "mother as a dependent",
+    "stay covered",
+    "remain covered"
+   ],
+   "passageTerms": [
+    "stepchild",
+    "step-child",
+    "foster child",
+    "grandchild",
+    "adopted",
+    "eligible as dependent",
+    "eligible family members"
+   ],
+   "titleMatch": [
+    "eligibility of usm dependents",
+    "fedvip eligibility - dependents",
+    "ineligible vs never eligible"
+   ],
+   "expand": [
+    "dependent",
+    "eligible"
+   ]
+  },
+  {
+   "id": "PRIMARY_ELIGIBILITY",
+   "label": "Who is eligible to enroll",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "eligible to enroll",
+    "can they enroll",
+    "can enroll",
+    "eligible for fedvip",
+    "eligible for dental",
+    "eligible for vision",
+    "eligibility requirements",
+    "check eligibility",
+    "eligibility rules",
+    "who is eligible",
+    "are they eligible",
+    "is she eligible to enroll",
+    "is he eligible to enroll",
+    "qualify for fedvip",
+    "qualify for dental",
+    "qualify for vision",
+    "do they qualify",
+    "does she qualify",
+    "does he qualify",
+    "not eligible",
+    "ineligible",
+    "isn't eligible"
+   ],
+   "passageTerms": [
+    "eligible for fedvip",
+    "eligible to enroll",
+    "eligible for dental",
+    "eligible for vision"
+   ],
+   "titleMatch": [
+    "primary enrollee eligibility",
+    "eligibility of uniformed service members",
+    "fedvip eligibility - federal civilian",
+    "agencies that offer their own",
+    "dual eligibility",
+    "non-appropriated funds"
+   ],
+   "expand": [
+    "eligible",
+    "enroll"
+   ],
+   "blockPhrases": [
+    "qualifying life event"
+   ]
+  },
+  {
+   "id": "SPONSOR",
+   "label": "Sponsors and primary enrollees (USM)",
+   "ruleFacets": [],
+   "risk": "HR-ELIG",
+   "terms": [
+    "sponsor",
+    "primary vs sponsor",
+    "true sponsor",
+    "enroll himself",
+    "enroll herself",
+    "enroll themselves"
+   ],
+   "passageTerms": [
+    "sponsor"
+   ],
+   "titleMatch": [
+    "sponsor"
+   ],
+   "expand": [
+    "sponsor"
+   ],
+   "prefer": [
+    "Primary Enrollee vs Sponsor",
+    "Sponsor Roles in the FEDVIP"
+   ]
+  },
+  {
+   "id": "DIVORCE",
+   "label": "Divorce and former spouses",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-TERM",
+   "terms": [
+    "divorce",
+    "divorced",
+    "ex wife",
+    "ex husband",
+    "former spouse",
+    "remove spouse",
+    "remove the spouse",
+    "remove ex",
+    "decree",
+    "divorcing",
+    "getting a divorce",
+    "split up",
+    "ex spouse",
+    "ex-wife",
+    "ex-husband",
+    "20 20 20",
+    "20-20-20",
+    "court order",
+    "court ordered",
+    "ex",
+    "the ex",
+    "my ex",
+    "ex wants"
+   ],
+   "passageTerms": [
+    "divorce",
+    "former spouse"
+   ],
+   "titleMatch": [
+    "divorce"
+   ],
+   "expand": [
+    "divorce",
+    "spouse"
+   ],
+   "prefer": [
+    "Enrollment or Inactivation Due to Divorce"
+   ]
+  },
+  {
+   "id": "DEATH_REPORT",
+   "label": "Reporting a death / deceased enrollee",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "died",
+    "passed away",
+    "death",
+    "dead",
+    "deceased",
+    "funeral",
+    "death certificate",
+    "widow",
+    "widower",
+    "estate",
+    "executor",
+    "passed",
+    "pass away",
+    "has passed",
+    "no longer living",
+    "deceased member",
+    "report a death",
+    "death notification",
+    "lost her husband",
+    "lost his wife",
+    "lost their spouse",
+    "kicked the bucket",
+    "passed on",
+    "isn't alive",
+    "no longer alive",
+    "survivor letter",
+    "notification letter",
+    "survivor annuitant notification",
+    "survivor annuitant notification letter"
+   ],
+   "passageTerms": [
+    "deceased",
+    "death",
+    "passed away",
+    "executor"
+   ],
+   "titleMatch": [
+    "death",
+    "deceased"
+   ],
+   "expand": [
+    "deceased",
+    "death"
+   ],
+   "blockPhrases": [
+    "dead air",
+    "dead end",
+    "line went dead",
+    "phone went dead",
+    "phone died",
+    "battery died",
+    "dead battery",
+    "went dead",
+    "goes dead",
+    "go dead",
+    "line dead",
+    "call dead",
+    "dead on me",
+    "phone is dead",
+    "line is dead"
+   ],
+   "prefer": [
+    "Handling Report of Death Calls",
+    "Deceased and 3rd Party Callers"
+   ]
+  },
+  {
+   "id": "SURVIVOR",
+   "label": "Survivor annuitants",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "survivor",
+    "survivor annuitant",
+    "surviving spouse",
+    "widow",
+    "widower",
+    "csf",
+    "survivor benefits",
+    "survivor annuity",
+    "surviving"
+   ],
+   "passageTerms": [
+    "survivor annuitant",
+    "new survivor",
+    "surviving spouse"
+   ],
+   "titleMatch": [
+    "survivor"
+   ],
+   "expand": [
+    "survivor"
+   ],
+   "blockPhrases": [
+    "survivor annuitant notification",
+    "survivor letter",
+    "notification letter",
+    "survivor notification letter",
+    "survivor notification"
+   ],
+   "describesCaller": true
+  },
+  {
+   "id": "THIRD_PARTY_AUTH",
+   "label": "Third-party callers and authorization (POA, ADI, guardian)",
+   "ruleFacets": [],
+   "risk": "HR-SEC",
+   "terms": [
+    "third party",
+    "3rd party",
+    "power of attorney",
+    "poa",
+    "adi",
+    "authorization for disclosure",
+    "guardian",
+    "conservator",
+    "verbal authorization",
+    "someone else calling",
+    "on behalf",
+    "authorized to speak",
+    "says she's his wife",
+    "says she is his wife",
+    "says he is her husband",
+    "claims to be",
+    "calling for her",
+    "calling for his",
+    "calling for my",
+    "calling for their",
+    "calling on behalf",
+    "on her behalf",
+    "on his behalf",
+    "speak for",
+    "talk for",
+    "caregiver",
+    "daughter calling",
+    "son calling",
+    "wife calling",
+    "husband calling",
+    "family member calling",
+    "not the account holder",
+    "not the primary",
+    "isn't the primary",
+    "authorized representative",
+    "stepdad",
+    "stepmom",
+    "step dad",
+    "step mom",
+    "not the enrollee",
+    "he's not the enrollee",
+    "she's not the enrollee",
+    "parent of a minor",
+    "authorization form",
+    "disclosure form",
+    "form on file",
+    "adi expiration",
+    "adi expire",
+    "still good",
+    "still valid",
+    "handles his bills",
+    "handles her bills",
+    "handles their bills",
+    "nursing home",
+    "assisted living",
+    "takes care of her",
+    "takes care of him",
+    "takes care of his",
+    "third parties",
+    "someone other than",
+    "other than the enrollee",
+    "not the member",
+    "enrollee daughter",
+    "enrollee son",
+    "member daughter",
+    "member son",
+    "enrollee wife",
+    "enrollee husband",
+    "friend of the enrollee",
+    "friend of the member",
+    "a friend",
+    "neighbor",
+    "enrollee mother",
+    "enrollee father"
+   ],
+   "passageTerms": [
+    "third party",
+    "3rd party",
+    "power of attorney",
+    "poa",
+    "adi",
+    "verbal authorization",
+    "guardian",
+    "parent of a minor",
+    "outside entities"
+   ],
+   "titleMatch": [
+    "third party",
+    "authorization (adi)",
+    "legal documents"
+   ],
+   "expand": [
+    "authorization",
+    "third"
+   ],
+   "prefer": [
+    "Third Party Callers"
+   ],
+   "blockPhrases": [
+    "claiming to be benefeds",
+    "claiming to be from",
+    "pretending to be"
+   ],
+   "allOf": [
+    [
+     "son",
+     "daughter",
+     "wife",
+     "husband",
+     "spouse",
+     "mother",
+     "father",
+     "mom",
+     "dad",
+     "sister",
+     "brother",
+     "niece",
+     "nephew",
+     "grandson",
+     "granddaughter",
+     "friend",
+     "neighbor",
+     "caregiver",
+     "aunt",
+     "uncle",
+     "cousin",
+     "girlfriend",
+     "boyfriend",
+     "fiance",
+     "stepson",
+     "stepdaughter",
+     "relative"
+    ],
+    [
+     "calling",
+     "is calling",
+     "on the line",
+     "on the phone",
+     "called",
+     "calls in",
+     "wants to know",
+     "asking"
+    ]
+   ],
+   "window": 5
+  },
+  {
+   "id": "MINOR_PRIMARY",
+   "label": "Minors as primary enrollees",
+   "ruleFacets": [],
+   "risk": "HR-SEC",
+   "terms": [
+    "minor",
+    "under 18",
+    "parent of a minor",
+    "child is the primary",
+    "kid is the primary",
+    "kid is the enrollee",
+    "child is the enrollee",
+    "minor is the enrollee",
+    "parent of a minor enrollee"
+   ],
+   "passageTerms": [
+    "minor",
+    "under 18",
+    "parents of minor"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "minor"
+   ],
+   "prefer": [
+    "Third Party Callers"
+   ]
+  },
+  {
+   "id": "SECURITY_VERIFICATION",
+   "label": "Security verification",
+   "ruleFacets": [],
+   "risk": "HR-SEC",
+   "terms": [
+    "security",
+    "verify",
+    "verification",
+    "verifying",
+    "authenticate",
+    "authenticated",
+    "authentication",
+    "security pieces",
+    "pieces of security",
+    "security items",
+    "security questions",
+    "direct hit",
+    "how many pieces",
+    "not verified",
+    "can't verify",
+    "cannot verify",
+    "fails security",
+    "failed security",
+    "identity",
+    "verify identity",
+    "prove who",
+    "confirm identity",
+    "security check",
+    "doesn't know the security",
+    "can't answer security",
+    "can't remember",
+    "knowledge based",
+    "what do i need from",
+    "before transferring",
+    "before i transfer",
+    "before transfer",
+    "sounds like a different person",
+    "sounds like a woman",
+    "sounds like a man",
+    "different voice",
+    "doesn't sound like",
+    "not the same person",
+    "think it's a third party",
+    "suspect a third party",
+    "ask for their name",
+    "how many times do i ask"
+   ],
+   "passageTerms": [
+    "pieces of security",
+    "security information",
+    "direct hit",
+    "authenticated",
+    "verify security"
+   ],
+   "titleMatch": [
+    "security verification",
+    "authentication process",
+    "security information location",
+    "handling security issues"
+   ],
+   "expand": [
+    "security",
+    "verify",
+    "pieces",
+    "approved"
+   ],
+   "prefer": [
+    "Security Verification"
+   ],
+   "blockPhrases": [
+    "social security number",
+    "social security",
+    "social security administration"
+   ]
+  },
+  {
+   "id": "OUTBOUND_CALL",
+   "label": "Outbound calls and call-backs",
+   "ruleFacets": [],
+   "risk": "HR-SEC",
+   "terms": [
+    "outbound",
+    "call back",
+    "call them back",
+    "callback",
+    "calling the customer back",
+    "disconnected",
+    "call dropped",
+    "dropped call",
+    "call the customer",
+    "call the member",
+    "return call",
+    "return the call",
+    "call back the",
+    "call out to",
+    "make an outbound",
+    "outgoing call",
+    "call a customer back",
+    "call the customer back",
+    "call the enrollee back",
+    "dial out",
+    "dialing out",
+    "dial a customer",
+    "dial the customer",
+    "dial the member",
+    "make a call",
+    "place a call",
+    "place an outbound",
+    "make outbound calls"
+   ],
+   "passageTerms": [
+    "outbound call",
+    "callback",
+    "call back",
+    "disconnected"
+   ],
+   "titleMatch": [
+    "outbound",
+    "callbacks",
+    "disconnected"
+   ],
+   "expand": [
+    "outbound",
+    "call"
+   ]
+  },
+  {
+   "id": "CALL_OPENING",
+   "label": "Call opening and IVR authentication",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "call opening",
+    "greeting",
+    "open the call",
+    "opening script",
+    "ivr",
+    "authenticated full",
+    "authenticated partial",
+    "partially authenticated",
+    "fully authenticated"
+   ],
+   "passageTerms": [
+    "thank you for calling",
+    "authenticated: full",
+    "authenticated: partial",
+    "ivr"
+   ],
+   "titleMatch": [
+    "call opening",
+    "benefeds ivr"
+   ],
+   "expand": [
+    "opening",
+    "ivr"
+   ]
+  },
+  {
+   "id": "CALL_CLOSING",
+   "label": "Call closing, survey and comments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "close the call",
+    "call closing",
+    "closing script",
+    "survey",
+    "anything else",
+    "comment the account",
+    "comments",
+    "autosummary",
+    "auto summary",
+    "contact id",
+    "disposition"
+   ],
+   "passageTerms": [
+    "survey",
+    "autosummary",
+    "comment the account",
+    "contact id"
+   ],
+   "titleMatch": [
+    "call closing",
+    "autosummary",
+    "offering the survey",
+    "retrieving a contact id"
+   ],
+   "expand": [
+    "closing",
+    "comment"
+   ],
+   "blockPhrases": [
+    "wants a comment",
+    "want a comment",
+    "for a comment",
+    "for comment",
+    "no comment",
+    "get a comment"
+   ]
+  },
+  {
+   "id": "HOLD",
+   "label": "Hold procedures",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "hold",
+    "on hold",
+    "check back",
+    "how long can i hold"
+   ],
+   "passageTerms": [
+    "on hold",
+    "hold time",
+    "check back"
+   ],
+   "titleMatch": [
+    "hold and transfer"
+   ],
+   "expand": [
+    "hold"
+   ],
+   "blockPhrases": [
+    "dead air",
+    "payment hold",
+    "hold on the payment",
+    "hold on money",
+    "hold on a refund",
+    "hold on my money",
+    "day hold",
+    "hold an ach",
+    "hold the payment",
+    "funds held"
+   ],
+   "suppressWith": [
+    "ACH_PAYMENT",
+    "BILLING",
+    "ABW",
+    "DIRECT_BILL",
+    "PAYMENT_HOLD"
+   ],
+   "unlessTerms": [
+    "caller",
+    "on hold",
+    "put on hold",
+    "place on hold",
+    "check back",
+    "warm transfer"
+   ]
+  },
+  {
+   "id": "TRANSFER",
+   "label": "Transferring and escalating calls",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "transfer",
+    "transferring",
+    "cold transfer",
+    "warm transfer",
+    "escalate",
+    "escalation",
+    "senior rep",
+    "supervisor",
+    "research team",
+    "send to research",
+    "transfer notes",
+    "take over",
+    "send them to",
+    "send the call",
+    "transfer the call",
+    "who do i transfer",
+    "route the call",
+    "hand off"
+   ],
+   "passageTerms": [
+    "transfer",
+    "escalat"
+   ],
+   "titleMatch": [
+    "transfer",
+    "escalat",
+    "receiving a transferred call",
+    "handling escalated"
+   ],
+   "expand": [
+    "transfer"
+   ]
+  },
+  {
+   "id": "ACH_PAYMENT",
+   "label": "ACH (one-time bank) payments",
+   "ruleFacets": [],
+   "risk": "HR-PAY",
+   "terms": [
+    "ach",
+    "make a payment",
+    "pay by phone",
+    "payment over the phone",
+    "one time payment",
+    "bank payment",
+    "pay the bill",
+    "pay their bill",
+    "pay a bill",
+    "routing number",
+    "postdated payment",
+    "cancel a payment",
+    "cancel the payment",
+    "pay over the phone",
+    "make payment",
+    "take a payment",
+    "pay with bank",
+    "checking account",
+    "savings account",
+    "e-check",
+    "echeck",
+    "eft",
+    "pay now",
+    "schedule a payment",
+    "future date",
+    "future payment",
+    "postdate"
+   ],
+   "passageTerms": [
+    "ach payment",
+    "ach"
+   ],
+   "titleMatch": [
+    "ach payment"
+   ],
+   "expand": [
+    "ach",
+    "payment"
+   ],
+   "blockPhrases": [
+    "credit card",
+    "debit card",
+    "payment with a debit card",
+    "payment with a credit card"
+   ]
+  },
+  {
+   "id": "THIRD_PARTY_PAYMENT",
+   "label": "Payments made by a third party",
+   "ruleFacets": [],
+   "risk": "HR-PAY",
+   "terms": [
+    "someone else pay",
+    "third party payment",
+    "third party pay",
+    "daughter pay",
+    "son pay",
+    "pay for my mother",
+    "pay for my father",
+    "pay on behalf",
+    "pay for someone",
+    "pay for my mom",
+    "pay for my dad",
+    "pay for my wife",
+    "pay for my husband",
+    "use her account",
+    "use his account",
+    "her bank account",
+    "his bank account",
+    "their bank account",
+    "someone else's bank",
+    "someone elses bank",
+    "with her card",
+    "with his card",
+    "pay mom",
+    "pay moms",
+    "pay dad",
+    "pay dads",
+    "pay mother",
+    "pay mothers",
+    "pay father",
+    "pay fathers",
+    "pay grandma",
+    "pay grandmas",
+    "pay grandpa",
+    "pay for mom",
+    "pay for dad",
+    "pay for mother",
+    "pay for father",
+    "pay someone else",
+    "someone else's bill",
+    "another person's bill",
+    "pay for her mom",
+    "pay for his mom"
+   ],
+   "passageTerms": [
+    "unauthorized third party's account",
+    "third party",
+    "third-parties when providing ach"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "payment",
+    "third"
+   ]
+  },
+  {
+   "id": "ABW",
+   "label": "Automatic bank withdrawal (ABW)",
+   "ruleFacets": [],
+   "risk": "HR-PAY",
+   "terms": [
+    "abw",
+    "automatic bank withdrawal",
+    "automatic withdrawal",
+    "auto pay",
+    "autopay",
+    "recurring payment",
+    "set up abw",
+    "bank draft",
+    "abw reversal",
+    "revoke abw",
+    "auto draft",
+    "automatic payments",
+    "auto payment",
+    "auto-pay",
+    "recurring withdrawal",
+    "monthly withdrawal",
+    "set up automatic",
+    "bank info",
+    "bank information",
+    "banking information",
+    "change bank",
+    "new bank account",
+    "update bank",
+    "change their bank",
+    "bank account change"
+   ],
+   "passageTerms": [
+    "abw",
+    "automatic bank withdrawal",
+    "retiro automático"
+   ],
+   "titleMatch": [
+    "abw"
+   ],
+   "expand": [
+    "abw",
+    "withdrawal"
+   ]
+  },
+  {
+   "id": "BILLING",
+   "label": "Billing, premiums, deductions and refunds",
+   "ruleFacets": [],
+   "risk": "HR-PAY",
+   "terms": [
+    "bill",
+    "billing",
+    "premium",
+    "premiums",
+    "deduction",
+    "deductions",
+    "payroll deduction",
+    "annuity deduction",
+    "refund",
+    "overpaid",
+    "past due",
+    "owe",
+    "balance",
+    "direct bill",
+    "pre tax",
+    "post tax",
+    "insufficient funds",
+    "charged twice",
+    "double charged",
+    "overcharged",
+    "charged",
+    "how much do i owe",
+    "payment amount",
+    "premium amount",
+    "deducted",
+    "money back",
+    "wants it back",
+    "taking money out",
+    "kept taking",
+    "still being charged",
+    "still charging",
+    "account credit",
+    "credits"
+   ],
+   "passageTerms": [
+    "premium",
+    "deduction",
+    "refund",
+    "direct bill",
+    "past due",
+    "insufficient funds"
+   ],
+   "titleMatch": [
+    "billing",
+    "premium",
+    "refund",
+    "credits",
+    "direct bill",
+    "past due",
+    "insufficient funds",
+    "forms of payment",
+    "method and frequency of pay",
+    "pre and post tax",
+    "accelerated payments",
+    "intermittent payors",
+    "financial document"
+   ],
+   "expand": [
+    "premium",
+    "billing"
+   ]
+  },
+  {
+   "id": "NON_PAY",
+   "label": "Non-pay inactivation, grace period and reinstatement",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-TERM",
+   "terms": [
+    "non pay",
+    "nonpay",
+    "non-payment",
+    "didn't pay",
+    "inactivated for non pay",
+    "coverage terminated for non pay",
+    "terminated for non pay",
+    "missed payment",
+    "missed payments",
+    "didnt pay",
+    "forgot to pay",
+    "lapsed",
+    "coverage lapsed",
+    "not paying",
+    "weren't paying",
+    "wasn't paying",
+    "for not paying",
+    "for nonpayment",
+    "dropped for not",
+    "shut off",
+    "cut off",
+    "booted",
+    "kicked off",
+    "termination letter",
+    "dv35",
+    "dv82",
+    "get back on",
+    "get it back",
+    "lost coverage for",
+    "termed for non pay",
+    "which letter",
+    "termed for nonpay",
+    "got termed",
+    "was termed",
+    "did not pay",
+    "does not pay",
+    "didn't make a payment",
+    "hospitalized",
+    "natural disaster"
+   ],
+   "passageTerms": [
+    "non-pay",
+    "non pay",
+    "grace period",
+    "reinstat",
+    "dv35",
+    "dv82"
+   ],
+   "titleMatch": [
+    "non-pay",
+    "non pay",
+    "reinstatement",
+    "grace period"
+   ],
+   "expand": [
+    "reinstatement"
+   ],
+   "prefer": [
+    "Reinstatement for Non Pay",
+    "5-Day Grace Period for Non-Pay Inactivation"
+   ],
+   "blockPhrases": [
+    "terms and conditions",
+    "long term",
+    "short term"
+   ]
+  },
+  {
+   "id": "CANCELLATION",
+   "label": "Cancelling coverage and inactivations",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "cancel",
+    "cancel coverage",
+    "cancel their plan",
+    "drop coverage",
+    "disenroll",
+    "disenrollment",
+    "inactivate",
+    "inactivation",
+    "terminate coverage",
+    "stop coverage",
+    "end coverage",
+    "cancel their dental",
+    "cancel their vision",
+    "cancel dental",
+    "cancel vision",
+    "doesn't want it anymore",
+    "don't want it anymore",
+    "get rid of",
+    "opt out",
+    "quit the plan",
+    "stop the plan"
+   ],
+   "passageTerms": [
+    "cancel",
+    "disenroll",
+    "inactivat"
+   ],
+   "titleMatch": [
+    "cancel",
+    "disenrollment",
+    "inactivation",
+    "termination or separation"
+   ],
+   "expand": [
+    "cancel"
+   ],
+   "prefer": [
+    "Cancelling FEDVIP Coverage Talking Points"
+   ]
+  },
+  {
+   "id": "ACED",
+   "label": "Allowable changes and effective dates (ACED, QLEs)",
+   "ruleFacets": [],
+   "risk": "HR-DATE",
+   "terms": [
+    "aced",
+    "qle",
+    "qualifying life event",
+    "life event",
+    "effective date",
+    "when does coverage start",
+    "when does it start",
+    "coverage start",
+    "when does coverage end",
+    "start date",
+    "new hire",
+    "newly eligible",
+    "marriage",
+    "got married",
+    "new baby",
+    "newborn",
+    "birth",
+    "adoption",
+    "loss of coverage",
+    "lost other coverage",
+    "moved",
+    "moving",
+    "when does the coverage start",
+    "when will coverage start",
+    "when does coverage begin",
+    "when does it end",
+    "life change",
+    "had a baby",
+    "having a baby",
+    "lost coverage",
+    "effective dates",
+    "lost dental",
+    "lost vision",
+    "lost their dental",
+    "wedding",
+    "take effect",
+    "takes effect",
+    "middle of the year",
+    "midyear enrollment",
+    "newly hired",
+    "new employee",
+    "just started working",
+    "started a new job",
+    "just hired",
+    "new federal employee",
+    "what counts as a qle",
+    "list of qles",
+    "types of qle",
+    "add vision",
+    "add dental"
+   ],
+   "passageTerms": [
+    "effective date",
+    "qle",
+    "qualifying life event",
+    "aced"
+   ],
+   "titleMatch": [
+    "aced",
+    "effective dates",
+    "humana's alternate effective date"
+   ],
+   "expand": [
+    "effective",
+    "qle"
+   ],
+   "prefer": [
+    "ACED Chart (L1)",
+    "ACED Chart (Senior Representative) (v2)"
+   ],
+   "blockPhrases": [
+    "date of birth",
+    "birth date",
+    "dob"
+   ]
+  },
+  {
+   "id": "ADD_REMOVE_DEPENDENT",
+   "label": "Adding or removing family members",
+   "ruleFacets": [],
+   "risk": "HR-ELIG",
+   "terms": [
+    "add a dependent",
+    "add dependent",
+    "remove a dependent",
+    "remove dependent",
+    "add family member",
+    "remove family member",
+    "add spouse",
+    "add child",
+    "add the baby",
+    "remove child",
+    "self plus one",
+    "self and family",
+    "enrollment type",
+    "add wife",
+    "add husband",
+    "add kid",
+    "add newborn",
+    "add son",
+    "add daughter",
+    "add baby",
+    "add stepchild",
+    "take off",
+    "off the plan",
+    "remove wife",
+    "remove husband",
+    "remove kid",
+    "remove son",
+    "remove daughter",
+    "drop wife",
+    "drop husband",
+    "drop kid",
+    "take wife off",
+    "take husband off",
+    "bump up to self plus one",
+    "upgrade to self and family",
+    "can they add",
+    "can she add",
+    "can he add",
+    "can i add my"
+   ],
+   "passageTerms": [
+    "add a dependent",
+    "remove",
+    "self and family",
+    "self plus one"
+   ],
+   "titleMatch": [
+    "adding and removing dependents",
+    "adding or removing family members",
+    "dependent awd ticket"
+   ],
+   "expand": [
+    "dependent",
+    "add"
+   ],
+   "prefer": [
+    "Adding and Removing Dependents",
+    "Adding or Removing Family Members in a Self and Family Plan"
+   ]
+  },
+  {
+   "id": "OPEN_SEASON",
+   "label": "Open Season enrollment and plan changes",
+   "ruleFacets": [],
+   "risk": "HR-DATE",
+   "terms": [
+    "open season",
+    "change plans",
+    "change plan",
+    "switch plans",
+    "switch carrier",
+    "change carrier",
+    "new plan",
+    "plan year",
+    "os change",
+    "change during open season",
+    "annual enrollment",
+    "open season dates",
+    "when is open season",
+    "when does open season start",
+    "when does open season end"
+   ],
+   "passageTerms": [
+    "open season",
+    "plan year",
+    "belated"
+   ],
+   "titleMatch": [
+    "open season",
+    "belated",
+    "plan comparison",
+    "plan changes"
+   ],
+   "expand": [
+    "open",
+    "season"
+   ],
+   "prefer": [
+    "Federal Benefits Open Season Overview",
+    "Open Season Current Plan Year Call"
+   ]
+  },
+  {
+   "id": "ENROLLMENT",
+   "label": "Enrolling and creating accounts",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "enroll",
+    "enrollment",
+    "sign up",
+    "create an account",
+    "create account",
+    "new account",
+    "register",
+    "registration",
+    "member id",
+    "user id",
+    "enroll in dental",
+    "enroll in vision",
+    "get dental",
+    "get vision",
+    "buy dental",
+    "sign up for dental",
+    "sign up for vision",
+    "new enrollment"
+   ],
+   "passageTerms": [
+    "create account",
+    "enroll"
+   ],
+   "titleMatch": [
+    "create account",
+    "account creation",
+    "creating a benefeds account",
+    "registration",
+    "new survivor enrollment"
+   ],
+   "expand": [
+    "enroll",
+    "account"
+   ],
+   "generic": true
+  },
+  {
+   "id": "LOGIN",
+   "label": "BENEFEDS.gov and Login.gov sign-in",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "login.gov",
+    "login gov",
+    "log in",
+    "login",
+    "sign in",
+    "can't log in",
+    "password",
+    "locked out",
+    "link account",
+    "linked account",
+    "unlinked",
+    "mfa",
+    "two factor",
+    "unauthorized login",
+    "log into",
+    "logging in",
+    "logging into",
+    "sign into",
+    "signing in",
+    "cant log in",
+    "cant login",
+    "can't login",
+    "cannot log in",
+    "locked",
+    "can't get in",
+    "cant get in",
+    "can't sign in",
+    "forgot password",
+    "forgot username",
+    "reset password",
+    "verification code",
+    "code not working",
+    "authenticator",
+    "can't get on",
+    "cant get on",
+    "can't get into",
+    "cant get into",
+    "can't access",
+    "won't let her in",
+    "won't let him in",
+    "someone logged into",
+    "someone logged in",
+    "not linked",
+    "not yet linked",
+    "never linked"
+   ],
+   "passageTerms": [
+    "login.gov",
+    "sign in",
+    "linked account"
+   ],
+   "titleMatch": [
+    "login.gov",
+    "sign in",
+    "benefeds.gov",
+    "unauthorized login",
+    "locked cs",
+    "foreign blocked"
+   ],
+   "expand": [
+    "login"
+   ],
+   "prefer": [
+    "BENEFEDS.gov Unlinked Account Sign In"
+   ]
+  },
+  {
+   "id": "TRANSITION_RETIREMENT",
+   "label": "Transition to retirement",
+   "ruleFacets": [
+    "affiliation"
+   ],
+   "risk": "HR-ELIG",
+   "terms": [
+    "retire",
+    "retiring",
+    "retirement",
+    "transition to retirement",
+    "dsr",
+    "discontinued service",
+    "deferred annuitant",
+    "postponed annuitant",
+    "retired",
+    "retiree",
+    "retirees",
+    "retiring soon",
+    "just retired",
+    "newly retired",
+    "going to retire"
+   ],
+   "passageTerms": [
+    "retire",
+    "annuit"
+   ],
+   "titleMatch": [
+    "retirement",
+    "annuit",
+    "discontinued service"
+   ],
+   "expand": [
+    "retirement"
+   ],
+   "negatable": true,
+   "prefer": [
+    "Federal Civilian Transition to Retirement",
+    "Federal Civilian Transition to Retirement (L1)"
+   ],
+   "describesCaller": true
+  },
+  {
+   "id": "LWOP",
+   "label": "Leave without pay and separation",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "lwop",
+    "leave without pay",
+    "furlough",
+    "unpaid leave",
+    "separated from service",
+    "separation",
+    "terminated from job",
+    "lost their job",
+    "break in service"
+   ],
+   "passageTerms": [
+    "leave without pay",
+    "lwop",
+    "separation"
+   ],
+   "titleMatch": [
+    "leave without pay",
+    "termination or separation",
+    "break in federal service",
+    "workforce"
+   ],
+   "expand": [
+    "leave"
+   ],
+   "prefer": [
+    "Handling a Leave Without Pay Call",
+    "Leave Without Pay (LWOP)"
+   ]
+  },
+  {
+   "id": "OTHER_INSURANCE",
+   "label": "Medicare, Medicaid, FEHB and other insurance",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "medicare",
+    "medicaid",
+    "other insurance",
+    "fehb",
+    "tricare dental",
+    "tdp",
+    "trdp",
+    "tricare",
+    "va",
+    "veterans affairs",
+    "champva",
+    "other coverage",
+    "fehb dental",
+    "spouse's employer",
+    "spouses employer",
+    "through their spouse",
+    "through her spouse",
+    "through his spouse",
+    "through her husband",
+    "through his wife",
+    "other dental insurance",
+    "other vision insurance",
+    "other dental coverage",
+    "other vision coverage",
+    "private insurance",
+    "employer insurance"
+   ],
+   "passageTerms": [
+    "medicare",
+    "medicaid",
+    "fehb",
+    "dual enroll",
+    "tricare"
+   ],
+   "titleMatch": [
+    "medicare",
+    "other insurances",
+    "edit fehb",
+    "dual enrollment",
+    "dual eligibility"
+   ],
+   "expand": [
+    "insurance"
+   ],
+   "blockPhrases": [
+    "va employee",
+    "va hospital employee",
+    "works for the va",
+    "works at the va"
+   ]
+  },
+  {
+   "id": "CARRIERS",
+   "label": "Carriers and plan information",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "carrier",
+    "carriers",
+    "insurance company",
+    "geha",
+    "metlife",
+    "aetna",
+    "delta dental",
+    "humana",
+    "fep blue",
+    "united concordia",
+    "vsp",
+    "unitedhealthcare",
+    "plan information",
+    "compare plans",
+    "id card",
+    "provider",
+    "dentist",
+    "eye doctor",
+    "optometrist",
+    "in network",
+    "out of network",
+    "network",
+    "claim",
+    "claims",
+    "benefits",
+    "coverage details",
+    "what does it cover",
+    "covered services",
+    "implants",
+    "braces",
+    "orthodontia",
+    "orthodontic",
+    "glasses",
+    "lenses",
+    "frames",
+    "cleaning",
+    "contact lenses"
+   ],
+   "passageTerms": [
+    "carrier"
+   ],
+   "titleMatch": [
+    "carrier",
+    "geha",
+    "plan comparison",
+    "compare dental",
+    "mail plan info"
+   ],
+   "expand": [
+    "carrier"
+   ],
+   "blockPhrases": [
+    "claim number",
+    "contact id",
+    "contact history",
+    "contact center",
+    "switch carrier",
+    "switch carriers",
+    "change carrier",
+    "change carriers",
+    "switching from"
+   ]
+  },
+  {
+   "id": "CONTACT_INFO",
+   "label": "Phone numbers, addresses and contacts",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "phone number",
+    "fax",
+    "address",
+    "mailing address",
+    "email address",
+    "where do they send",
+    "where to send",
+    "contact information",
+    "po box",
+    "email",
+    "fax number",
+    "where do i send",
+    "where can they send",
+    "send it to",
+    "mail it",
+    "mailing",
+    "phone number for",
+    "number for",
+    "how to reach",
+    "contact the carrier",
+    "contact opm",
+    "800 number",
+    "toll free",
+    "toll free number",
+    "1 800",
+    "phone number doesn't work",
+    "number doesn't work",
+    "number not working",
+    "overnight address",
+    "overnight a payment",
+    "where do they overnight",
+    "payable to",
+    "make the check payable",
+    "office hours",
+    "hours of operation",
+    "business hours",
+    "what are their hours",
+    "hours are"
+   ],
+   "passageTerms": [
+    "po box",
+    "fax",
+    "1-8",
+    "@benefeds"
+   ],
+   "titleMatch": [
+    "phone and contact",
+    "contact information",
+    "non-opm annuity locations"
+   ],
+   "expand": [
+    "contact"
+   ],
+   "prefer": [
+    "FEDVIP Phone and Contact Information"
+   ],
+   "blockPhrases": [
+    "24 hour",
+    "24 hours",
+    "hour rule",
+    "hours a month",
+    "hours per week",
+    "hour shift",
+    "address problem",
+    "address problems",
+    "address discrepancy",
+    "address discrepancies",
+    "address issue",
+    "address issues",
+    "wrong address",
+    "incorrect address",
+    "bad address"
+   ]
+  },
+  {
+   "id": "INTERNATIONAL",
+   "label": "Overseas, military addresses and blocked countries",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "overseas",
+    "international",
+    "apo",
+    "fpo",
+    "dpo",
+    "foreign address",
+    "lives abroad",
+    "outside the us",
+    "lives overseas",
+    "lives in germany",
+    "lives in japan",
+    "stationed overseas",
+    "out of the country",
+    "foreign country",
+    "abroad",
+    "outside the country",
+    "lives in another country",
+    "germany",
+    "japan",
+    "korea",
+    "south korea",
+    "italy",
+    "england",
+    "united kingdom",
+    "spain",
+    "mexico",
+    "canada",
+    "philippines",
+    "guam",
+    "puerto rico",
+    "okinawa",
+    "bahrain",
+    "kuwait",
+    "qatar",
+    "belgium",
+    "turkey",
+    "calling from overseas",
+    "from overseas",
+    "international number",
+    "international phone",
+    "postal code",
+    "foreign postal code",
+    "peru"
+   ],
+   "passageTerms": [
+    "apo",
+    "fpo",
+    "international",
+    "foreign",
+    "blocked"
+   ],
+   "titleMatch": [
+    "international",
+    "apo",
+    "foreign blocked"
+   ],
+   "expand": [
+    "international",
+    "overseas"
+   ],
+   "blockPhrases": [
+    "apo locations",
+    "apo admin",
+    "agency payroll office",
+    "to apo",
+    "manage apo"
+   ]
+  },
+  {
+   "id": "CXONE",
+   "label": "CXone phone system",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "cxone",
+    "softphone",
+    "agent status",
+    "available status",
+    "acw",
+    "log into cxone",
+    "phone system",
+    "contact history",
+    "voicemail",
+    "conference call",
+    "queue",
+    "no audio",
+    "headset",
+    "softphone not working",
+    "phone not ringing",
+    "agent state"
+   ],
+   "passageTerms": [
+    "cxone"
+   ],
+   "titleMatch": [
+    "cxone"
+   ],
+   "expand": [
+    "cxone"
+   ],
+   "blockPhrases": [
+    "record that",
+    "record it",
+    "where do i record",
+    "for the record"
+   ]
+  },
+  {
+   "id": "SYSTEM_DOWN",
+   "label": "System down and technical help",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "system down",
+    "systems down",
+    "css down",
+    "error message",
+    "crashed",
+    "frozen",
+    "help desk",
+    "help ticket",
+    "clear cache",
+    "vpn",
+    "cache",
+    "clear cache",
+    "clear my cache",
+    "edge cache",
+    "browser cache",
+    "website down",
+    "site down",
+    "page won't load",
+    "won't load",
+    "not loading",
+    "spinning",
+    "outage",
+    "glitch",
+    "kicked out",
+    "slow system",
+    "getting an error",
+    "system error",
+    "error screen",
+    "is down",
+    "went down",
+    "goes down",
+    "down for everyone",
+    "cxone down",
+    "awd down",
+    "iex down",
+    "learn down",
+    "sharepoint down",
+    "website is down",
+    "site is down",
+    "not ringing",
+    "no calls coming in",
+    "can't receive calls",
+    "acting up",
+    "glitching",
+    "system not working",
+    "systems are not working"
+   ],
+   "passageTerms": [
+    "system down",
+    "help ticket",
+    "clear cache"
+   ],
+   "titleMatch": [
+    "system down",
+    "help desk",
+    "helpticket",
+    "clearing ms edge cache",
+    "troubleshooting"
+   ],
+   "expand": [
+    "system"
+   ],
+   "blockPhrases": [
+    "critical error",
+    "critical errors",
+    "browser extension",
+    "scroll down"
+   ],
+   "prefer": [
+    "System Down Procedures"
+   ]
+  },
+  {
+   "id": "SCHEDULE",
+   "label": "Schedules, time off and attendance",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "schedule",
+    "time off",
+    "vto",
+    "voluntary time off",
+    "extra hours",
+    "pto",
+    "leave request",
+    "trade shift",
+    "trade schedule",
+    "attendance",
+    "iex",
+    "webstation",
+    "running late",
+    "tardy",
+    "call out",
+    "calling out",
+    "sick day",
+    "shift swap",
+    "swap shifts",
+    "my schedule",
+    "break and lunch",
+    "lunch break",
+    "time zone"
+   ],
+   "passageTerms": [
+    "iex",
+    "webstation",
+    "vto",
+    "time off"
+   ],
+   "titleMatch": [
+    "iex",
+    "webstation",
+    "time off",
+    "vto",
+    "attendance",
+    "schedule",
+    "administrative leave",
+    "break and lunch"
+   ],
+   "expand": [
+    "schedule"
+   ],
+   "blockPhrases": [
+    "schedule a callback",
+    "schedule a call back",
+    "schedule a call",
+    "schedule a payment",
+    "schedule the payment",
+    "deduction schedule",
+    "payroll schedule",
+    "pay schedule",
+    "billing schedule"
+   ]
+  },
+  {
+   "id": "QA",
+   "label": "QA scoring and evaluations",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "qa",
+    "quality",
+    "score",
+    "scoring",
+    "critical error",
+    "critical fail",
+    "evaluation",
+    "call check",
+    "qa score",
+    "evaluation score",
+    "graded",
+    "auto fail",
+    "autofail",
+    "dispute my score",
+    "qa appeal",
+    "appeal my score",
+    "appeal a score",
+    "appeal an evaluation",
+    "appeal the evaluation",
+    "dispute my evaluation"
+   ],
+   "passageTerms": [
+    "qa",
+    "critical error",
+    "evaluation"
+   ],
+   "titleMatch": [
+    "qa",
+    "critical error",
+    "quality"
+   ],
+   "expand": [
+    "qa"
+   ]
+  },
+  {
+   "id": "AWD",
+   "label": "AWD work items and tickets",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "awd",
+    "ticket",
+    "work item",
+    "submit a ticket",
+    "create a ticket"
+   ],
+   "passageTerms": [
+    "awd",
+    "work item",
+    "ticket"
+   ],
+   "titleMatch": [
+    "awd"
+   ],
+   "expand": [
+    "awd"
+   ]
+  },
+  {
+   "id": "OTHER_PROGRAMS",
+   "label": "FLTCIP, FSAFEDS and non-FEDVIP programs",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "fltcip",
+    "long term care",
+    "fsafeds",
+    "flexible spending",
+    "fsa",
+    "pshb",
+    "postal health",
+    "non fedvip",
+    "flex spending",
+    "flexible spending account",
+    "health care fsa",
+    "dependent care fsa",
+    "fsa reimbursement",
+    "reimbursement",
+    "medical insurance",
+    "health insurance",
+    "medical coverage",
+    "health plan",
+    "fehb question"
+   ],
+   "passageTerms": [
+    "fltcip",
+    "fsafeds"
+   ],
+   "titleMatch": [
+    "fltcip",
+    "fsafeds",
+    "non fedvip"
+   ],
+   "expand": [
+    "program"
+   ],
+   "prefer": [
+    "Non FEDVIP Program Information"
+   ]
+  },
+  {
+   "id": "WORKFORCE",
+   "label": "Workforce changes",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "workforce",
+    "rif",
+    "reduction in force",
+    "laid off",
+    "layoff",
+    "deferred resignation",
+    "workforce changes",
+    "drp",
+    "doge",
+    "fork in the road",
+    "resignation",
+    "early retirement offer",
+    "vera",
+    "vsip",
+    "buyout",
+    "rif'd",
+    "rifd",
+    "riffed",
+    "got rif"
+   ],
+   "passageTerms": [
+    "workforce"
+   ],
+   "titleMatch": [
+    "workforce"
+   ],
+   "expand": [
+    "workforce"
+   ]
+  },
+  {
+   "id": "ACCOUNT_UPDATES",
+   "label": "Updating customer account information",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "update address",
+    "change address",
+    "new address",
+    "update phone",
+    "change email",
+    "update email",
+    "change name",
+    "name change",
+    "update account",
+    "agency name change",
+    "multiple ssn",
+    "wrong ssn",
+    "correspondence",
+    "mail a letter",
+    "send a letter",
+    "update the address",
+    "change the address",
+    "change of address",
+    "update the phone",
+    "change phone",
+    "change phone number",
+    "update their info",
+    "update information",
+    "legal name",
+    "maiden name",
+    "residential address",
+    "home address",
+    "physical address",
+    "residence address"
+   ],
+   "passageTerms": [
+    "update",
+    "address"
+   ],
+   "titleMatch": [
+    "updating customer account",
+    "edit sponsor",
+    "agency name change",
+    "multiple ssn",
+    "correspondence",
+    "customer alerts"
+   ],
+   "expand": [
+    "update"
+   ],
+   "prefer": [
+    "Updating Customer Account Information"
+   ]
+  },
+  {
+   "id": "COMPLAINTS",
+   "label": "Complaints and upset callers",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "complaint",
+    "complain",
+    "complaining",
+    "angry",
+    "upset",
+    "irate",
+    "yelling",
+    "frustrated",
+    "de escalate",
+    "deescalate",
+    "wants a supervisor",
+    "speak to a supervisor",
+    "mad",
+    "pissed",
+    "furious",
+    "rude",
+    "escalated call",
+    "unhappy",
+    "dissatisfied",
+    "file a complaint",
+    "wants to complain",
+    "manager",
+    "congressman",
+    "congresswoman",
+    "senator",
+    "congressional inquiry",
+    "report you",
+    "better business bureau",
+    "bbb",
+    "contact their congressman",
+    "call their senator",
+    "member of congress",
+    "going to the media"
+   ],
+   "passageTerms": [
+    "complaint",
+    "de-escalat"
+   ],
+   "titleMatch": [
+    "complaints",
+    "de-escalation",
+    "repeat offenders",
+    "escalation to opm"
+   ],
+   "expand": [
+    "complaint"
+   ]
+  },
+  {
+   "id": "THREATS",
+   "label": "Threats and inappropriate behavior",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "threat",
+    "threats",
+    "threatening",
+    "threatened",
+    "abusive",
+    "harassing",
+    "violent",
+    "hurt themselves",
+    "suicide",
+    "self harm",
+    "going to hurt",
+    "gonna hurt",
+    "bomb",
+    "weapon",
+    "harass",
+    "racist",
+    "slur",
+    "cussing at me",
+    "cursing me out",
+    "cursing at me",
+    "screaming at me",
+    "yelling at me",
+    "hang up on",
+    "disconnect the call",
+    "profanity",
+    "curse words",
+    "name calling",
+    "blow up",
+    "bomb threat",
+    "hurt someone",
+    "hurt somebody",
+    "hurt people",
+    "come down there",
+    "coming down there",
+    "shoot up",
+    "gun",
+    "kill someone",
+    "kill you",
+    "threatened to",
+    "threatening to",
+    "wants to hurt",
+    "want to hurt",
+    "hurt his supervisor",
+    "hurt her supervisor",
+    "swearing at me",
+    "keeps swearing",
+    "keeps cursing",
+    "is swearing at",
+    "is cursing at",
+    "sexual comments",
+    "inappropriate comments",
+    "offensive language",
+    "going to kill",
+    "shoot someone",
+    "shoot up the"
+   ],
+   "passageTerms": [
+    "threat",
+    "inappropriate behavior"
+   ],
+   "titleMatch": [
+    "threats"
+   ],
+   "expand": [
+    "threat"
+   ],
+   "prefer": [
+    "Handling Threats and Inappropriate Behavior"
+   ],
+   "blockPhrases": [
+    "kill themselves",
+    "kill himself",
+    "kill herself",
+    "kill myself",
+    "swears she",
+    "swears he",
+    "swears they",
+    "swears that",
+    "swear she",
+    "swear he"
+   ]
+  },
+  {
+   "id": "MEDIA",
+   "label": "Media and press inquiries",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "reporter",
+    "news",
+    "media",
+    "press",
+    "journalist",
+    "newspaper",
+    "tv station",
+    "washington post",
+    "new york times",
+    "news outlet",
+    "magazine",
+    "blogger",
+    "podcast",
+    "press inquiry",
+    "wants a comment",
+    "want a comment",
+    "for a comment",
+    "for comment",
+    "no comment",
+    "get a comment"
+   ],
+   "passageTerms": [
+    "media",
+    "reporter"
+   ],
+   "titleMatch": [
+    "media"
+   ],
+   "expand": [
+    "media"
+   ]
+  },
+  {
+   "id": "FRAUD",
+   "label": "Fraud, suspicious activity and security incidents",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "fraud",
+    "fraudulent",
+    "scam",
+    "identity theft",
+    "stolen identity",
+    "phishing",
+    "impersonat*",
+    "posing as",
+    "other company",
+    "scammer",
+    "someone else enrolled",
+    "didn't enroll",
+    "never enrolled",
+    "not me",
+    "opened an account in her name",
+    "opened an account in his name",
+    "account in her name",
+    "account in his name",
+    "never signed up",
+    "didn't sign up",
+    "account compromised",
+    "compromised",
+    "hacked",
+    "someone hacked",
+    "someone got into",
+    "unauthorized access",
+    "identity stolen",
+    "in their name",
+    "in my name",
+    "without permission",
+    "didn't authorize",
+    "enrolled without",
+    "number that looked like",
+    "spoofed",
+    "scam call",
+    "gave their credit card",
+    "using her identity",
+    "using his identity",
+    "using their identity",
+    "late husbands identity",
+    "late wife's identity",
+    "dead husband's identity",
+    "opened a dental plan using",
+    "opened a plan in",
+    "is lying about",
+    "pretending to be",
+    "fake account",
+    "suspicious activity",
+    "suspicious call",
+    "suspicious caller"
+   ],
+   "passageTerms": [
+    "fraud",
+    "incident",
+    "breach"
+   ],
+   "titleMatch": [
+    "fraud",
+    "security issues",
+    "incident"
+   ],
+   "expand": [
+    "fraud"
+   ],
+   "prefer": [
+    "Reporting Suspected Fraud"
+   ]
+  },
+  {
+   "id": "LEAVING_FOR_ACTIVE_DUTY",
+   "label": "Leaving for active military duty",
+   "ruleFacets": [],
+   "risk": "HR-TERM",
+   "terms": [
+    "active duty",
+    "deployed",
+    "deploying",
+    "deployment",
+    "called to active duty",
+    "military duty",
+    "mobilized",
+    "activated",
+    "going on active duty",
+    "called up",
+    "deploying soon",
+    "being deployed",
+    "military orders",
+    "reserve call up",
+    "shipping out",
+    "ships out",
+    "getting deployed",
+    "get deployed",
+    "deployment orders"
+   ],
+   "passageTerms": [
+    "active military duty",
+    "active-duty",
+    "active duty",
+    "deployed"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "active",
+    "duty"
+   ]
+  },
+  {
+   "id": "BELATED",
+   "label": "Belated and exception enrollments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "belated",
+    "missed open season",
+    "missed the deadline",
+    "after the deadline",
+    "late enrollment",
+    "exception enrollment",
+    "missed os",
+    "too late to enroll",
+    "deadline passed",
+    "open season ended",
+    "late request",
+    "belated action request",
+    "bar form",
+    "decision letter"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "belated",
+    "exception enrollment"
+   ],
+   "expand": [
+    "belated"
+   ]
+  },
+  {
+   "id": "HOLD_TIMING",
+   "label": "Hold timing",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "how many minutes",
+    "check back",
+    "check in",
+    "hold time",
+    "long hold",
+    "hold limit",
+    "time limit",
+    "expected to finish",
+    "how fast",
+    "how quickly",
+    "how long can i hold",
+    "how long on hold",
+    "how long before",
+    "how long",
+    "goal",
+    "target",
+    "how much time"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "minutes"
+   ]
+  },
+  {
+   "id": "DEERS",
+   "label": "DEERS",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "deers",
+    "defense enrollment eligibility reporting system",
+    "updating deers",
+    "update deers",
+    "not in deers",
+    "approved in deers"
+   ],
+   "passageTerms": [
+    "deers"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "deers"
+   ]
+  },
+  {
+   "id": "LANGUAGE",
+   "label": "Language and interpreter support",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "spanish",
+    "espanol",
+    "español",
+    "interpreter",
+    "language line",
+    "teleinterpreter",
+    "doesn't speak english",
+    "does not speak english",
+    "non english",
+    "no english",
+    "other language",
+    "translator",
+    "translate",
+    "habla",
+    "dialect",
+    "certification",
+    "hablo",
+    "ingles",
+    "no hablo",
+    "habla espanol",
+    "speaks spanish",
+    "only speaks",
+    "spanish speaking",
+    "en espanol"
+   ],
+   "passageTerms": [
+    "teleinterpreter",
+    "spanish",
+    "interpreter"
+   ],
+   "titleMatch": [
+    "spanish",
+    "teleinterpreter",
+    "non-english"
+   ],
+   "expand": [
+    "spanish"
+   ],
+   "prefer": [
+    "Non-English Speaking TeleInterpreter Tips"
+   ]
+  },
+  {
+   "id": "DEAF",
+   "label": "Deaf and hard of hearing callers",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "deaf",
+    "hard of hearing",
+    "tty",
+    "tdd",
+    "relay",
+    "relay service",
+    "hearing impaired",
+    "sign language",
+    "asl",
+    "video relay"
+   ],
+   "passageTerms": [
+    "deaf",
+    "relay",
+    "tty",
+    "hard of hearing",
+    "711 relay",
+    "relay service",
+    "video relay"
+   ],
+   "titleMatch": [
+    "deaf"
+   ],
+   "expand": [
+    "deaf",
+    "relay"
+   ]
+  },
+  {
+   "id": "AUDIO",
+   "label": "Call audio problems",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "can't hear the caller",
+    "caller can't hear me",
+    "can't hear me",
+    "no audio",
+    "audio",
+    "static",
+    "echo",
+    "choppy",
+    "one way audio",
+    "headset",
+    "unable to hear",
+    "can't hear",
+    "cannot hear",
+    "can not hear",
+    "no one answers",
+    "nobody answers",
+    "no one is there",
+    "nobody is there",
+    "silence",
+    "can't hear anyone",
+    "cant hear anyone",
+    "no response",
+    "greet three times",
+    "dead silence",
+    "no one on the line",
+    "background noise",
+    "caller can't hear",
+    "cant here the caller"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "troubleshooting audio",
+    "unable to hear"
+   ],
+   "expand": [
+    "audio"
+   ],
+   "prefer": [
+    "Unable to Hear"
+   ]
+  },
+  {
+   "id": "ABW_SCRIPT",
+   "label": "ABW scripting",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "abw script",
+    "abw scripting",
+    "authorization script",
+    "read the script",
+    "authorization of abw",
+    "abw authorization",
+    "authorize abw",
+    "recording the authorization"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "abw scripting",
+    "authorization of abw"
+   ],
+   "expand": [
+    "script"
+   ],
+   "allOf": [
+    [
+     "read",
+     "script",
+     "scripting"
+    ],
+    [
+     "bank draft",
+     "abw",
+     "bank withdrawal",
+     "autopay",
+     "auto pay",
+     "automatic withdrawal",
+     "automatic bank",
+     "auto draft"
+    ]
+   ],
+   "window": 10
+  },
+  {
+   "id": "SEND_DOCS",
+   "label": "Sending documents",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "send documents",
+    "send the documents",
+    "send docs",
+    "send paperwork",
+    "send proof",
+    "send a copy",
+    "where do i send",
+    "where do they send",
+    "where to send",
+    "fax",
+    "email the",
+    "upload",
+    "submit documents",
+    "submit proof",
+    "documentation",
+    "paperwork",
+    "proof"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "send",
+    "documentation"
+   ]
+  },
+  {
+   "id": "SEPARATION",
+   "label": "Separation from service",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "separated from",
+    "separating",
+    "left federal service",
+    "leaving federal service",
+    "quit",
+    "fired",
+    "resigned",
+    "resigning",
+    "no longer employed",
+    "leaving the job",
+    "left the job",
+    "left their job",
+    "lost their job",
+    "lost her job",
+    "lost his job",
+    "laid off",
+    "terminated from",
+    "terminated from their job",
+    "job ended",
+    "separated",
+    "got out of the military",
+    "discharged",
+    "left the army",
+    "left the military",
+    "left the navy",
+    "left the air force",
+    "left the marines",
+    "separating from",
+    "quit her job",
+    "quit his job",
+    "quit their job",
+    "quit the job",
+    "left her job",
+    "left his job"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "termination or separation",
+    "break in federal service"
+   ],
+   "expand": [
+    "separation"
+   ],
+   "blockPhrases": [
+    "quit the plan",
+    "quit dental",
+    "quit vision",
+    "separate pages",
+    "separate the document",
+    "separate document"
+   ],
+   "prefer": [
+    "Termination or Separation from Federal or USM Services"
+   ]
+  },
+  {
+   "id": "AGENCY_OWN_DV",
+   "label": "Agencies with their own dental/vision",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "own dental",
+    "own vision",
+    "agency offers",
+    "agency has its own",
+    "agency provides dental",
+    "agency dental",
+    "not through fedvip",
+    "tva",
+    "tennessee valley",
+    "federal reserve",
+    "postal health",
+    "agency sponsored",
+    "agency-sponsored",
+    "agency sponsored dental",
+    "agency sponsored vision"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "agencies that offer their own"
+   ],
+   "expand": [
+    "agency"
+   ]
+  },
+  {
+   "id": "DUAL_ELIGIBILITY",
+   "label": "Dual eligibility",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "dual eligibility",
+    "dual eligible",
+    "eligible as both",
+    "both civilian and military",
+    "both fed civ and usm",
+    "two affiliations",
+    "eligible twice",
+    "which one should she enroll under",
+    "which one should he enroll under",
+    "enroll under which",
+    "which affiliation",
+    "both affiliations"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "dual eligibility"
+   ],
+   "expand": [
+    "dual"
+   ],
+   "prefer": [
+    "Dual Eligibility"
+   ]
+  },
+  {
+   "id": "DUAL_ENROLLMENT",
+   "label": "Dual enrollments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "dual enrollment",
+    "dual enrolled",
+    "enrolled twice",
+    "two plans",
+    "two enrollments",
+    "double coverage",
+    "covered twice",
+    "enrolled in two",
+    "covering each other",
+    "both have family plans",
+    "both have self and family",
+    "got married and both have",
+    "both enrolled"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "dual enrollment"
+   ],
+   "expand": [
+    "dual",
+    "enrollment"
+   ]
+  },
+  {
+   "id": "ACCELERATED_PAYMENT",
+   "label": "Accelerated payments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "accelerated payment",
+    "accelerated payments",
+    "pay ahead",
+    "pay in advance",
+    "prepay",
+    "pay early",
+    "pay the rest of the year",
+    "accelerat*",
+    "pay faster",
+    "pay off faster",
+    "extra deductions",
+    "bigger deductions",
+    "speed up payments"
+   ],
+   "passageTerms": [
+    "accelerated pay"
+   ],
+   "titleMatch": [
+    "accelerated payments"
+   ],
+   "expand": [
+    "accelerated"
+   ],
+   "prefer": [
+    "Accelerated Payments"
+   ]
+  },
+  {
+   "id": "FINANCIAL_DOCS",
+   "label": "Financial document requests",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "tax form",
+    "tax document",
+    "tax documents",
+    "1095",
+    "1099",
+    "proof of payment",
+    "payment history",
+    "premium statement",
+    "statement",
+    "receipt",
+    "financial document",
+    "year end statement",
+    "letter for taxes",
+    "tax letter",
+    "for taxes",
+    "for their taxes",
+    "proof of premiums paid",
+    "premiums paid letter",
+    "letter showing",
+    "proof for taxes",
+    "premium letter",
+    "post tax premium letter",
+    "correspondence ticket",
+    "letter for her taxes"
+   ],
+   "passageTerms": [
+    "post tax premium",
+    "correspondence awd ticket"
+   ],
+   "titleMatch": [
+    "financial document"
+   ],
+   "expand": [
+    "document"
+   ],
+   "prefer": [
+    "Financial Document Requests"
+   ]
+  },
+  {
+   "id": "FORMS_OF_PAYMENT",
+   "label": "Forms of payment",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "forms of payment",
+    "form of payment",
+    "how can they pay",
+    "ways to pay",
+    "payment options",
+    "pay by check",
+    "pay with check",
+    "credit card",
+    "debit card",
+    "money order",
+    "mail a check",
+    "pay by mail",
+    "pay with a card",
+    "pay with card",
+    "pay by card",
+    "card over the phone",
+    "pay with a credit",
+    "pay with a debit",
+    "visa",
+    "mastercard",
+    "paypal",
+    "overnight",
+    "fedex",
+    "ups",
+    "payable to",
+    "make the check out",
+    "check payable",
+    "send a check",
+    "mail in a check",
+    "pay by credit",
+    "pay with credit"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "forms of payment"
+   ],
+   "expand": [
+    "payment"
+   ],
+   "prefer": [
+    "Forms of Payment"
+   ],
+   "demoteText": [
+    "Account Credits & Premium Retention",
+    "Refund Processing"
+   ],
+   "blockPhrases": [
+    "gave their credit card"
+   ]
+  },
+  {
+   "id": "PRE_POST_TAX",
+   "label": "Pre- and post-tax deductions",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "pre tax",
+    "post tax",
+    "pretax",
+    "posttax",
+    "before tax",
+    "after tax",
+    "taxable",
+    "tax deduction"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "pre and post tax"
+   ],
+   "expand": [
+    "tax"
+   ],
+   "blockPhrases": [
+    "post tax premium letter",
+    "post tax letter",
+    "post tax premiums for her taxes",
+    "letter showing post tax"
+   ]
+  },
+  {
+   "id": "RATES",
+   "label": "Plan rates and costs",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "rates",
+    "rate",
+    "price",
+    "prices",
+    "cost",
+    "costs",
+    "how much does it cost",
+    "premium amount",
+    "monthly cost",
+    "cheapest",
+    "most expensive",
+    "compare costs",
+    "how much is the plan",
+    "how much is dental",
+    "how much is vision",
+    "how much are the premiums",
+    "how much will it cost",
+    "how much would it cost"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "compare dental service costs",
+    "plan comparison"
+   ],
+   "expand": [
+    "rates",
+    "cost"
+   ]
+  },
+  {
+   "id": "CHANGE_OF_MIND",
+   "label": "24 Hour Rule (changing a recent action)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "24 hour rule",
+    "24 hours",
+    "changed their mind",
+    "changed her mind",
+    "changed his mind",
+    "change their mind",
+    "undo",
+    "take it back",
+    "made a mistake",
+    "enrolled by mistake",
+    "wrong plan",
+    "picked the wrong",
+    "chose the wrong",
+    "back out",
+    "wants out",
+    "undo it",
+    "enrolled yesterday",
+    "enrolled over the weekend",
+    "enrolled on saturday",
+    "enrolled on friday",
+    "just enrolled",
+    "enrolled last week",
+    "signed up last week",
+    "signed up yesterday",
+    "still allowed",
+    "too late to switch",
+    "picked the wrong carrier",
+    "picked the wrong plan",
+    "wrong carrier",
+    "enrolled monday",
+    "enrolled tuesday",
+    "enrolled wednesday",
+    "enrolled thursday",
+    "enrolled friday",
+    "enrolled saturday",
+    "enrolled sunday",
+    "enrolled today",
+    "enrolled this morning",
+    "enrolled last night",
+    "signed up today",
+    "enrolled by accident",
+    "days ago",
+    "business day",
+    "business days",
+    "enrolled through qle",
+    "just switched",
+    "switched yesterday"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "24 hour rule"
+   ],
+   "expand": [
+    "24",
+    "hour"
+   ],
+   "prefer": [
+    "24 Hour Rule"
+   ],
+   "allOf": [
+    [
+     "enrolled",
+     "signed up",
+     "switched",
+     "picked",
+     "chose",
+     "selected",
+     "changed"
+    ],
+    [
+     "yesterday",
+     "today",
+     "ago",
+     "business day",
+     "last night",
+     "this morning",
+     "weekend",
+     "friday",
+     "monday",
+     "just"
+    ],
+    [
+     "cancel",
+     "change",
+     "switch",
+     "undo",
+     "wrong",
+     "back out",
+     "take back",
+     "reverse"
+    ]
+   ],
+   "window": 10
+  },
+  {
+   "id": "LEARN",
+   "label": "LEARN (training platform)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "learn",
+    "docebo",
+    "training course",
+    "pre training",
+    "course",
+    "quiz",
+    "webex training",
+    "learning platform",
+    "learn alerts",
+    "latest alerts",
+    "blue bulb",
+    "white bulb",
+    "training site",
+    "where job aids live",
+    "learn login",
+    "learn password",
+    "forgot my login for the training"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "learn",
+    "pre-training"
+   ],
+   "expand": [
+    "learn"
+   ]
+  },
+  {
+   "id": "IT_SUPPORT",
+   "label": "IT and tools support",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "help ticket",
+    "helpticket",
+    "it ticket",
+    "it support",
+    "servicenow",
+    "service now",
+    "employee service center",
+    "computer problem",
+    "laptop",
+    "sharepoint",
+    "mfa setup",
+    "authenticator app",
+    "teams",
+    "slack",
+    "it issue",
+    "report an it issue",
+    "computer is broken",
+    "computer not working",
+    "headset not working",
+    "software stopped working",
+    "computer wont turn on",
+    "computer won't turn on"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "helpticket",
+    "servicenow",
+    "employee service center",
+    "sharepoint",
+    "microsoft teams",
+    "slack"
+   ],
+   "expand": [
+    "ticket"
+   ]
+  },
+  {
+   "id": "SELF_HARM",
+   "label": "Caller at risk of self-harm",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "kill myself",
+    "killing myself",
+    "end my life",
+    "end their life",
+    "suicidal",
+    "suicide",
+    "want to die",
+    "wants to die",
+    "hurt myself",
+    "hurt themselves",
+    "hurting themselves",
+    "self harm",
+    "not worth living",
+    "take my own life",
+    "take their own life",
+    "end it all",
+    "gonna end it",
+    "going to end it",
+    "end his life",
+    "end her life",
+    "kill himself",
+    "kill herself",
+    "hurt himself",
+    "hurt herself",
+    "harm himself",
+    "harm herself",
+    "doesn't want to live",
+    "threatened self harm",
+    "doesn't see the point",
+    "doesnt see the point",
+    "no point anymore",
+    "no point in living",
+    "end things",
+    "wants to end things",
+    "better off dead",
+    "better off without",
+    "give up on life",
+    "giving up on life",
+    "can't go on",
+    "cant go on",
+    "nothing to live for",
+    "not want to be here",
+    "doesn't want to be here anymore",
+    "kill themselves",
+    "killing themselves",
+    "harm themselves",
+    "kill themself",
+    "off themselves"
+   ],
+   "passageTerms": [
+    "suicide",
+    "harm themselves",
+    "hurt themselves",
+    "self-harm",
+    "self harm",
+    "harm self",
+    "threatened self harm"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "threat"
+   ],
+   "prefer": [
+    "Handling Threats and Inappropriate Behavior"
+   ]
+  },
+  {
+   "id": "OUTSIDE_ENTITY",
+   "label": "Calls from outside organizations",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "provider office",
+    "dentist office",
+    "doctor's office",
+    "doctors office",
+    "billing office",
+    "carrier calling",
+    "carrier is calling",
+    "carrier rep",
+    "insurance company calling",
+    "agency calling",
+    "hr calling",
+    "hr office",
+    "benefits officer",
+    "payroll office",
+    "abo",
+    "vso",
+    "veterans service officer",
+    "opm calling",
+    "lawyer calling",
+    "attorney calling",
+    "carrier is asking",
+    "carrier asking",
+    "carrier wants",
+    "from the carrier",
+    "provider's office",
+    "veteran's service officer",
+    "agency benefits officer",
+    "call from a",
+    "a vso",
+    "from a vso",
+    "veteran service officer",
+    "carrier is on the phone",
+    "carrier rep calling",
+    "dental rep",
+    "vision rep",
+    "rep on the phone",
+    "rep from",
+    "representative from",
+    "from delta dental",
+    "from metlife",
+    "from geha",
+    "from aetna",
+    "from humana",
+    "from united concordia",
+    "from fep blue",
+    "from unitedhealthcare",
+    "from vsp",
+    "insurance rep",
+    "hr rep",
+    "congressional office calling",
+    "congressional caseworker"
+   ],
+   "passageTerms": [
+    "outside entities"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "third",
+    "party"
+   ],
+   "prefer": [
+    "Third Party Callers"
+   ],
+   "demoteText": [
+    "No additional security is needed"
+   ]
+  },
+  {
+   "id": "DIRECT_BILL",
+   "label": "Direct bill and insufficient funds",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "direct bill",
+    "direct billed",
+    "i code",
+    "i codes",
+    "insufficient funds",
+    "annuity too small",
+    "annuity check is tiny",
+    "not taking out",
+    "stopped taking out",
+    "not deducting",
+    "stopped deducting",
+    "not enough money",
+    "paycheck too small",
+    "not enough pay",
+    "nsf",
+    "intermittent",
+    "j code",
+    "s code",
+    "j codes",
+    "s codes",
+    "bill in the mail",
+    "getting a bill",
+    "paper bill",
+    "why direct billed",
+    "got a bill"
+   ],
+   "passageTerms": [
+    "i code",
+    "insufficient funds",
+    "direct bill"
+   ],
+   "titleMatch": [
+    "direct bill",
+    "insufficient funds",
+    "intermittent payors"
+   ],
+   "expand": [
+    "direct",
+    "bill"
+   ],
+   "prefer": [
+    "Insufficient Funds",
+    "Understanding the Direct Bill Process",
+    "Reasons Direct Bills are Sent"
+   ]
+  },
+  {
+   "id": "DISCONNECTED_CALL",
+   "label": "Disconnected calls",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "hung up",
+    "hang up on me",
+    "went dead",
+    "line went dead",
+    "call dropped",
+    "dropped call",
+    "disconnected",
+    "call disconnected",
+    "lost the call",
+    "call cut off",
+    "got cut off",
+    "call got cut",
+    "dropped the call"
+   ],
+   "passageTerms": [
+    "disconnected",
+    "disconnects"
+   ],
+   "titleMatch": [
+    "disconnected calls"
+   ],
+   "expand": [
+    "disconnected"
+   ],
+   "prefer": [
+    "CXone Disconnected Calls"
+   ]
+  },
+  {
+   "id": "INCIDENT",
+   "label": "Incidents and privacy breaches",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "wrong person",
+    "wrong account",
+    "wrong customer",
+    "gave info to",
+    "gave out",
+    "pii",
+    "misdirected",
+    "sent to the wrong",
+    "mailed to the wrong",
+    "emailed the wrong",
+    "data breach",
+    "breach",
+    "incident",
+    "how fast do we have to report",
+    "report a breach",
+    "breach reporting",
+    "reporting a breach",
+    "how long to report",
+    "when to report an incident",
+    "sharing member",
+    "sharing ssn",
+    "sharing ssns",
+    "agent sharing",
+    "agents sharing",
+    "leaked",
+    "member info shared",
+    "privacy breach",
+    "privacy incident",
+    "privacy violation",
+    "accidentally disclosed",
+    "accidentally gave",
+    "accidentally sent",
+    "accidentally mailed",
+    "disclosed pii",
+    "disclosed member",
+    "info exposed",
+    "data exposed",
+    "member data exposed"
+   ],
+   "passageTerms": [
+    "incident",
+    "breach"
+   ],
+   "titleMatch": [
+    "incident"
+   ],
+   "expand": [
+    "incident"
+   ],
+   "blockPhrases": [
+    "authorization for disclosure",
+    "authorization for disclosure of information",
+    "disclosure of information"
+   ],
+   "prefer": [
+    "Incident vs Breach",
+    "Incident Reporting Scenarios",
+    "QA Incident Reporting"
+   ]
+  },
+  {
+   "id": "CUSTOMER_ALERTS",
+   "label": "Customer alerts in an account",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "red dot",
+    "bell icon",
+    "alert",
+    "alerts",
+    "account alert",
+    "banking alert",
+    "premiums due alert",
+    "notification icon",
+    "red exclamation"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "customer alerts"
+   ],
+   "expand": [
+    "alert"
+   ],
+   "blockPhrases": [
+    "alerts in learn",
+    "learn alerts"
+   ]
+  },
+  {
+   "id": "OPM_CLAIM",
+   "label": "OPM claim numbers",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "claim number",
+    "opm claim",
+    "csa number",
+    "csf number",
+    "csa",
+    "csf",
+    "annuity claim",
+    "retirement claim number"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "claim number"
+   ],
+   "expand": [
+    "claim",
+    "number"
+   ]
+  },
+  {
+   "id": "USM_CODES",
+   "label": "USM eligibility codes",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "eligibility code",
+    "eligibility codes",
+    "gar",
+    "rep code",
+    "fad code",
+    "fgr",
+    "rpn",
+    "srp",
+    "oes",
+    "ufs",
+    "trs code",
+    "usm code",
+    "usm codes"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "usm eligibility codes"
+   ],
+   "expand": [
+    "code"
+   ],
+   "prefer": [
+    "USM Eligibility Codes"
+   ]
+  },
+  {
+   "id": "PREMIUM_CODES",
+   "label": "Premium administration codes",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "premium administration code",
+    "premium administration codes",
+    "admin code",
+    "r01",
+    "code v",
+    "premium code",
+    "pa code",
+    "pa codes",
+    "inactivation reason code",
+    "inactivation code",
+    "reason code",
+    "billing status",
+    "enrollment status code",
+    "pay status",
+    "employment status code",
+    "freeze code",
+    "return code",
+    "no deduction reason",
+    "adjustment reason code",
+    "status code"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "premium administration codes"
+   ],
+   "expand": [
+    "code"
+   ],
+   "prefer": [
+    "Premium Administration Codes"
+   ]
+  },
+  {
+   "id": "DATABASE_REDUCTION",
+   "label": "Archived accounts (database reduction)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "database reduction",
+    "purged",
+    "archived",
+    "account archived",
+    "old account",
+    "account deleted",
+    "can't find the account",
+    "cannot find the account",
+    "can't locate the account",
+    "account is gone"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "database reduction",
+    "data retrieval"
+   ],
+   "expand": [
+    "archived"
+   ]
+  },
+  {
+   "id": "MAIL_PLAN_INFO",
+   "label": "Mailing plan information",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "dv61",
+    "mail plan info",
+    "plan brochure",
+    "brochure",
+    "brochures",
+    "mail the plan information",
+    "send plan information",
+    "plan info in the mail",
+    "paper brochure",
+    "mail them plan",
+    "plan information mail",
+    "plan info mail",
+    "mail plan information",
+    "mail them plan information",
+    "mailed plan information",
+    "mail them the plan",
+    "send plan info"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "mail plan info"
+   ],
+   "expand": [
+    "mail",
+    "plan"
+   ]
+  },
+  {
+   "id": "AFFILIATION_CHANGE",
+   "label": "Affiliation and agency changes",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "affiliation change",
+    "change affiliation",
+    "changed affiliation",
+    "update affiliation",
+    "agency change",
+    "changed agencies",
+    "new agency",
+    "switched agencies",
+    "transferring agencies",
+    "moving to a new agency",
+    "fed civ to usm",
+    "usm to fed civ",
+    "employment status change",
+    "change employment status",
+    "moved from federal civilian",
+    "civ to usps",
+    "changed jobs",
+    "new job at the post office",
+    "employment status",
+    "switch their employment status"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "affiliation changes",
+    "fed civ to usm",
+    "agency name change"
+   ],
+   "expand": [
+    "affiliation"
+   ],
+   "prefer": [
+    "Fed Civ to USM Change Employment Status"
+   ]
+  },
+  {
+   "id": "RECORDING",
+   "label": "Call recording",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "don't record",
+    "not be recorded",
+    "not recorded",
+    "stop recording",
+    "unrecorded",
+    "encrypted line",
+    "doesn't want to be recorded",
+    "record the call",
+    "recorded line",
+    "refuses to be recorded",
+    "refuses recording",
+    "refuses to have the call recorded",
+    "refusal of call recording",
+    "cleared individual",
+    "secure line",
+    "isn't recorded",
+    "not being recorded"
+   ],
+   "passageTerms": [
+    "call recording",
+    "cleared individual",
+    "encrypted line",
+    "refuses call recording",
+    "unrecorded"
+   ],
+   "titleMatch": [
+    "unrecorded outbound",
+    "call storage",
+    "listening to recordings",
+    "listen to your calls"
+   ],
+   "expand": [
+    "recorded"
+   ],
+   "prefer": [
+    "Handling Escalated Calls",
+    "Handling Security Issues"
+   ]
+  },
+  {
+   "id": "WEBSITE_CAN_DO",
+   "label": "What customers can do on BENEFEDS.gov",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "on the website",
+    "online",
+    "can they do it online",
+    "self service",
+    "do it themselves",
+    "website can",
+    "can the customer do",
+    "do it on benefeds",
+    "benefeds gov"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "can and cannot do"
+   ],
+   "expand": [
+    "website"
+   ]
+  },
+  {
+   "id": "ACW",
+   "label": "After-call work (ACW)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "acw",
+    "after call work",
+    "wrap up",
+    "wrap time",
+    "wrap up time"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "acw"
+   ]
+  },
+  {
+   "id": "PAT",
+   "label": "PAT (premium administration)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "pat",
+    "pat email",
+    "premium administration team"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "pat"
+   ]
+  },
+  {
+   "id": "ACCOUNT_COMMENTS",
+   "label": "Account comments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "comments",
+    "commenting",
+    "account comments",
+    "autosummary",
+    "auto summary",
+    "notate",
+    "notes on the account",
+    "documenting the call",
+    "document the call",
+    "account comment",
+    "comment the account",
+    "leave a comment",
+    "add a comment",
+    "comment in css",
+    "comments in css"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "comment"
+   ],
+   "blockPhrases": [
+    "wants a comment",
+    "want a comment",
+    "for a comment",
+    "for comment",
+    "no comment",
+    "get a comment"
+   ]
+  },
+  {
+   "id": "ANNUITY",
+   "label": "Annuities and annuitants",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "annuity",
+    "annuitant",
+    "annuitants",
+    "annuity check",
+    "retirement check",
+    "pension"
+   ],
+   "passageTerms": [
+    "annuity",
+    "annuitant"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "annuity"
+   ],
+   "blockPhrases": [
+    "survivor annuitant notification",
+    "survivor annuitant notification letter"
+   ],
+   "describesCaller": true
+  },
+  {
+   "id": "CALLBACK",
+   "label": "Callbacks and voicemail",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "call back tomorrow",
+    "call me back",
+    "call her back later",
+    "call him back later",
+    "callback at",
+    "callback later",
+    "schedule a callback",
+    "reschedule a callback",
+    "returning a call",
+    "returning a customers call",
+    "returning the customers call",
+    "return a call",
+    "voicemail",
+    "leave a voicemail",
+    "leaving a voicemail",
+    "left a voicemail",
+    "callback request"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "callbacks"
+   ],
+   "expand": [
+    "callback"
+   ],
+   "prefer": [
+    "CXone Callbacks & Scripting",
+    "Outbound Call Scripting"
+   ]
+  },
+  {
+   "id": "AWD_TIMEFRAME",
+   "label": "AWD processing timeframes",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "how long does awd take",
+    "how long does the ticket take",
+    "processing time",
+    "processing timeframe",
+    "how many business days",
+    "when will the ticket be done",
+    "when will their ticket",
+    "ticket be processed",
+    "how long to process",
+    "how many days",
+    "takes to process",
+    "turnaround",
+    "status of ticket",
+    "when will it be processed"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "processing timeframes"
+   ],
+   "expand": [
+    "business",
+    "days"
+   ],
+   "prefer": [
+    "Advising of AWD Processing Timeframes"
+   ]
+  },
+  {
+   "id": "VA_BENEFITS",
+   "label": "VA benefits",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "va dental",
+    "va benefits",
+    "va coverage",
+    "veterans affairs dental",
+    "va vision",
+    "va health",
+    "approved for va"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "va benefits"
+   ],
+   "expand": [
+    "va"
+   ],
+   "prefer": [
+    "VA Benefits Inactivation"
+   ]
+  },
+  {
+   "id": "BLOCKED_COUNTRY",
+   "label": "Foreign blocked countries",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "russia",
+    "china",
+    "ukraine",
+    "blocked country",
+    "blocked countries",
+    "site is blocked",
+    "website blocked",
+    "can't access the site from"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "foreign blocked"
+   ],
+   "expand": [
+    "blocked"
+   ],
+   "prefer": [
+    "Foreign Blocked Countries"
+   ]
+  },
+  {
+   "id": "PAYMENT_HOLD",
+   "label": "Payment hold times",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "payment hold",
+    "funds held",
+    "money held",
+    "10 day hold",
+    "day hold",
+    "hold on the payment",
+    "hold on money",
+    "how long is the money held",
+    "held",
+    "uncashed",
+    "never cashed",
+    "check payment held",
+    "hold an ach",
+    "hold a payment",
+    "hold the payment",
+    "hold a check",
+    "hold on payments",
+    "hold before refunding",
+    "held before refund"
+   ],
+   "passageTerms": [
+    "hold on money",
+    "will be held",
+    "time held"
+   ],
+   "titleMatch": [],
+   "expand": [
+    "held"
+   ],
+   "prefer": [
+    "FEDVIP Credits & Refunds"
+   ]
+  },
+  {
+   "id": "AGENT_STATUS",
+   "label": "CXone agent statuses",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "what status",
+    "status for lunch",
+    "lunch status",
+    "break status",
+    "bathroom",
+    "wem",
+    "agent status",
+    "agent statuses",
+    "unavailable status",
+    "available status",
+    "which status",
+    "change my state",
+    "change my status",
+    "set my status",
+    "my state",
+    "unavailable",
+    "go unavailable",
+    "put myself in"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "agent statuses"
+   ],
+   "expand": [
+    "status"
+   ],
+   "prefer": [
+    "CXone Agent Statuses",
+    "CXone Agent Statuses (WCX)"
+   ]
+  },
+  {
+   "id": "SSN_ACCOUNT_ISSUES",
+   "label": "SSN and duplicate account issues",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "wrong ssn",
+    "change ssn",
+    "change their social security number",
+    "two accounts",
+    "duplicate account",
+    "typed the wrong",
+    "ssn is wrong",
+    "incorrect ssn"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "multiple ssn issues",
+    "delete registration"
+   ],
+   "expand": [
+    "ssn"
+   ]
+  },
+  {
+   "id": "AWD_TOOL",
+   "label": "AWD (work item system)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "add a note to a ticket",
+    "comment on the ticket",
+    "quick create",
+    "attach",
+    "attachment",
+    "upload",
+    "document splitter",
+    "tagline",
+    "taglines",
+    "worklist",
+    "look up a ticket",
+    "cancel a ticket",
+    "get rid of a ticket",
+    "pop out",
+    "awd"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "awd creating",
+    "awd commenting",
+    "awd locking",
+    "awd searching",
+    "awd cancelling",
+    "awd working with cards",
+    "awd document splitter",
+    "awd taglines",
+    "awd action menu",
+    "awd worklist",
+    "awd saving",
+    "awd navigating",
+    "awd known issues",
+    "awd creating and linking",
+    "awd customizing"
+   ],
+   "expand": [
+    "awd"
+   ],
+   "generic": true
+  },
+  {
+   "id": "AWD_ACCESS",
+   "label": "AWD access problems",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "awd password",
+    "log into awd",
+    "awd locked",
+    "awd browser",
+    "can't get into awd"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [],
+   "prefer": [
+    "AWD Known Issues"
+   ]
+  },
+  {
+   "id": "ATTENDANCE",
+   "label": "Attendance",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "late for their shift",
+    "minutes late",
+    "tardy",
+    "call out",
+    "called out",
+    "left early",
+    "no call no show",
+    "attendance"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "attendance updates",
+    "admin responsibilities matrix"
+   ],
+   "expand": [
+    "attendance"
+   ]
+  },
+  {
+   "id": "RTA_ADHERENCE",
+   "label": "Real-time adherence (RTA)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "rta",
+    "adherence",
+    "out of adherence",
+    "over break",
+    "over lunch",
+    "late from lunch",
+    "refused status",
+    "real time adherence"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "rta",
+    "adherence"
+   ],
+   "expand": [
+    "adherence"
+   ]
+  },
+  {
+   "id": "WFM_REPORTS",
+   "label": "Workforce and CSAT reports",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "time utilization",
+    "lost to meetings",
+    "adherence report",
+    "csat",
+    "survey results",
+    "csat dashboard",
+    "scheduled hours report",
+    "csat report",
+    "lose to meetings",
+    "meetings and training",
+    "time lost to meetings",
+    "time lost",
+    "time utilization report"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "generating",
+    "creating automated reports",
+    "csat"
+   ],
+   "expand": [
+    "report"
+   ]
+  },
+  {
+   "id": "PAY_FREQUENCY",
+   "label": "Pay frequency",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "how often do they pay",
+    "pay frequency",
+    "frequency of pay",
+    "every pay period",
+    "pay sequences",
+    "how often are premiums deducted",
+    "how often are premiums taken",
+    "monthly or biweekly",
+    "biweekly or monthly",
+    "pay monthly",
+    "paid monthly",
+    "method of pay",
+    "method and frequency"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "method and frequency of pay"
+   ],
+   "expand": [
+    "frequency"
+   ],
+   "prefer": [
+    "Method and Frequency of Pay"
+   ],
+   "allOf": [
+    [
+     "how often",
+     "how frequently",
+     "what frequency"
+    ],
+    [
+     "pay",
+     "pays",
+     "paid",
+     "premium",
+     "premiums",
+     "deducted",
+     "deduction",
+     "deductions",
+     "billed"
+    ]
+   ],
+   "window": 8
+  },
+  {
+   "id": "APO_PAYROLL",
+   "label": "Agency payroll offices (APO)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "agency payroll office",
+    "payroll office",
+    "apo location",
+    "manage apo",
+    "deduction schedule",
+    "pay dates",
+    "payroll schedule",
+    "payroll office's deduction",
+    "runs deductions",
+    "run deductions",
+    "billing run dates",
+    "billing run date",
+    "apo payroll schedule",
+    "apo deduction schedule",
+    "manage apo locations"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "manage apo"
+   ],
+   "expand": [
+    "payroll"
+   ],
+   "prefer": [
+    "Using the Manage APO Locations Tool"
+   ]
+  },
+  {
+   "id": "ABW_REVOKE",
+   "label": "Stopping ABW",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "stop abw",
+    "stop automatic",
+    "stop the withdrawals",
+    "cancel abw",
+    "revoke",
+    "turn off autopay",
+    "stop autopay",
+    "stop auto pay"
+   ],
+   "passageTerms": [],
+   "titleMatch": [],
+   "expand": [
+    "revoke"
+   ],
+   "prefer": [
+    "Edit ABW Information L1",
+    "Edit ABW Information"
+   ]
+  },
+  {
+   "id": "CSS_SYSTEM",
+   "label": "CSS (customer service system)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "css",
+    "cs system",
+    "customer service system",
+    "service portal",
+    "css dashboard"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "service portal dashboard"
+   ],
+   "expand": [
+    "css"
+   ],
+   "generic": true
+  },
+  {
+   "id": "ACCOUNT_SEARCH",
+   "label": "Finding an account",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "search for a member",
+    "search for the member",
+    "look up the account",
+    "find the account",
+    "locate an account",
+    "pull up the account",
+    "search by ssn",
+    "find the member",
+    "look up a member"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "locating an account"
+   ],
+   "expand": [
+    "search"
+   ],
+   "prefer": [
+    "Locating an Account in the CSS"
+   ]
+  },
+  {
+   "id": "CONFERENCE",
+   "label": "Conference calls",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "three way call",
+    "3 way call",
+    "three people",
+    "add someone to the call",
+    "conference in",
+    "merge the call",
+    "conference call"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "conference call"
+   ],
+   "expand": [
+    "conference"
+   ],
+   "prefer": [
+    "CXone Conference Call"
+   ]
+  },
+  {
+   "id": "ACCOUNT_REVIEW",
+   "label": "Account review requests",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "account review",
+    "previous agent said",
+    "misinformed",
+    "review the call",
+    "another agent told"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "account review"
+   ],
+   "expand": [
+    "review"
+   ]
+  },
+  {
+   "id": "PROGRAM_INFO",
+   "label": "FEDVIP program background",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "what law",
+    "history of fedvip",
+    "who runs fedvip",
+    "role of opm",
+    "who governs",
+    "what is fedvip",
+    "what is benefeds"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "fedvip background",
+    "fedvip roles"
+   ],
+   "expand": [
+    "fedvip"
+   ]
+  },
+  {
+   "id": "LIVE_MONITORING",
+   "label": "Live call monitoring",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "listen in",
+    "listen live",
+    "monitor a call",
+    "barge",
+    "whisper",
+    "live monitor"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "live monitoring"
+   ],
+   "expand": [
+    "monitor"
+   ]
+  },
+  {
+   "id": "AGENT_STATE",
+   "label": "Changing an agent's state",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "change their status",
+    "force log out",
+    "didn't come back from lunch",
+    "agent state",
+    "change an agent's state",
+    "log an agent out"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "changing agent state"
+   ],
+   "expand": [
+    "state"
+   ]
+  },
+  {
+   "id": "PHONETIC",
+   "label": "Phonetic (NATO) alphabet",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "phonetic",
+    "spell out",
+    "letter by letter",
+    "nato",
+    "phonetic alphabet"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "nato alphabet"
+   ],
+   "expand": [
+    "alphabet"
+   ]
+  },
+  {
+   "id": "GRACE_PERIOD",
+   "label": "5-day grace period",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "grace period",
+    "5 day grace",
+    "five day grace",
+    "grace days",
+    "payment arrives a few days later",
+    "few days after the account was inactivated",
+    "payment came in a few days",
+    "payment arrived a few days",
+    "a few days late",
+    "couple days late",
+    "payment came in late",
+    "payment arrived late",
+    "reinstate automatically",
+    "automatically reinstate"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "grace period"
+   ],
+   "expand": [
+    "grace"
+   ],
+   "prefer": [
+    "5-Day Grace Period for Non-Pay Inactivation"
+   ]
+  },
+  {
+   "id": "REINSTATEMENT",
+   "label": "Reinstating coverage",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "reinstate",
+    "reinstatement",
+    "reinstated",
+    "get coverage back",
+    "restore coverage",
+    "turn coverage back on"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "determining fedvip reinstatement",
+    "reinstate enrollment"
+   ],
+   "expand": [
+    "reinstate"
+   ],
+   "prefer": [
+    "Determining FEDVIP Reinstatement"
+   ]
+  },
+  {
+   "id": "SAVED_SEARCH",
+   "label": "Saving a search in AWD",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "save my search",
+    "saved search",
+    "save the search",
+    "save a search",
+    "member id search"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "saving a benefeds search"
+   ],
+   "expand": [
+    "search"
+   ]
+  },
+  {
+   "id": "PAYROLL_AUTH",
+   "label": "Payroll authorization form (FAD)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "payroll authorization",
+    "payroll authorization form",
+    "payroll allotment form"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "payroll authorization form"
+   ],
+   "expand": [
+    "payroll",
+    "authorization"
+   ]
+  },
+  {
+   "id": "SHIFT_START_END",
+   "label": "Starting and ending your shift",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "end of my shift",
+    "end of shift",
+    "start of shift",
+    "start of my shift",
+    "starting my day",
+    "ending my day",
+    "end my day",
+    "don't get another call",
+    "stop getting calls"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "starting and ending your day",
+    "logging in and out"
+   ],
+   "expand": [
+    "shift"
+   ]
+  },
+  {
+   "id": "CSS_LOGIN",
+   "label": "Signing in to the CSS",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "activation email",
+    "first time log into the cs system",
+    "css mfa",
+    "log into the cs system",
+    "cs system login",
+    "css login",
+    "css password",
+    "log into the customer service system",
+    "first time log into the css",
+    "multi factor for the cs system",
+    "css multi factor",
+    "mfa for the css",
+    "mfa for css",
+    "logging into the customer service system",
+    "logging into the cs system",
+    "logging into css",
+    "multi factor for css"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "css authentication process",
+    "locked cs system"
+   ],
+   "expand": [
+    "css"
+   ],
+   "prefer": [
+    "BENEFEDS CSS Authentication Process"
+   ]
+  },
+  {
+   "id": "INELIGIBLE_DEPENDENTS",
+   "label": "Ineligible vs never-eligible dependents",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "never eligible",
+    "ineligible dependent",
+    "ineligible vs never",
+    "ineligible and never eligible",
+    "never be covered",
+    "can never be covered",
+    "can't be covered now",
+    "cannot be covered now",
+    "not eligible now",
+    "never eligible dependent",
+    "ineligible dependents",
+    "become eligible later",
+    "eligible in the future"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "ineligible vs never eligible"
+   ],
+   "expand": [
+    "ineligible"
+   ],
+   "prefer": [
+    "FEDVIP Ineligible vs Never Eligible Dependents"
+   ]
+  },
+  {
+   "id": "CREATE_ENROLLMENT_TICKET",
+   "label": "Create Enrollment ticket",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "won't let me enroll",
+    "can't enroll the customer",
+    "cannot enroll the customer",
+    "create enrollment ticket",
+    "system won't let me enroll"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "primary create enrollment"
+   ],
+   "expand": [
+    "enrollment"
+   ]
+  },
+  {
+   "id": "RETURNED_PAYMENT",
+   "label": "Returned or reversed payments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "bounced",
+    "bounced check",
+    "bounced payment",
+    "returned check",
+    "returned payment",
+    "payment reversed",
+    "abw reversal",
+    "abw reversals",
+    "reversal",
+    "reversed",
+    "payment bounced",
+    "check bounced"
+   ],
+   "passageTerms": [
+    "reversal",
+    "returned payment"
+   ],
+   "titleMatch": [
+    "multiple abw reversals"
+   ],
+   "expand": [
+    "reversal"
+   ],
+   "prefer": [
+    "Customers with Multiple ABW Reversals",
+    "FEDVIP Credits & Refunds",
+    "Insufficient Funds"
+   ]
+  },
+  {
+   "id": "AWD_TAGLINES",
+   "label": "Customizing AWD work item taglines",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "summary line",
+    "work item summary",
+    "details show on my work item",
+    "details that show on the work item",
+    "what shows on the work item",
+    "customize work item",
+    "customize the work item",
+    "customize taglines",
+    "customize my taglines",
+    "customizing taglines",
+    "change my taglines",
+    "change what shows",
+    "show different fields",
+    "work item fields",
+    "fields on the work item",
+    "fields that display on the work item"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "customizing taglines"
+   ],
+   "expand": [
+    "tagline"
+   ],
+   "prefer": [
+    "AWD Customizing Taglines"
+   ]
+  },
+  {
+   "id": "AUTOSUMMARY",
+   "label": "AutoSummary call comments",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "autosummary",
+    "auto summary",
+    "writes the comment",
+    "write the comment for me",
+    "writes my comments",
+    "comment for me",
+    "automatic comment",
+    "automatically comments",
+    "automatically writes",
+    "summarizes the call",
+    "summarizing the call",
+    "call summary tool"
+   ],
+   "passageTerms": [
+    "autosummary"
+   ],
+   "titleMatch": [
+    "autosummary"
+   ],
+   "expand": [
+    "autosummary"
+   ],
+   "prefer": [
+    "AutoSummary FAQ",
+    "Commenting with AutoSummary"
+   ]
+  },
+  {
+   "id": "IVR",
+   "label": "BENEFEDS IVR (phone menu)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "ivr",
+    "phone menu",
+    "phone tree",
+    "automated menu",
+    "automated phone",
+    "menu options",
+    "interactive voice response",
+    "press 1",
+    "voice menu",
+    "before they reach an agent",
+    "before they reach us",
+    "prompts on the phone",
+    "automated phone system"
+   ],
+   "passageTerms": [
+    "ivr"
+   ],
+   "titleMatch": [
+    "ivr"
+   ],
+   "expand": [
+    "ivr"
+   ],
+   "prefer": [
+    "BENEFEDS IVR"
+   ]
+  },
+  {
+   "id": "ACCOUNT_COMPROMISED",
+   "label": "Compromised BENEFEDS.gov account",
+   "ruleFacets": [],
+   "risk": "HR-SAFETY",
+   "terms": [
+    "hacked",
+    "hacked into",
+    "someone hacked",
+    "account compromised",
+    "account was compromised",
+    "unauthorized login",
+    "someone logged into",
+    "someone logged in",
+    "someone got into",
+    "broke into",
+    "accessed their account",
+    "accessed my account",
+    "someone else logged",
+    "someone is in their account",
+    "tried to sign into",
+    "tried to sign in",
+    "tried to log into",
+    "tried to log in",
+    "someone tried to sign",
+    "someone tried to log",
+    "sign into his account who",
+    "wasn't him",
+    "wasn't her",
+    "changed their bank info",
+    "changed my bank"
+   ],
+   "passageTerms": [
+    "compromised"
+   ],
+   "titleMatch": [
+    "unauthorized login"
+   ],
+   "expand": [
+    "unauthorized"
+   ],
+   "prefer": [
+    "BENEFEDS.gov Unauthorized Login Attempt",
+    "Handling Security Issues"
+   ]
+  },
+  {
+   "id": "SUPERVISOR_REQUEST",
+   "label": "Caller asks for a supervisor or manager",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "wants a manager",
+    "wants a supervisor",
+    "wants to speak to a manager",
+    "speak to a manager",
+    "speak with a manager",
+    "speak to a supervisor",
+    "speak with a supervisor",
+    "asking for a manager",
+    "asking for a supervisor",
+    "asks for a supervisor",
+    "asks for a manager",
+    "request a supervisor",
+    "requests a supervisor",
+    "get my supervisor",
+    "supervisor on the call",
+    "supervisor to join",
+    "supervisor takeover",
+    "supervisor take over",
+    "talk to a manager",
+    "talk to a supervisor",
+    "talk to your manager",
+    "talk to your supervisor",
+    "for a supervisor",
+    "for a manager",
+    "supervisor into the call",
+    "manager on the line",
+    "supervisor on the line"
+   ],
+   "passageTerms": [
+    "request for a manager",
+    "speak with a supervisor",
+    "speak with a manager",
+    "manager/supervisor"
+   ],
+   "titleMatch": [
+    "escalation procedures",
+    "handling escalated calls"
+   ],
+   "expand": [
+    "supervisor"
+   ],
+   "prefer": [
+    "CXone Escalation Procedures"
+   ]
+  },
+  {
+   "id": "DEESCALATION",
+   "label": "De-escalating an upset caller",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "calm them down",
+    "calm down",
+    "calm the caller",
+    "calm a caller",
+    "calming",
+    "de escalate",
+    "deescalate",
+    "de-escalate",
+    "de escalation",
+    "deescalation",
+    "defuse",
+    "diffuse the situation",
+    "settle them down",
+    "angry caller",
+    "upset caller",
+    "irate caller"
+   ],
+   "passageTerms": [
+    "de-escalat"
+   ],
+   "titleMatch": [
+    "de-escalation",
+    "unhappy callers"
+   ],
+   "expand": [
+    "calm"
+   ],
+   "prefer": [
+    "De-escalation Techniques"
+   ]
+  },
+  {
+   "id": "CSAT",
+   "label": "CSAT (customer satisfaction) reports",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "csat",
+    "customer satisfaction",
+    "satisfaction survey",
+    "survey results",
+    "survey scores",
+    "survey report",
+    "survey reports",
+    "feedback management"
+   ],
+   "passageTerms": [
+    "csat"
+   ],
+   "titleMatch": [
+    "csat"
+   ],
+   "expand": [
+    "csat"
+   ]
+  },
+  {
+   "id": "TERMS_CONDITIONS",
+   "label": "Enrollment terms and conditions",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "terms and conditions",
+    "terms & conditions",
+    "what they agree",
+    "what does the member agree",
+    "what does the enrollee agree",
+    "what are they agreeing",
+    "certification statement",
+    "fine print"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "terms & conditions"
+   ],
+   "expand": [
+    "terms"
+   ],
+   "prefer": [
+    "Enrollment Terms & Conditions"
+   ],
+   "allOf": [
+    [
+     "agree",
+     "agrees",
+     "agreeing",
+     "certify",
+     "certifies",
+     "accept",
+     "accepts"
+    ],
+    [
+     "enroll",
+     "enrolls",
+     "enrolling",
+     "enrollment"
+    ]
+   ],
+   "window": 6
+  },
+  {
+   "id": "VTO",
+   "label": "Voluntary time off (VTO)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "vto",
+    "voluntary time off",
+    "time off because it's slow",
+    "because it's slow",
+    "when it's slow",
+    "slow day",
+    "go home early",
+    "leave early because",
+    "send people home",
+    "volunteer to leave"
+   ],
+   "passageTerms": [
+    "vto"
+   ],
+   "titleMatch": [
+    "vto",
+    "voluntary time off"
+   ],
+   "expand": [
+    "vto"
+   ],
+   "prefer": [
+    "Guidelines for VTO (Voluntary Time Off)",
+    "Requesting Voluntary Time Off"
+   ]
+  },
+  {
+   "id": "SERVICENOW_MFA",
+   "label": "ServiceNow MFA setup",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "servicenow mfa",
+    "service now mfa",
+    "mfa in servicenow",
+    "mfa in service now",
+    "two factor in service now",
+    "two-factor authentication in service now",
+    "two factor authentication in servicenow",
+    "multi factor in servicenow",
+    "multi factor in service now",
+    "servicenow two factor",
+    "service now two factor"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "servicenow to set up mfa"
+   ],
+   "expand": [
+    "servicenow"
+   ],
+   "prefer": [
+    "Logging into ServiceNow to Set Up MFA"
+   ]
+  },
+  {
+   "id": "ENROLLEE_DEATH_CALL",
+   "label": "Caller reporting an enrollee's death",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "reporting a death",
+    "reporting the death",
+    "report a death",
+    "report the death",
+    "calling to report a death",
+    "death of the enrollee",
+    "death of enrollee",
+    "death of the member",
+    "enrollee passed away",
+    "enrollee passed",
+    "enrollee died",
+    "enrollee is deceased",
+    "enrollee has died",
+    "member passed away",
+    "member died",
+    "primary passed away",
+    "primary died",
+    "account holder passed away",
+    "account holder died"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "report of death"
+   ],
+   "expand": [
+    "death"
+   ],
+   "prefer": [
+    "Handling Report of Death Calls"
+   ]
+  },
+  {
+   "id": "AWD_ACTION_MENU",
+   "label": "AWD action menu",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "three dots",
+    "3 dots",
+    "three vertical dots",
+    "vertical dots",
+    "action menu",
+    "assign to self"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "awd action menu"
+   ],
+   "expand": [
+    "action",
+    "menu"
+   ],
+   "prefer": [
+    "AWD Action Menu"
+   ]
+  },
+  {
+   "id": "AWD_SEARCH",
+   "label": "Searching AWD for a work item",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "look up a ticket",
+    "search for a ticket",
+    "find a ticket",
+    "pull up a ticket",
+    "search for a work item",
+    "find a work item",
+    "look up a work item",
+    "search awd",
+    "search in awd",
+    "ticket by member id",
+    "tickets by member id"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "awd searching"
+   ],
+   "expand": [],
+   "prefer": [
+    "AWD Searching for a Work Item"
+   ]
+  },
+  {
+   "id": "TRAINING_ACCOUNTS",
+   "label": "Training practice accounts",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "practice account",
+    "test account",
+    "training account",
+    "training ivr",
+    "practice accounts in training"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "account creation training template"
+   ],
+   "expand": [],
+   "prefer": [
+    "Account Creation Training Template"
+   ]
+  },
+  {
+   "id": "CREATE_ACCOUNT",
+   "label": "Creating a My BENEFEDS account",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "create an account",
+    "make an account",
+    "doesn't have an account",
+    "does not have an account",
+    "doesnt have an account",
+    "don't have an account",
+    "set up an account",
+    "open an account",
+    "new my benefeds account",
+    "create a my benefeds account",
+    "make one on the website",
+    "sign up for an account",
+    "doesn't have a my benefeds account",
+    "does not have a my benefeds account",
+    "doesnt have a my benefeds account",
+    "no my benefeds account",
+    "need to create a my benefeds account"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "create account"
+   ],
+   "expand": [],
+   "prefer": [
+    "BENEFEDS.gov Create Account"
+   ]
+  },
+  {
+   "id": "DEFERRED_ANNUITANT",
+   "label": "Deferred vs. postponed annuitants",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "deferred annuity",
+    "deferred annuitant",
+    "postponed annuity",
+    "postponed annuitant",
+    "before retirement age",
+    "annuity later",
+    "deferred retirement",
+    "postponed retirement",
+    "left federal service before"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "deferred vs. postponed"
+   ],
+   "expand": [],
+   "prefer": [
+    "Deferred vs. Postponed Annuitants"
+   ]
+  },
+  {
+   "id": "OS_CANCEL",
+   "label": "Cancelling a plan during Open Season",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "cancel during open season",
+    "cancel plan during open season",
+    "cancel their plan during open season",
+    "cancel coverage during open season",
+    "cancel in open season",
+    "open season cancellation",
+    "cancel at open season",
+    "cancel for the new plan year",
+    "cancel for next year"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "handling open season plan cancellation"
+   ],
+   "expand": [],
+   "prefer": [
+    "Handling Open Season Plan Cancellation Call"
+   ]
+  },
+  {
+   "id": "INSUFFICIENT_FUNDS",
+   "label": "Insufficient funds for premium deductions",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "insufficient funds",
+    "big enough to cover",
+    "not enough to cover",
+    "isn't enough to cover",
+    "too small to cover",
+    "not enough money in",
+    "not enough pay",
+    "not enough in their paycheck",
+    "paycheck too small",
+    "annuity too small"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "insufficient funds"
+   ],
+   "expand": [
+    "insufficient",
+    "funds"
+   ],
+   "prefer": [
+    "Insufficient Funds"
+   ]
+  },
+  {
+   "id": "BELATED_APPROVED",
+   "label": "Processing an approved belated request",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "late request was approved",
+    "request was approved",
+    "bar was approved",
+    "belated request was approved",
+    "verify the approval",
+    "verify the bar",
+    "approved bar",
+    "bar approval",
+    "verify it was approved"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "belated enrollments",
+    "submitting an approved plan year belated"
+   ],
+   "expand": [],
+   "prefer": [
+    "Belated Enrollments"
+   ]
+  },
+  {
+   "id": "AWD_ATTACH",
+   "label": "Attaching documents in AWD",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "attach it to a ticket",
+    "attach to a ticket",
+    "attach to the ticket",
+    "attach a document",
+    "attach the document",
+    "link an attachment",
+    "link the attachment",
+    "link attachment",
+    "create an attachment",
+    "create attachment",
+    "upload a document to awd",
+    "upload to awd",
+    "upload a file",
+    "attach a file"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "awd creating and linking attachments"
+   ],
+   "expand": [
+    "attachment"
+   ],
+   "prefer": [
+    "AWD Creating and Linking Attachments"
+   ]
+  },
+  {
+   "id": "AWD_CARDS",
+   "label": "Moving and resizing AWD cards",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "resize",
+    "resizing",
+    "move a card",
+    "move the card",
+    "move a window",
+    "move the window",
+    "minimize a card",
+    "minimize the card",
+    "popout",
+    "pop out a card",
+    "pop out the card",
+    "cards in awd",
+    "card in awd"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "awd working with cards"
+   ],
+   "expand": [
+    "card"
+   ],
+   "prefer": [
+    "AWD Working with Cards"
+   ]
+  },
+  {
+   "id": "OS_PENDING_ENROLLMENT",
+   "label": "Changing a pending Open Season enrollment",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "pending enrollment",
+    "pending open season enrollment",
+    "pending os enrollment",
+    "next year's plan",
+    "next years plan",
+    "next year plan",
+    "next plan year",
+    "for next year"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "adding and removing dependents"
+   ],
+   "expand": [
+    "pending"
+   ],
+   "prefer": [
+    "Adding and Removing Dependents"
+   ]
+  },
+  {
+   "id": "QA_ACKNOWLEDGE",
+   "label": "Acknowledging QA evaluations",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "acknowledge my qa",
+    "acknowledge my evaluation",
+    "acknowledge the evaluation",
+    "acknowledge my quality",
+    "acknowledge an evaluation",
+    "acknowledge a qa",
+    "acknowledge the qa",
+    "acknowledge my score",
+    "qa acknowledgement",
+    "evaluation acknowledgement"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "steady state qa processes"
+   ],
+   "expand": [
+    "acknowledge"
+   ],
+   "prefer": [
+    "BENEFEDS CXone Steady State QA Processes"
+   ]
+  },
+  {
+   "id": "LINKED_SIGNIN",
+   "label": "Signing in with an already linked Login.gov account",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "already linked",
+    "already connected",
+    "already been linked",
+    "is linked",
+    "are linked",
+    "already link",
+    "linked login.gov",
+    "connected login.gov"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "linked account sign in"
+   ],
+   "expand": [
+    "linked"
+   ],
+   "prefer": [
+    "BENEFEDS.gov Linked Account Sign In"
+   ]
+  },
+  {
+   "id": "CALL_STORAGE",
+   "label": "Call recording storage and retrieval",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "keep call recordings",
+    "keep recordings",
+    "keep the recordings",
+    "recordings kept",
+    "recording kept",
+    "how long are recordings",
+    "how long are calls stored",
+    "recording retention",
+    "retain recordings",
+    "store recordings",
+    "stored recordings",
+    "call storage",
+    "long term storage",
+    "long-term storage",
+    "retrieve a recording",
+    "retrieve an old recording",
+    "retrieve a call recording",
+    "old recording",
+    "old call recording",
+    "master contact id"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "call storage and retrieval"
+   ],
+   "expand": [
+    "recording",
+    "storage"
+   ],
+   "prefer": [
+    "CXone Call Storage and Retrieval"
+   ]
+  },
+  {
+   "id": "INTERMITTENT_PAY",
+   "label": "Intermittent payors",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "intermittent",
+    "intermittently",
+    "paid intermittently",
+    "zero deductions",
+    "zero deduction",
+    "no deductions some pay periods",
+    "some pay periods",
+    "$0 deduction",
+    "$0 deductions",
+    "0 deductions",
+    "zero pay",
+    "$0 pay",
+    "only paid some"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "intermittent payor"
+   ],
+   "expand": [
+    "intermittent"
+   ],
+   "prefer": [
+    "Intermittent Payors"
+   ]
+  },
+  {
+   "id": "BREAK_IN_SERVICE",
+   "label": "Break in federal service",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "break in service",
+    "break in federal service",
+    "rehired",
+    "rehire",
+    "re-hired",
+    "terminated and rehired",
+    "gap in employment",
+    "gap in service"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "break in federal service"
+   ],
+   "expand": [
+    "rehire"
+   ],
+   "prefer": [
+    "Managing Break in Federal Service"
+   ]
+  },
+  {
+   "id": "AWD_WHICH_ITEM",
+   "label": "Which AWD work item to use",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "which work item",
+    "which awd work item",
+    "what work item do i use",
+    "which work item to use",
+    "work item overview",
+    "change profile versus",
+    "change profile vs",
+    "versus create enrollment",
+    "versus combine accounts",
+    "which primary ticket",
+    "which primary work item"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "primary awd work item overview"
+   ],
+   "expand": [
+    "work",
+    "item"
+   ],
+   "prefer": [
+    "Primary AWD Work Item Overview"
+   ]
+  },
+  {
+   "id": "OPM_ESCALATION",
+   "label": "Escalating to OPM (team leads)",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "opm's contact",
+    "opm contact information",
+    "give them opm",
+    "give out opm",
+    "escalate to opm",
+    "escalation to opm",
+    "opm's information"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "escalation to opm"
+   ],
+   "expand": [],
+   "prefer": [
+    "Escalation to OPM (TL ONLY)"
+   ],
+   "generic": true
+  },
+  {
+   "id": "OS_PLAN_CHANGE",
+   "label": "Making an Open Season plan change",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "switch carriers",
+    "switch carrier",
+    "change carriers",
+    "change carrier",
+    "change plan type",
+    "change tier",
+    "change their plan",
+    "change plans",
+    "switch plans",
+    "plan change",
+    "plan changes"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "handling open season plan changes"
+   ],
+   "expand": [
+    "change"
+   ],
+   "prefer": [
+    "Handling Open Season Plan Changes"
+   ]
+  },
+  {
+   "id": "LEARN_PASSWORD",
+   "label": "LEARN password",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "learn password",
+    "reset learn",
+    "learn login",
+    "forgot my login for the training",
+    "training site password",
+    "can't log into learn",
+    "cant log into learn",
+    "locked out of learn"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "resetting learn password"
+   ],
+   "expand": [
+    "password"
+   ],
+   "prefer": [
+    "Resetting LEARN Password"
+   ]
+  },
+  {
+   "id": "LEGAL_DOCS",
+   "label": "BENEFEDS.gov legal documents",
+   "ruleFacets": [],
+   "risk": "standard",
+   "terms": [
+    "privacy policy",
+    "privacy statement",
+    "terms of use",
+    "legal documents",
+    "accessibility statement",
+    "website policies",
+    "legal notice"
+   ],
+   "passageTerms": [],
+   "titleMatch": [
+    "legal documents"
+   ],
+   "expand": [
+    "privacy"
+   ],
+   "prefer": [
+    "BENEFEDS.gov Legal Documents"
+   ]
+  }
+ ],
+ "acronyms": {
+  "fedvip": "federal employees dental and vision insurance program",
+  "fehb": "federal employees health benefits",
+  "fltcip": "long term care",
+  "fsafeds": "flexible spending",
+  "usm": "uniformed service",
+  "usps": "postal",
+  "opm": "office of personnel management",
+  "css": "customer service system",
+  "awd": "work item ticket",
+  "abw": "automatic bank withdrawal",
+  "ach": "bank payment",
+  "adi": "authorization for disclosure of information",
+  "poa": "power of attorney",
+  "qle": "qualifying life event",
+  "aced": "allowable changes effective dates",
+  "iss": "incapable of self support",
+  "deers": "defense enrollment eligibility reporting system",
+  "tdp": "tricare dental program",
+  "trdp": "tricare retiree dental program",
+  "lwop": "leave without pay",
+  "dsr": "discontinued service retirement",
+  "naf": "non appropriated funds",
+  "os": "open season",
+  "sr": "senior representative",
+  "ivr": "interactive voice response",
+  "ssn": "social security number",
+  "dob": "date of birth",
+  "fad": "family of active duty",
+  "vto": "voluntary time off",
+  "mfa": "multi factor authentication",
+  "acw": "after call work",
+  "tl": "team lead",
+  "csat": "customer satisfaction",
+  "apo": "military address",
+  "fpo": "military address",
+  "csf": "survivor claim number",
+  "pshb": "postal health benefits",
+  "bar": "belated action request",
+  "nsf": "insufficient funds",
+  "eft": "bank payment",
+  "tty": "deaf relay",
+  "tdd": "deaf relay",
+  "vso": "veterans service officer",
+  "abo": "agency benefits officer",
+  "moh": "medal of honor",
+  "trs": "tricare reserve select",
+  "sf": "self and family",
+  "dv": "dental vision",
+  "hr": "human resources",
+  "esc": "employee service center",
+  "sme": "subject matter expert",
+  "wem": "workforce engagement"
+ },
+ "ambiguityCues": [
+  {
+   "id": "AMB-FULLTIME",
+   "pattern": "full time",
+   "unlessFollowedBy": [
+    "student",
+    "students",
+    "school",
+    "college",
+    "university"
+   ],
+   "note": "“Full time” could mean full-time student status or full-time employment. Confirm with the caller; the tool does not assume either."
+  },
+  {
+   "id": "AMB-RETIRED",
+   "pattern": "(?:retired|retiree|retirees)",
+   "unlessFollowedBy": [
+    "air",
+    "army",
+    "civilian",
+    "coast",
+    "fed",
+    "fedciv",
+    "federal",
+    "from",
+    "guard",
+    "marine",
+    "marines",
+    "military",
+    "navy",
+    "postal",
+    "reserve",
+    "reservist",
+    "uniformed",
+    "usm",
+    "usps"
+   ],
+   "note": "“Retired” applies to both federal civilian annuitants and retired uniformed service members, and their rules differ. Confirm which.",
+   "suppressIfResolved": "affiliation"
+  },
+  {
+   "id": "AMB-VETERAN",
+   "pattern": "veterans?",
+   "unlessFollowedBy": [
+    "service",
+    "affairs"
+   ],
+   "suppressIfResolved": "affiliation",
+   "note": "“Veteran” can mean a retired uniformed service member, a separated service member, or a federal civilian who served. Confirm the caller's current affiliation."
+  }
+ ],
+ "fillers": [
+  "someone is calling about",
+  "someone's calling about",
+  "someone is calling",
+  "a caller is asking about",
+  "caller is asking about",
+  "caller is asking",
+  "caller wants to know",
+  "the caller says",
+  "caller says",
+  "i have a caller",
+  "i've got a caller",
+  "customer is asking",
+  "customer wants to know",
+  "member is asking",
+  "how do i",
+  "what do i do if",
+  "what do i do when",
+  "what should i do",
+  "can you tell me",
+  "i need to know",
+  "quick question",
+  "please help",
+  "um",
+  "uh",
+  "umm",
+  "uhh",
+  "like",
+  "basically",
+  "literally",
+  "so yeah",
+  "she was saying",
+  "he was saying",
+  "they were saying",
+  "she said",
+  "he said",
+  "they said",
+  "she is asking",
+  "he is asking",
+  "they are asking",
+  "she wants to know",
+  "he wants to know",
+  "they want to know",
+  "i have a lady",
+  "i have a guy",
+  "i got a lady",
+  "i got a guy",
+  "i've got a lady",
+  "i've got a guy",
+  "got a caller",
+  "have a caller",
+  "this caller",
+  "the caller",
+  "on the line",
+  "on the phone",
+  "hey",
+  "hi",
+  "hello",
+  "ok so",
+  "okay so",
+  "real quick",
+  "just wondering",
+  "wondering",
+  "i was wondering",
+  "trying to figure out",
+  "can someone tell me",
+  "anyone know",
+  "does anyone know",
+  "lol",
+  "smh",
+  "wat",
+  "wut",
+  "lmao",
+  "idk",
+  "tbh",
+  "i'm a senior rep",
+  "i am a senior rep",
+  "i a senior rep",
+  "as a senior rep",
+  "as an sr",
+  "as a sr",
+  "as an l1",
+  "as a l1",
+  "i'm l1",
+  "i am l1",
+  "i a l1",
+  "as l1",
+  "i'm an l1",
+  "i am an l1"
+ ],
+ "stopwords": [
+  "a",
+  "an",
+  "the",
+  "is",
+  "are",
+  "was",
+  "were",
+  "be",
+  "been",
+  "to",
+  "of",
+  "for",
+  "in",
+  "on",
+  "at",
+  "by",
+  "with",
+  "and",
+  "or",
+  "but",
+  "if",
+  "their",
+  "there",
+  "they",
+  "them",
+  "this",
+  "that",
+  "it",
+  "its",
+  "my",
+  "your",
+  "our",
+  "his",
+  "her",
+  "him",
+  "she",
+  "he",
+  "we",
+  "you",
+  "i",
+  "me",
+  "do",
+  "does",
+  "did",
+  "can",
+  "could",
+  "would",
+  "should",
+  "about",
+  "what",
+  "how",
+  "now",
+  "just",
+  "so",
+  "some",
+  "any",
+  "has",
+  "have",
+  "had",
+  "will",
+  "from",
+  "up",
+  "out",
+  "into",
+  "who",
+  "whom",
+  "which",
+  "when",
+  "where",
+  "why",
+  "calling",
+  "caller",
+  "customer",
+  "member",
+  "someone",
+  "says",
+  "said",
+  "wants",
+  "want",
+  "asking",
+  "asks",
+  "call",
+  "need",
+  "needs"
+ ],
+ "protected": [
+  "acw",
+  "after",
+  "aren't",
+  "before",
+  "can't",
+  "cannot",
+  "csa",
+  "csf",
+  "doesn't",
+  "don't",
+  "dv35",
+  "dv61",
+  "dv82",
+  "espanol",
+  "except",
+  "fgr",
+  "gar",
+  "hablo",
+  "hola",
+  "ingles",
+  "isn't",
+  "l1",
+  "l2",
+  "naf",
+  "never",
+  "no",
+  "not",
+  "oes",
+  "only",
+  "os",
+  "over",
+  "pat",
+  "r01",
+  "rpn",
+  "sr",
+  "srp",
+  "tl",
+  "tva",
+  "ufs",
+  "under",
+  "unless",
+  "without",
+  "won't"
+ ],
+ "synonyms": {
+  "baby": [
+   "birth",
+   "newborn"
+  ],
+  "newborn": [
+   "birth",
+   "baby"
+  ],
+  "born": [
+   "birth"
+  ],
+  "pregnant": [
+   "birth"
+  ],
+  "married": [
+   "marriage"
+  ],
+  "marry": [
+   "marriage"
+  ],
+  "wedding": [
+   "marriage"
+  ],
+  "husband": [
+   "spouse"
+  ],
+  "wife": [
+   "spouse"
+  ],
+  "hubby": [
+   "spouse"
+  ],
+  "kid": [
+   "child",
+   "dependent"
+  ],
+  "kids": [
+   "children",
+   "dependents"
+  ],
+  "son": [
+   "child",
+   "dependent"
+  ],
+  "daughter": [
+   "child",
+   "dependent"
+  ],
+  "died": [
+   "death",
+   "deceased"
+  ],
+  "passed": [
+   "deceased"
+  ],
+  "adopting": [
+   "adopt",
+   "adoption"
+  ],
+  "adopted": [
+   "adoption"
+  ],
+  "cancelled": [
+   "cancel"
+  ],
+  "canceled": [
+   "cancel"
+  ],
+  "drop": [
+   "cancel",
+   "remove"
+  ],
+  "bill": [
+   "premium",
+   "billing"
+  ],
+  "payment": [
+   "pay"
+  ],
+  "refund": [
+   "refund",
+   "credit"
+  ],
+  "deployed": [
+   "active",
+   "duty"
+  ],
+  "deployment": [
+   "active",
+   "duty"
+  ],
+  "password": [
+   "password",
+   "login"
+  ],
+  "locked": [
+   "lock",
+   "login"
+  ],
+  "retiree": [
+   "retired"
+  ],
+  "retirees": [
+   "retired"
+  ],
+  "ex": [
+   "former"
+  ],
+  "spanish": [
+   "spanish",
+   "interpreter"
+  ],
+  "glasses": [
+   "vision"
+  ],
+  "contacts": [
+   "vision"
+  ],
+  "teeth": [
+   "dental"
+  ],
+  "dentist": [
+   "dental"
+  ],
+  "paycheck": [
+   "deduction"
+  ],
+  "payroll": [
+   "deduction"
+  ],
+  "money": [
+   "payment"
+  ],
+  "autopay": [
+   "abw"
+  ],
+  "hang": [
+   "disconnect"
+  ],
+  "cursing": [
+   "offensive",
+   "abusive"
+  ],
+  "cussing": [
+   "offensive",
+   "abusive"
+  ],
+  "swearing": [
+   "offensive",
+   "abusive"
+  ],
+  "screaming": [
+   "abusive"
+  ],
+  "espanol": [
+   "spanish"
+  ],
+  "español": [
+   "spanish"
+  ],
+  "habla": [
+   "spanish"
+  ],
+  "hablo": [
+   "spanish"
+  ],
+  "800": [
+   "toll",
+   "free"
+  ],
+  "ticket": [
+   "work",
+   "item"
+  ],
+  "tickets": [
+   "work",
+   "items"
+  ],
+  "timezone": [
+   "time",
+   "zone"
+  ]
+ },
+ "cueBlockPhrases": [
+  "fed up",
+  "military address",
+  "military deployment",
+  "military duty",
+  "military id",
+  "military leave",
+  "military orders",
+  "military post",
+  "military time",
+  "of the enrollee is calling",
+  "of the member is calling",
+  "of the primary is calling",
+  "p o box",
+  "po box",
+  "post office box",
+  "postal code",
+  "postal services",
+  "tricare answers",
+  "tricare questions",
+  "us postal service",
+  "zip code"
+ ]
+}

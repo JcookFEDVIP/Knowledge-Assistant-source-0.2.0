@@ -1,0 +1,2168 @@
+{
+ "_notice": "Search aliases: how agents phrase questions each job aid answers. Search keys only - never shown to agents as guidance. Seeded 10/2026 from tester questions (coverage, golden, swarm, holdout-1). SMEs may add phrasings.",
+ "aliases": [
+  {
+   "source": "24 Hour Rule",
+   "phrases": [
+    "caller enrolled yesterday after a QLE and now wants to cancel, can they still",
+    "caller enrolled yesterday and wants to cancel",
+    "customer enrolled yesterday due to a QLE and wants to cancel",
+    "enrolled on friday picked wrong plan can we change it monday",
+    "what is the 24 hour rule",
+    "customer enrolled friday night and wants to switch plans monday, too late?"
+   ]
+  },
+  {
+   "source": "5-Day Grace Period for Non-Pay Inactivation",
+   "phrases": [
+    "account was inactivated for not paying, will it come back automatically if the payment arrives a few days later",
+    "caller got dropped for not paying, says he mailed the check before the due date, will it turn back on by itself"
+   ]
+  },
+  {
+   "source": "ABW Scripting",
+   "phrases": [
+    "what do I have to read to the caller when I set up their bank draft for premiums"
+   ]
+  },
+  {
+   "source": "ACED Chart (L1)",
+   "phrases": [
+    "caller got married, how many days do they have to enroll and when is it effective",
+    "caller got married last month and wants to add his wife",
+    "caller lost her dental coverage through her job, can she enroll now",
+    "they marry an active duty usm cancel",
+    "spouse leaving for active duty wants to cancel both dental and vision"
+   ]
+  },
+  {
+   "source": "ACED Chart (Senior Representative) (v2)",
+   "phrases": [
+    "can an enrollee decrease from self and family to self only when a child ages out and what pay period is it effective"
+   ]
+  },
+  {
+   "source": "AWD Action Menu",
+   "phrases": [
+    "what are the options under the three dots in a ticket tagline",
+    "what does assign to self do in the AWD action menu"
+   ]
+  },
+  {
+   "source": "AWD Cancelling a Work Item",
+   "phrases": [
+    "I started a ticket by mistake, how do I get rid of it",
+    "how do I cancel a work item in AWD that I created by mistake",
+    "how do I cancel a work item in awd"
+   ]
+  },
+  {
+   "source": "AWD Commenting on a Work Item",
+   "phrases": [
+    "how do I add a note to a ticket without opening it",
+    "how do I comment on a work item in AWD"
+   ]
+  },
+  {
+   "source": "AWD Creating a Work Item",
+   "phrases": [
+    "how do I start a new ticket using quick create",
+    "how do I create a new work item in AWD",
+    "how do I create an awd work item"
+   ]
+  },
+  {
+   "source": "AWD Creating and Linking Attachments",
+   "phrases": [
+    "how do I upload a document and attach it to a ticket",
+    "customer faxed in a marriage cert, how do I attach that doc to the ticket in awd"
+   ]
+  },
+  {
+   "source": "AWD Customizing Taglines",
+   "phrases": [
+    "can I change which details show on my work item summary line"
+   ]
+  },
+  {
+   "source": "AWD Delete Registration Ticket",
+   "phrases": [
+    "customer wants their registration removed but I can't delete it in the system",
+    "caller wants her account wiped out completely, never enrolled in anything, CSS wont let me remove it"
+   ]
+  },
+  {
+   "source": "AWD Document Splitter",
+   "phrases": [
+    "how do I separate pages of an attachment into their own document",
+    "how do I split an attachment in AWD into a new document",
+    "how do i use the document splitter",
+    "the scanned pdf has 3 different peoples forms in it, need to break it into separate pieces"
+   ]
+  },
+  {
+   "source": "AWD Enrollment Verification Ticket",
+   "phrases": [
+    "the carrier doesn't show the member's enrollment but BENEFEDS does, what ticket do I send",
+    "everything looks right on our side but the dental company says they have no record of him"
+   ]
+  },
+  {
+   "source": "AWD Known Issues",
+   "phrases": [
+    "what browser should I use for AWD and how do I change my password"
+   ]
+  },
+  {
+   "source": "AWD Locking Work Items",
+   "phrases": [
+    "the lock on my ticket is grey and the cursor shows a red circle, what does that mean",
+    "how to lock a work item"
+   ]
+  },
+  {
+   "source": "AWD Navigating Analytics",
+   "phrases": [
+    "where do I find workspaces and portals in analytics"
+   ]
+  },
+  {
+   "source": "AWD Outstanding Refund Premium Ticket",
+   "phrases": [
+    "member never cashed their refund check and got a letter about it"
+   ]
+  },
+  {
+   "source": "AWD Saving a BENEFEDS Search",
+   "phrases": [
+    "how do I save my member ID search so I don't have to set it up every time"
+   ]
+  },
+  {
+   "source": "AWD Searching for a Work Item",
+   "phrases": [
+    "how do I look up a ticket using the member ID",
+    "how do I search for a work item in AWD by member ID"
+   ]
+  },
+  {
+   "source": "AWD Taglines",
+   "phrases": [
+    "how is the ticket number formatted with the insured's initials",
+    "how do I add a tagline in awd"
+   ]
+  },
+  {
+   "source": "AWD Ticket Flow",
+   "phrases": [
+    "which department handles the employment status change tickets"
+   ]
+  },
+  {
+   "source": "AWD Work Item Types",
+   "phrases": [
+    "which type of ticket do I use when the customer wants the terms and conditions mailed"
+   ]
+  },
+  {
+   "source": "AWD Working with Cards",
+   "phrases": [
+    "how do I move or resize a window in AWD"
+   ]
+  },
+  {
+   "source": "AWD Worklist Icons",
+   "phrases": [
+    "what does the get work icon do in my worklist"
+   ]
+  },
+  {
+   "source": "Accelerated Payments",
+   "phrases": [
+    "caller wants to pay their premiums faster with extra deductions from their paycheck, can I set that up",
+    "how do I set up accelerated payments"
+   ]
+  },
+  {
+   "source": "Accessing FedPoint Teams Chat as a Guest",
+   "phrases": [
+    "I got an email invite to join the fedpoint team chat as a guest, how do I get in"
+   ]
+  },
+  {
+   "source": "Accessing MS Teams Through LEARN",
+   "phrases": [
+    "how do I join my virtual training class meeting from learn"
+   ]
+  },
+  {
+   "source": "Accessing WebEx Training in LEARN",
+   "phrases": [
+    "how do I join the webex session for training"
+   ]
+  },
+  {
+   "source": "Account Creation Training Template",
+   "phrases": [
+    "where are the practice accounts we use to create a test account in training",
+    "training template with the IVR phone number and practice member names for account creation"
+   ]
+  },
+  {
+   "source": "Account Review Request",
+   "phrases": [
+    "caller says the agent last time told them something different than what actually happened on the account, they want it reviewed",
+    "caller disputes what happened on a previous call and wants research to review the account",
+    "caller insists the last rep told her something totally different than whats on her account, wants someone to look into the call"
+   ]
+  },
+  {
+   "source": "Adding Sponsors Outside of Open Season",
+   "phrases": [
+    "sponsor accidentally set himself up as the sponsor but wanted to be the primary enrollee, it's after open season"
+   ]
+  },
+  {
+   "source": "Adding and Removing Dependents",
+   "phrases": [
+    "how do I add a dependent to next year's plan from the pending enrollment",
+    "adding a dependant duing open sesaon"
+   ]
+  },
+  {
+   "source": "Adding or Removing Family Members in a Self and Family Plan",
+   "phrases": [
+    "member already has a family plan and wants to add their new baby to it"
+   ]
+  },
+  {
+   "source": "Admin Responsibilities Matrix",
+   "phrases": [
+    "who is responsible for updating attendance in IEX by 10:30, admin or workforce"
+   ]
+  },
+  {
+   "source": "Administrative Leave",
+   "phrases": [
+    "employee is on excused absence from their agency, does that affect their dental coverage",
+    "employee is on administrative leave, are they still eligible and do premiums keep coming out",
+    "caller is on admin leave, does that mess with her dental deductions",
+    "caller is on excused absence from work, does that mess with his dental premiums"
+   ]
+  },
+  {
+   "source": "Advising of AWD Processing Timeframes",
+   "phrases": [
+    "caller wants to know how long their ticket will take to process"
+   ]
+  },
+  {
+   "source": "Affiliation Changes",
+   "phrases": [
+    "member is moving from a civilian job to the military, how do I change their affiliation"
+   ]
+  },
+  {
+   "source": "Affiliation Changes for Inactive Accounts",
+   "phrases": [
+    "how do I change the affiliation on an account that has no enrollment",
+    "affiliation change inactive account",
+    "account has no enrollment on it but i need to switch them from civilian to retiree, how"
+   ]
+  },
+  {
+   "source": "Agencies That Offer Their Own Dental and Vision",
+   "phrases": [
+    "employee moved to an agency that has its own dental plan, can they cancel FEDVIP",
+    "agency offers its own dental and vision"
+   ]
+  },
+  {
+   "source": "Agency Name Change and Claim Number AWD Ticket",
+   "phrases": [
+    "customer changed from one federal agency to another, what ticket do I submit",
+    "employee transferred from Treasury to DOJ, need to update which agency is on his account"
+   ]
+  },
+  {
+   "source": "Approving or Denying Extra Hours (EH) and Voluntary Time Off (VTO)",
+   "phrases": [
+    "how do I approve an agent's request for extra hours in webstation"
+   ]
+  },
+  {
+   "source": "Attendance Updates",
+   "phrases": [
+    "agent was two minutes late for their shift, how do I code it"
+   ]
+  },
+  {
+   "source": "Authorization (ADI) - Denial Letters",
+   "phrases": [
+    "caller got a letter saying their authorization form was rejected, what do I tell them"
+   ]
+  },
+  {
+   "source": "AutoSummary FAQ",
+   "phrases": [
+    "what is the tool that listens to the call and writes the comment for me"
+   ]
+  },
+  {
+   "source": "BENEFEDS CSS Authentication Process",
+   "phrases": [
+    "first time logging into the customer service system, how do I do the multi factor",
+    "how do I complete MFA the first time I log into the CS system from the activation email"
+   ]
+  },
+  {
+   "source": "BENEFEDS CXone Steady State QA Processes",
+   "phrases": [
+    "how do I acknowledge my quality evaluation outside open season",
+    "how do I dispute my qa score",
+    "steady state QA process for reviewing and acknowledging my evaluation in cxone"
+   ]
+  },
+  {
+   "source": "BENEFEDS IVR",
+   "phrases": [
+    "what options does the phone menu give callers before they reach us",
+    "what self service options does the BENEFEDS IVR offer callers"
+   ]
+  },
+  {
+   "source": "BENEFEDS Login.gov Support",
+   "phrases": [
+    "caller can't get into their account through login.gov even though it's linked, what can I do",
+    "member cant log in with login.gov"
+   ]
+  },
+  {
+   "source": "BENEFEDS Open Season QA Companion Guide",
+   "phrases": [
+    "what do I need to do on the call opening to meet expectations on my QA during open season"
+   ]
+  },
+  {
+   "source": "BENEFEDS Role in FLTCIP",
+   "phrases": [
+    "caller has a question about long term care insurance, what does BENEFEDS handle for that"
+   ]
+  },
+  {
+   "source": "BENEFEDS Steady State QA Companion Guide",
+   "phrases": [
+    "what are the QA expectations for greeting the caller and verifying security"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Can and Cannot Do",
+   "phrases": [
+    "can the customer change their social security number on the website themselves",
+    "what can a customer do on BENEFEDS.gov outside of open season and what can't they do"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Can and Cannot Do DURING OPEN SEASON",
+   "phrases": [
+    "what can a customer do on the website during open season and what do they need to call for"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Can and Cannot Do DURING Post Open Season",
+   "phrases": [
+    "after open season what can customers still do online",
+    "what can't the customer do on BENEFEDS.gov during post open season"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Create Account",
+   "phrases": [
+    "customer doesn't have an account yet, how do they make one on the website",
+    "customer tried to locate their account on BENEFEDS.gov but it wasn't found, how do they create one"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Legal Documents",
+   "phrases": [
+    "where can the customer find legal documents like privacy notices on the website",
+    "caller wants a copy of the privacy policy and terms, where on the website do i send them"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Linked Account Sign In",
+   "phrases": [
+    "how does a member sign in when their login.gov is already connected"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Unauthorized Login Attempt",
+   "phrases": [
+    "customer thinks someone hacked into their online account",
+    "customer reports an unauthorized login attempt on their BENEFEDS.gov account, how do I secure it",
+    "unauthorized login attempt on benefeds account",
+    "he got an alert someone tried to sign into his account who wasnt him"
+   ]
+  },
+  {
+   "source": "BENEFEDS.gov Unlinked Account Sign In",
+   "phrases": [
+    "customer has a my benefeds account but never connected it to login.gov"
+   ]
+  },
+  {
+   "source": "Belated Action Request Form",
+   "phrases": [
+    "caller missed their enrollment window, how long do they have to request a late enrollment",
+    "new hire missed the 60 day window"
+   ]
+  },
+  {
+   "source": "Belated Enrollments",
+   "phrases": [
+    "the member's late request was approved, how many days do they have and how do I verify the approval",
+    "how do I verify the BAR was approved before processing a belated enrollment"
+   ]
+  },
+  {
+   "source": "Belated Open Season Actions (L1)",
+   "phrases": [
+    "customer wants to change plans but open season already ended, what do I say",
+    "open season ended last week can he still change plans"
+   ]
+  },
+  {
+   "source": "Belated Open Season Actions (L2)",
+   "phrases": [
+    "customer wants to change plans but open season already ended, what do I say"
+   ]
+  },
+  {
+   "source": "Billing & Deduction Questions",
+   "phrases": [
+    "caller has a question about their payroll deduction, who do I transfer them to",
+    "where do I transfer a caller with a FSAFEDS billing question"
+   ]
+  },
+  {
+   "source": "Break and Lunch Rules for Admins",
+   "phrases": [
+    "how many breaks and lunches for a 9 hour shift",
+    "how many 15s does an admin get on a 9 hr shift"
+   ]
+  },
+  {
+   "source": "CSS Agency Name Change",
+   "phrases": [
+    "there's a banner on the deduction info tab saying there is a pending modification"
+   ]
+  },
+  {
+   "source": "CXone Agent Statuses",
+   "phrases": [
+    "what status do I use for my 10 minute pre-shift",
+    "what cxone status for lunch"
+   ]
+  },
+  {
+   "source": "CXone Agent Statuses (WCX)",
+   "phrases": [
+    "which statuses am I allowed to use during my shift in the softphone"
+   ]
+  },
+  {
+   "source": "CXone Call Storage and Retrieval",
+   "phrases": [
+    "how long do we keep call recordings"
+   ]
+  },
+  {
+   "source": "CXone Callbacks & Scripting",
+   "phrases": [
+    "I got a call where the system says this is a callback, what do I say",
+    "caller wants us to call him back tomorrow",
+    "how do I identify a callback",
+    "customer wants me to call back tomorrow at 3",
+    "leaving a voicemail on outbound call what can i say",
+    "member calling back after I left voicemail",
+    "returning a customers call what do i say"
+   ]
+  },
+  {
+   "source": "CXone Cold Transfers (External)",
+   "phrases": [
+    "how do I blind transfer a caller to an outside phone number",
+    "transfer caller to OPM retirement line"
+   ]
+  },
+  {
+   "source": "CXone Cold Transfers (Internal)",
+   "phrases": [
+    "how do I do an instant transfer to another workgroup with transfer notes"
+   ]
+  },
+  {
+   "source": "CXone Conference Call",
+   "phrases": [
+    "how do I get three people on the line at the same time",
+    "how do I conference in another agent",
+    "how do I set up a conference call in cxone"
+   ]
+  },
+  {
+   "source": "CXone Contact History",
+   "phrases": [
+    "how do I look up the history of a call by its contact ID in reporting"
+   ]
+  },
+  {
+   "source": "CXone Disconnected Calls",
+   "phrases": [
+    "the caller hung up in the middle of the call, do I have to call them back",
+    "call disconnected how do I call the customer back",
+    "caller got disconnected what do I do",
+    "caller hung up because she didnt like my answer, call back?",
+    "customer hung up on me mid call do I have to call back",
+    "ssn 123456789 caller hung up"
+   ]
+  },
+  {
+   "source": "CXone Escalation Procedures",
+   "phrases": [
+    "caller wants a manager, how do I get my supervisor on the call"
+   ]
+  },
+  {
+   "source": "CXone Handling Escalated Calls (Supervisor)",
+   "phrases": [
+    "as a supervisor how do I join a call that an agent escalated to me",
+    "supervisor escalated call",
+    "supervisor takeover of an escalated call",
+    "how do I handle a supervisor takeover"
+   ]
+  },
+  {
+   "source": "CXone Handling Voicemail",
+   "phrases": [
+    "how do I work the overnight voicemails assigned to me",
+    "how to handle voicemail",
+    "where do i find the overnight voice messages assigned to me"
+   ]
+  },
+  {
+   "source": "CXone How to Listen to Your Calls",
+   "phrases": [
+    "how can I listen back to my own recorded calls"
+   ]
+  },
+  {
+   "source": "CXone How to Make an Outbound Call",
+   "phrases": [
+    "how do I dial out to a customer from the softphone",
+    "how do I make an outbound call in cxone with the new outbound icon",
+    "how do I make an outbound call"
+   ]
+  },
+  {
+   "source": "CXone Initial Preferences and Setup",
+   "phrases": [
+    "first time setting up my softphone, what settings do I pick"
+   ]
+  },
+  {
+   "source": "CXone Installing Browser Extension",
+   "phrases": [
+    "the softphone is asking me to install an extension, how do I do it",
+    "how to install the cxone browser extension"
+   ]
+  },
+  {
+   "source": "CXone Listening to Recordings",
+   "phrases": [
+    "how do I search interactions to listen to an agent's recorded call"
+   ]
+  },
+  {
+   "source": "CXone Live Monitoring (Supervisor)",
+   "phrases": [
+    "how do I listen in on an agent's live call",
+    "how do I live monitor an agent",
+    "how do I use live monitoring to monitor an agent's voice call"
+   ]
+  },
+  {
+   "source": "CXone Offering the Survey",
+   "phrases": [
+    "how do I send the caller to the after-call survey",
+    "how do I offer the survey"
+   ]
+  },
+  {
+   "source": "CXone QA Process for OS and Post OS",
+   "phrases": [
+    "how many days do I have to acknowledge my QA evaluation",
+    "how do I view my qa evaluation"
+   ]
+  },
+  {
+   "source": "CXone Resetting Your Password",
+   "phrases": [
+    "I forgot my password for the phone system",
+    "how do I reset my cxone password"
+   ]
+  },
+  {
+   "source": "CXone Retrieving a Contact ID",
+   "phrases": [
+    "I can't find the interaction ID for my comment",
+    "how to retrieve a contact id"
+   ]
+  },
+  {
+   "source": "CXone Softphone Changing Agent State",
+   "phrases": [
+    "agent didn't come back from lunch, how do I change their status",
+    "how do I force log out an agent or change their state to unavailable system down"
+   ]
+  },
+  {
+   "source": "CXone Softphone Logging In and Out",
+   "phrases": [
+    "how do I log into the softphone and connect the agent leg"
+   ]
+  },
+  {
+   "source": "CXone Starting and Ending Your Day",
+   "phrases": [
+    "what steps do I follow at the end of my shift so I don't get another call",
+    "how do I start my day in cxone"
+   ]
+  },
+  {
+   "source": "CXone Troubleshooting Audio",
+   "phrases": [
+    "caller says they can hear background noise on my end",
+    "agent cant hear the caller audio",
+    "caller can't hear me, how do I troubleshoot the audio"
+   ]
+  },
+  {
+   "source": "CXone Unrecorded Outbound Calls",
+   "phrases": [
+    "customer doesn't want to be recorded, how can we call them back without recording",
+    "caller wants an encrypted line",
+    "customer refuses to have the call recorded"
+   ]
+  },
+  {
+   "source": "CXone User Hub",
+   "phrases": [
+    "how do I launch the agent app from the hub"
+   ]
+  },
+  {
+   "source": "CXone Viewing Call Queue Wait Times",
+   "phrases": [
+    "how can I see how long the wait is in the queue before I transfer",
+    "where can I see call queue wait times"
+   ]
+  },
+  {
+   "source": "CXone Viewing QA Evaluations",
+   "phrases": [
+    "where do I see my evaluations and request a review"
+   ]
+  },
+  {
+   "source": "CXone Warm Transfers",
+   "phrases": [
+    "should a transfer to research be warm or cold and how do I do it",
+    "how do I do a warm transfer",
+    "sending this one to research, do i stay on and introduce or just send it"
+   ]
+  },
+  {
+   "source": "Call Closing Process - Inbound Calls",
+   "phrases": [
+    "what do I say to end the call before offering the survey",
+    "what is the standard closing script",
+    "how fast do i need to greet the caller"
+   ]
+  },
+  {
+   "source": "Call Opening Decision Tree",
+   "phrases": [
+    "caller came through the phone menu fully authenticated, what greeting do I use",
+    "caller is authenticated partial in the IVR, what do I say to open the call",
+    "caller only did partial in the IVR, what else do i need",
+    "primary wants to make an ach payment, how much security",
+    "what is the greeting when the caller is not authenticated"
+   ]
+  },
+  {
+   "source": "Call Opening Process & Scripting",
+   "phrases": [
+    "what is the greeting script when I answer a call",
+    "caller only did partial in the IVR, what else do i need",
+    "how fast do i need to greet the caller",
+    "primary wants to make an ach payment, how much security",
+    "what is the greeting when the caller is not authenticated"
+   ]
+  },
+  {
+   "source": "Canceling ACH Payments (L1)",
+   "phrases": [
+    "customer wants to stop a one time bank payment they scheduled",
+    "how do I cancel an ACH payment"
+   ]
+  },
+  {
+   "source": "Cancelling FEDVIP Coverage Talking Points",
+   "phrases": [
+    "member is being deployed on active duty, can they cancel their dental",
+    "enrollee going on active duty can they cancel",
+    "postal worker going on active duty can he cancel",
+    "she wants to drop her vision",
+    "spouse leaving for active duty wants to cancel both dental and vision",
+    "retiree wants to drop his vision plan, what do i tell him"
+   ]
+  },
+  {
+   "source": "Carrier Communication After Open Season",
+   "phrases": [
+    "when does the carrier get the new year's enrollment information after open season"
+   ]
+  },
+  {
+   "source": "Carrier Concerns",
+   "phrases": [
+    "dentist won't do the work because the predetermination wasn't approved by united concordia"
+   ]
+  },
+  {
+   "source": "Carrier Emergency Update",
+   "phrases": [
+    "member needs dental work tomorrow and the carrier can't find their coverage",
+    "she's at the dentist right now and they cant find her coverage, enrolled 2 weeks ago"
+   ]
+  },
+  {
+   "source": "Carrier Information",
+   "phrases": [
+    "when will the member get their new ID card after changing plans"
+   ]
+  },
+  {
+   "source": "Changing Your Time Zone in IEX",
+   "phrases": [
+    "my schedule shows the wrong time zone in webstation",
+    "how do I change my time zone in iex",
+    "my schedule in webstation is showing eastern but i work in central"
+   ]
+  },
+  {
+   "source": "Chorus - Agent Workaround",
+   "phrases": [
+    "chorus is down and I can't submit tickets, what do I do"
+   ]
+  },
+  {
+   "source": "Chorus - Process Steps Explained",
+   "phrases": [
+    "what does the end process step mean on a ticket"
+   ]
+  },
+  {
+   "source": "Clearing MS Edge Cache",
+   "phrases": [
+    "my systems are acting up, how do I clear the browser cache"
+   ]
+  },
+  {
+   "source": "Commenting with AutoSummary",
+   "phrases": [
+    "after the call how do I paste the generated comment into the account"
+   ]
+  },
+  {
+   "source": "Communication Options for the Deaf",
+   "phrases": [
+    "caller is hard of hearing, what options do they have to contact us",
+    "deaf caller using a relay service",
+    "caller has a speech disability, communicates through relay"
+   ]
+  },
+  {
+   "source": "Compare Dental Service Costs Tool",
+   "phrases": [
+    "customer wants to know how much a crown would cost out of pocket under different plans",
+    "compare dental service costs"
+   ]
+  },
+  {
+   "source": "Complaints",
+   "phrases": [
+    "caller says they are going to contact their congressman",
+    "customer wants to file a complaint by email",
+    "customer says he will call his congressman"
+   ]
+  },
+  {
+   "source": "Correspondence AWD Ticket",
+   "phrases": [
+    "customer wants their confirmation letter re-sent by mail",
+    "customer wants their enrollment confirmation re-sent, what correspondence ticket do I create"
+   ]
+  },
+  {
+   "source": "Creating Automated Reports in Webstation",
+   "phrases": [
+    "how do I set up a report in webstation to run automatically"
+   ]
+  },
+  {
+   "source": "Creating a BENEFEDS Account Checklist",
+   "phrases": [
+    "what should I check before setting up a new account for a caller"
+   ]
+  },
+  {
+   "source": "Customer Alerts in a BENEFEDS Account",
+   "phrases": [
+    "member sees a red dot on their dental card, what does it mean"
+   ]
+  },
+  {
+   "source": "Customers with Multiple ABW Reversals",
+   "phrases": [
+    "member's bank draft keeps bouncing over and over",
+    "customer has multiple ABW reversals and wants back on ABW",
+    "member has multiple ABW reversals from insufficient funds, what are the steps"
+   ]
+  },
+  {
+   "source": "Database Reduction",
+   "phrases": [
+    "the account was fully archived, should I retrieve it or create a new one",
+    "how many years of data stay active in the CSS before it gets archived"
+   ]
+  },
+  {
+   "source": "De-escalation Techniques",
+   "phrases": [
+    "caller is yelling at me, how do I calm them down",
+    "how do I calm down an angry caller",
+    "what de-escalation techniques can I use with an upset caller"
+   ]
+  },
+  {
+   "source": "Deceased and 3rd Party Callers",
+   "phrases": [
+    "the daughter of a member who passed away is calling, what can I share with her",
+    "caller reporting death of enrollee"
+   ]
+  },
+  {
+   "source": "Deferred vs. Postponed Annuitants",
+   "phrases": [
+    "former employee who left before retirement age and will get their annuity later, are they eligible",
+    "is a deferred annuitant eligible for FEDVIP, what about a postponed annuitant",
+    "former fed left service early and is waiting to draw his annuity, can he get fedvip"
+   ]
+  },
+  {
+   "source": "Delete FEDVIP Registration",
+   "phrases": [
+    "customer registered under the wrong federal family and has no enrollment, how do I remove the registration"
+   ]
+  },
+  {
+   "source": "Dependent AWD Ticket",
+   "phrases": [
+    "I need to reactivate a dependent that was removed last month, what ticket"
+   ]
+  },
+  {
+   "source": "Dependent Eligibility Age 21 or 23 – USM",
+   "phrases": [
+    "military member's son is turning 21 and is a full time student, can he stay on",
+    "how old can a usm dependent child be covered until",
+    "(overlay integrity) CG-USM-ISS-DEERS member source",
+    "caller is not federal civilian, he is army, son 22",
+    "postal worker kid 22 full time student",
+    "son turning 21 dad is active duty navy can he stay on"
+   ]
+  },
+  {
+   "source": "Dependent Eligibility Age 22 – CIV Employee or USPS",
+   "phrases": [
+    "postal worker's daughter is turning 22, when does her coverage end",
+    "not a usm, federal civilian, son turning 22",
+    "usps employee daughter 22 full time student",
+    "dependent age limit",
+    "federal civilian dependent child age limit",
+    "usps employee child turning 22",
+    "ISS appeal annuitant OPM delayed paperwork",
+    "postal worker kid 22 full time student"
+   ]
+  },
+  {
+   "source": "Dependent Eligibility Incapable of Self Support",
+   "phrases": [
+    "adult disabled child who can't support himself, can he stay on the plan past the age limit",
+    "ISS appeal annuitant OPM delayed paperwork"
+   ]
+  },
+  {
+   "source": "Determining FEDVIP Reinstatement",
+   "phrases": [
+    "member's coverage was terminated because of an address problem, can we reinstate it"
+   ]
+  },
+  {
+   "source": "Discontinued Service Retirement (DSR)",
+   "phrases": [
+    "employee was involuntarily separated in a reduction in force and gets an immediate annuity, can they keep their coverage",
+    "laid off involuntarily and getting an immediate annuity, is fedvip continued"
+   ]
+  },
+  {
+   "source": "Downloading CSAT reports",
+   "phrases": [
+    "how do I download the customer satisfaction survey results",
+    "how do I download CSAT reports from feedback management"
+   ]
+  },
+  {
+   "source": "Dual Eligibility",
+   "phrases": [
+    "caller is both a federal employee and a military retiree, which one do they enroll under",
+    "retired navy but now a federal civilian employee wants to enroll",
+    "so basically the guy is in the army reserves and also works at the VA as a civilian and he wants to know which one he should enroll under"
+   ]
+  },
+  {
+   "source": "Dual Enrollments",
+   "phrases": [
+    "husband and wife both have family plans covering each other, is that allowed",
+    "spouses each have a self plus one covering the other, is that a dual enrollment",
+    "husband and wife both have self only plus she's listed on his family plan too, is that ok"
+   ]
+  },
+  {
+   "source": "Edit ABW Information",
+   "phrases": [
+    "customer wants to use a different bank account for vision than dental",
+    "how do I change the bank account for ABW on the dental plan"
+   ]
+  },
+  {
+   "source": "Edit ABW Information L1",
+   "phrases": [
+    "how do I add a bank account for automatic withdrawal during an enrollment",
+    "ABW failed three times what happens",
+    "member wants to cancel ABW"
+   ]
+  },
+  {
+   "source": "Edit FEHB",
+   "phrases": [
+    "the FEHB plan code on the account is wrong, how do I fix it"
+   ]
+  },
+  {
+   "source": "Edit Other Insurances",
+   "phrases": [
+    "member has dental coverage through their spouse's employer, where do I record that",
+    "how do I edit the member's other non FEHB dental insurance"
+   ]
+  },
+  {
+   "source": "Edit Sponsor Info",
+   "phrases": [
+    "the sponsor's date of birth is wrong, how do I update it",
+    "how do I edit the sponsor's name on the affiliations page"
+   ]
+  },
+  {
+   "source": "Effective Dates",
+   "phrases": [
+    "what is the difference between the premium effective date and the coverage effective date",
+    "when does coverage start if she enrolls today due to marriage"
+   ]
+  },
+  {
+   "source": "Eligibility of USM Dependents",
+   "phrases": [
+    "can a former spouse of a military retiree stay covered",
+    "son is 23 and full time student uniformed service",
+    "tricare eligible kid just started full time college mid year, can the usm sponsor add him now",
+    "caller is not federal civilian, he is army, son 22",
+    "son turning 21 dad is active duty navy can he stay on"
+   ]
+  },
+  {
+   "source": "Eligibility of Uniformed Service Members (USM)",
+   "phrases": [
+    "is a gray area reservist under 60 eligible for dental and vision",
+    "USM retiree wants to enroll in dental",
+    "ex wife was married to a marine for 25 years can she get coverage on her own  (also: \"ex wife wants coverage\", \"ex-wife of a marine wants vision\", \"ex wife was married to him 25 years\")"
+   ]
+  },
+  {
+   "source": "Employee Service Center Incident vs Request",
+   "phrases": [
+    "my computer crashed, should I submit an incident or a request"
+   ]
+  },
+  {
+   "source": "Enrollment Code Translator",
+   "phrases": [
+    "what does carrier code AK mean in the enrollment code"
+   ]
+  },
+  {
+   "source": "Enrollment Terms & Conditions",
+   "phrases": [
+    "what does the member agree to when they finish enrolling",
+    "what does the member certify in the enrollment terms and conditions"
+   ]
+  },
+  {
+   "source": "Enrollment or Inactivation Due to Divorce",
+   "phrases": [
+    "ex wife wants to enroll on her own but she's still listed on her ex husband's plan",
+    "federal employee divorced remove former spouse",
+    "member divorced, where do they email the decree",
+    "sponsor wants to drop his ex off the plan without her ok",
+    "where does the sponsor send the divorce decree",
+    "ex wife still on his plan after divorce finalized, she wants her own coverage"
+   ]
+  },
+  {
+   "source": "Escalation OPM Annuity",
+   "phrases": [
+    "caller has a question about their retirement annuity payment, what number do I give them",
+    "transfer caller to OPM retirement line"
+   ]
+  },
+  {
+   "source": "Escalation to OPM (TL ONLY)",
+   "phrases": [
+    "customer is threatening to call their senator, can I give them OPM's contact information"
+   ]
+  },
+  {
+   "source": "FAD Account USM Transition from Active Duty",
+   "phrases": [
+    "sponsor is retiring from active duty and the spouse has a family of active duty account",
+    "usm sponsor retired family member was primary on FAD account"
+   ]
+  },
+  {
+   "source": "FEDVIP Background",
+   "phrases": [
+    "when was the dental and vision program created and by what law"
+   ]
+  },
+  {
+   "source": "FEDVIP Credits & Refunds",
+   "phrases": [
+    "member has a credit on their account, can I tell them when the refund will arrive",
+    "OPM letter says they are no longer receiving premium",
+    "member overpaid by check when can we refund it",
+    "member paid by ABW where does the refund go",
+    "refund for a deceased member"
+   ]
+  },
+  {
+   "source": "FEDVIP Eligibility - Dependents (FED CIV)",
+   "phrases": [
+    "federal employee wants to add their civil union partner, are they eligible",
+    "can grandchildren be added",
+    "ex wife was married to a marine for 25 years can she get coverage on her own  (also: \"ex wife wants coverage\", \"ex-wife of a marine wants vision\", \"ex wife was married to him 25 years\")"
+   ]
+  },
+  {
+   "source": "FEDVIP Eligibility - Federal Civilian (FED CIV)",
+   "phrases": [
+    "is a temporary federal employee eligible to enroll"
+   ]
+  },
+  {
+   "source": "FEDVIP Ineligible vs Never Eligible Dependents",
+   "phrases": [
+    "what's the difference between a dependent that can't be covered now and one that can never be covered",
+    "what is the difference between an ineligible dependent and a never eligible dependent"
+   ]
+  },
+  {
+   "source": "FEDVIP Phone and Contact Information",
+   "phrases": [
+    "what is the phone number for aetna dental",
+    "what are blue cross fep dental's hours and phone number",
+    "poa fax number",
+    "usm member wants the ISS approval email address",
+    "what is the GEHA dental phone number",
+    "what is the benefeds fax number",
+    "transfer caller to OPM retirement line"
+   ]
+  },
+  {
+   "source": "FEDVIP Primary Enrollee Eligibility",
+   "phrases": [
+    "how many hours a month does a federal employee have to work to be eligible",
+    "federal employee must expect to work 130 hours per month for 90 days, is that the eligibility rule"
+   ]
+  },
+  {
+   "source": "FEDVIP Roles",
+   "phrases": [
+    "what is OPM's role versus fedpoint in the program"
+   ]
+  },
+  {
+   "source": "Fed Civ to USM Change Employment Status",
+   "phrases": [
+    "customer wants to switch their employment status from civilian to uniformed services"
+   ]
+  },
+  {
+   "source": "Federal Benefits Open Season Overview",
+   "phrases": [
+    "how can people enroll or make changes during open season"
+   ]
+  },
+  {
+   "source": "Federal Civilian Transition to Retirement",
+   "phrases": [
+    "civilian employee is retiring, how do I handle their FEDVIP"
+   ]
+  },
+  {
+   "source": "Federal Civilian Transition to Retirement (L1)",
+   "phrases": [
+    "civilian employee just retired, can they cancel their dental because they retired"
+   ]
+  },
+  {
+   "source": "Financial Document Requests",
+   "phrases": [
+    "customer needs a letter showing premiums paid after tax for their taxes"
+   ]
+  },
+  {
+   "source": "Foreign Blocked Countries",
+   "phrases": [
+    "caller overseas can't get to the website, is their country blocked",
+    "customer overseas says the website just wont load for him at all"
+   ]
+  },
+  {
+   "source": "Forms of Payment",
+   "phrases": [
+    "which payment methods are billed in arrears versus in advance",
+    "what forms of payment do we accept",
+    "what ways can someone pay premiums and are they billed ahead or behind"
+   ]
+  },
+  {
+   "source": "GEHA and Common Customer Questions",
+   "phrases": [
+    "how do you pronounce GEHA and what does their plan include"
+   ]
+  },
+  {
+   "source": "Generating Adherence Reports",
+   "phrases": [
+    "how do I run an adherence report by agent"
+   ]
+  },
+  {
+   "source": "Generating Scheduled Hours Report",
+   "phrases": [
+    "how do I pull a report of agents scheduled work hours"
+   ]
+  },
+  {
+   "source": "Generating Time Utilization Reports",
+   "phrases": [
+    "how much time did agents lose to meetings and training, which report shows that",
+    "how do I generate a time utilization report with activity codes"
+   ]
+  },
+  {
+   "source": "Guidelines for VTO (Voluntary Time Off)",
+   "phrases": [
+    "if I ask for time off because it's slow, is it guaranteed",
+    "is VTO approval guaranteed, I'm planning to request voluntary time off"
+   ]
+  },
+  {
+   "source": "Handling Escalated Calls",
+   "phrases": [
+    "caller asks to speak to a supervisor, what steps do I take",
+    "caller wants an encrypted line",
+    "customer refuses to have the call recorded",
+    "caller is yelling and demanding my manager right now"
+   ]
+  },
+  {
+   "source": "Handling FSAFEDS Calls",
+   "phrases": [
+    "caller has a question about their flexible spending account claim"
+   ]
+  },
+  {
+   "source": "Handling Inquiries From the Media",
+   "phrases": [
+    "a reporter from a newspaper is calling asking about our contract",
+    "a reporter is on the line asking for a comment"
+   ]
+  },
+  {
+   "source": "Handling Open Season Plan Cancellation Call",
+   "phrases": [
+    "member wants to cancel their plan during open season, when does it end",
+    "caller wants to cancel during open season",
+    "enrolee picked a plan for next year during open season and now wants to undo it completely"
+   ]
+  },
+  {
+   "source": "Handling Open Season Plan Changes",
+   "phrases": [
+    "member wants to switch carriers during open season, how do I do it",
+    "wants to change from self plus one to self and family during open season"
+   ]
+  },
+  {
+   "source": "Handling Report of Death Calls",
+   "phrases": [
+    "caller is reporting that the enrollee passed away",
+    "what security do I need from someone reporting a death"
+   ]
+  },
+  {
+   "source": "Handling Security Issues",
+   "phrases": [
+    "caller refuses to have the call recorded, who do I escalate to",
+    "caller wants an encrypted line",
+    "customer refuses to have the call recorded",
+    "caller says they think someone hacked their benefeds login and changed their bank info"
+   ]
+  },
+  {
+   "source": "Handling Threats and Inappropriate Behavior",
+   "phrases": [
+    "caller said they want to hurt themselves",
+    "caller is yelling and cursing at me",
+    "caller says he wants to end his life",
+    "caller says he threatened to blow up the building",
+    "caller wants to hurt his supervisor",
+    "guy said he is going to come down there and hurt someone",
+    "man said if his coverage gets cancelled he's going to come down there and hurt somebody"
+   ]
+  },
+  {
+   "source": "Handling a Leave Without Pay Call",
+   "phrases": [
+    "member is on maternity leave unpaid and got a bill, why"
+   ]
+  },
+  {
+   "source": "Hold and Transfer Procedures and Scripting",
+   "phrases": [
+    "how often should I check back with the caller when they're on hold",
+    "how long can I keep a caller on hold"
+   ]
+  },
+  {
+   "source": "Humana's Alternate Effective Date",
+   "phrases": [
+    "humana website shows a different start date than BENEFEDS",
+    "humana alternate effective date"
+   ]
+  },
+  {
+   "source": "IEX Activity Codes Updates",
+   "phrases": [
+    "what does the system down activity code mean in IEX",
+    "iex activity codes"
+   ]
+  },
+  {
+   "source": "IEX Setup for Schedule Review",
+   "phrases": [
+    "how should I arrange IEX windows to review schedule adherence"
+   ]
+  },
+  {
+   "source": "IEX Tips and Shortcuts",
+   "phrases": [
+    "keyboard shortcut to copy an exact schedule in IEX"
+   ]
+  },
+  {
+   "source": "IEX Webstation Login and Logout",
+   "phrases": [
+    "what are the password requirements for webstation",
+    "how do I log into iex webstation",
+    "cant remember how to sign in to the nice webstation to see my schedule"
+   ]
+  },
+  {
+   "source": "Incident Reporting Scenarios",
+   "phrases": [
+    "QA found the agent disclosed information to the wrong person, is that reported as an incident",
+    "QA incident reporting scenarios, when does compliance say to report it"
+   ]
+  },
+  {
+   "source": "Incident vs Breach",
+   "phrases": [
+    "how quickly must a breach be reported versus an incident",
+    "i accidentally gave account info to the wrong person, what now"
+   ]
+  },
+  {
+   "source": "Inquiries Regarding Workforce Changes",
+   "phrases": [
+    "member was inactivated because of the 2025 layoffs, can we reinstate them",
+    "got RIF'd last year, coverage got cut, can we reinstate"
+   ]
+  },
+  {
+   "source": "Insufficient Funds",
+   "phrases": [
+    "member's paycheck isn't big enough to cover the premium",
+    "member has insufficient funds in their annuity check to pay the FEDVIP premium",
+    "retiree says his annuity check was too small to take out the dental premium this month"
+   ]
+  },
+  {
+   "source": "Intermittent Payors",
+   "phrases": [
+    "member gets paid only some pay periods and has zero deductions in between",
+    "federal civilian with intermittent deductions and past due balance, is the account inactivated",
+    "intermittent payor wants to go back to payroll deductions",
+    "seasonal park service employee only gets paid part of the year, deductions keep stopping"
+   ]
+  },
+  {
+   "source": "International & Military Information Gathering",
+   "phrases": [
+    "how do I enter an overseas address with a province and postal code"
+   ]
+  },
+  {
+   "source": "LEARN Troubleshooting",
+   "phrases": [
+    "I'm getting an error 403 in learn",
+    "the training site keeps freezing when i open two tabs"
+   ]
+  },
+  {
+   "source": "Leave Without Pay (LWOP)",
+   "phrases": [
+    "is an employee on unpaid leave still eligible and how are they billed",
+    "guy on unpaid leave from the VA, is he still eligible"
+   ]
+  },
+  {
+   "source": "Locating an Account in the CSS",
+   "phrases": [
+    "how do I search for a member in the customer service system",
+    "how do I find an account in the css"
+   ]
+  },
+  {
+   "source": "Locating the Payroll Authorization Form for FAD Accounts",
+   "phrases": [
+    "where does the military spouse download the payroll authorization form"
+   ]
+  },
+  {
+   "source": "Locked CS System Account",
+   "phrases": [
+    "I got locked out of the customer service system after too many tries",
+    "cs system locked out after 3 tries",
+    "my css account is locked"
+   ]
+  },
+  {
+   "source": "Logging into ServiceNow to Set Up MFA",
+   "phrases": [
+    "how do I configure two-factor authentication in service now",
+    "how do I set up MFA in servicenow from my profile"
+   ]
+  },
+  {
+   "source": "Mail Plan Info",
+   "phrases": [
+    "customer wants plan information mailed to them",
+    "how do I mail plan information from the plans and rates page",
+    "customer has no computer and wants plan brochures sent, what's the letter called"
+   ]
+  },
+  {
+   "source": "Managing Break in Federal Service",
+   "phrases": [
+    "employee was terminated and rehired two days later, what happens to their enrollment",
+    "employee had a break in federal service of 3 days or less, what do I do with the enrollment"
+   ]
+  },
+  {
+   "source": "Medicare & Medicaid Questions",
+   "phrases": [
+    "the medicare pop up came up, do I need to ask those questions"
+   ]
+  },
+  {
+   "source": "Method and Frequency of Pay",
+   "phrases": [
+    "how often does a retired military member pay premiums"
+   ]
+  },
+  {
+   "source": "Microsoft Teams Best Practices",
+   "phrases": [
+    "how should I use teams channels to ask floor support questions"
+   ]
+  },
+  {
+   "source": "Multiple SSN Issues",
+   "phrases": [
+    "member has two accounts because they typed the wrong social security number",
+    "member has multiple accounts with different SSNs, one is wrong"
+   ]
+  },
+  {
+   "source": "NATO Alphabet",
+   "phrases": [
+    "how do I spell out a temporary password letter by letter to the caller",
+    "phonetic alphabet for reading a password to the customer",
+    "is it B as in bravo... whats the full list i use for reading passwords"
+   ]
+  },
+  {
+   "source": "NICE Webstation (IEX) Trading Schedules",
+   "phrases": [
+    "how do I swap a shift with another agent",
+    "how to trade schedules in iex"
+   ]
+  },
+  {
+   "source": "New Survivor Annuitant Create Account",
+   "phrases": [
+    "widow calling to enroll for the first time after her husband died, do I set up the account",
+    "widow of a federal retiree wants to enroll, she just got her CSF claim number"
+   ]
+  },
+  {
+   "source": "New Survivor Enrollment",
+   "phrases": [
+    "how long does a surviving spouse have to enroll after the death",
+    "widow of a retired military member wants to enroll, how long does she have",
+    "usm survivor what dates make them a new survivor"
+   ]
+  },
+  {
+   "source": "New Survivor L1",
+   "phrases": [
+    "surviving spouse wants to enroll, what do I do as a level 1 rep",
+    "widow of a federal retiree wants to enroll, do I transfer to a senior rep"
+   ]
+  },
+  {
+   "source": "Non FEDVIP Program Information",
+   "phrases": [
+    "caller is asking about their medical insurance not dental, what do I tell them",
+    "caller is asking about FEHB health insurance, not dental or vision"
+   ]
+  },
+  {
+   "source": "Non-Appropriated Funds",
+   "phrases": [
+    "is a NAF employee on a military base eligible for FEDVIP",
+    "works at the commissary on base paid from store revenue not federal money, can he enroll"
+   ]
+  },
+  {
+   "source": "Non-English Speaking TeleInterpreter Tips",
+   "phrases": [
+    "caller only speaks Vietnamese, how do I get an interpreter",
+    "how do I transfer to a Spanish speaking agent",
+    "teleinterpreter number",
+    "cliente solo habla español transferir",
+    "habla espanol",
+    "spanish caller just wants to know their plan name"
+   ]
+  },
+  {
+   "source": "Non-OPM Annuity Locations",
+   "phrases": [
+    "retiree gets pension from the Federal Reserve not OPM, what annuity location"
+   ]
+  },
+  {
+   "source": "OPM Claim Numbers and Where to Locate Them",
+   "phrases": [
+    "where can a retiree find their CSA number",
+    "survivor asks where to find her CSF number"
+   ]
+  },
+  {
+   "source": "OS Admin Responsibilities",
+   "phrases": [
+    "what are my daily duties as an admin during open season"
+   ]
+  },
+  {
+   "source": "OS Vendor Help Desk Support Ticket",
+   "phrases": [
+    "agent at WCX has a system issue, how does the team lead open a ticket",
+    "i'm at the vendor site and my system went down, who opens the ticket"
+   ]
+  },
+  {
+   "source": "OS and Post OS QA Appeal Process",
+   "phrases": [
+    "agent disagrees with how their call was scored, how do they dispute it",
+    "disagree with how my call got scored, how do i dispute the QA"
+   ]
+  },
+  {
+   "source": "Open Season Current Plan Year Call",
+   "phrases": [
+    "caller wants to switch from high to standard option before open season, when does it take effect"
+   ]
+  },
+  {
+   "source": "Open Season Exception Enrollment Steps",
+   "phrases": [
+    "steps to enroll someone on the post open season exception day"
+   ]
+  },
+  {
+   "source": "Outbound Call Scripting",
+   "phrases": [
+    "what do I say when I call a customer back",
+    "greeting and security to use when making an outbound call to a customer",
+    "outbound call how many pieces of security",
+    "leaving a voicemail on outbound call what can i say",
+    "member calling back after I left voicemail",
+    "returning a customers call what do i say"
+   ]
+  },
+  {
+   "source": "Past Due and Retroactive Payments",
+   "phrases": [
+    "how do we collect premiums that were missed while they were on leave without pay",
+    "member is getting double deductions for past due premiums"
+   ]
+  },
+  {
+   "source": "Placing Enrollee on Direct Bill",
+   "phrases": [
+    "how do I set the payment method to direct bill during enrollment",
+    "default to direct bill instead of adding a bank account during enrollment",
+    "annuitant wants to pay by bill instead of out of annuity, how do i switch them"
+   ]
+  },
+  {
+   "source": "Plan Comparison Tool",
+   "phrases": [
+    "caller wants to compare dental plans and rates before choosing",
+    "how can customer compare rates between dental carriers on the website"
+   ]
+  },
+  {
+   "source": "Postdated ACH Payments",
+   "phrases": [
+    "customer wants to schedule a payment for a future date",
+    "customer wants to postdate an ACH payment",
+    "customer wants to postdate their payment for next friday"
+   ]
+  },
+  {
+   "source": "Potential Dual Enrollment Scenarios",
+   "phrases": [
+    "two enrollees got married and both have self and family, what happens",
+    "both spouses are covered under two FEDVIP dental plans, dual enrollment after marriage",
+    "member's kid is covered on both her plan and her ex's dental plan"
+   ]
+  },
+  {
+   "source": "Pre and Post Tax Deductions",
+   "phrases": [
+    "are annuitant premiums taken out before or after taxes",
+    "which enrollees pay premiums pre-tax",
+    "is the dental premium pretax for retirees"
+   ]
+  },
+  {
+   "source": "Premium Administration Codes",
+   "phrases": [
+    "what does inactivation reason code N mean",
+    "what does billing status U unconfirmed mean in the deduction info",
+    "what does premium error code B mean"
+   ]
+  },
+  {
+   "source": "Premium Administration Process",
+   "phrases": [
+    "how does the prenote and bill file process with the payroll office work",
+    "explain pre note file process after someone enrolls"
+   ]
+  },
+  {
+   "source": "Premium Inquiry AWD Ticket",
+   "phrases": [
+    "customer disputes the amount being deducted, what ticket do I submit"
+   ]
+  },
+  {
+   "source": "Premium Payment Collection",
+   "phrases": [
+    "when will the first premium be taken for a newly enrolled annuitant",
+    "federal civilian annuitant just enrolled, what date will the first deduction come out",
+    "usm retiree is fed up with his deductions"
+   ]
+  },
+  {
+   "source": "Prenoting USM New Retirees",
+   "phrases": [
+    "newly retired military member was enrolled but got an ABW offer instead of retirement pay deduction",
+    "military retiree enrolled but received a 2nd B code and was switched to ABW",
+    "new USM retiree asking why they're getting a bank withdrawal offer when they picked annuity",
+    "usm retiree is fed up with his deductions"
+   ]
+  },
+  {
+   "source": "Primary AWD Work Item Overview",
+   "phrases": [
+    "which AWD work item do I use for which situation",
+    "when do I use change profile versus create enrollment versus combine accounts AWD"
+   ]
+  },
+  {
+   "source": "Primary Change Enrollment AWD Ticket",
+   "phrases": [
+    "I get an error trying to change their plan in the CS system, what ticket",
+    "enrollee gave wrong eligibility dates and CSS gives an error when I change the enrollment"
+   ]
+  },
+  {
+   "source": "Primary Change Profile AWD Ticket",
+   "phrases": [
+    "I can't update the customer's profile because of an error, what do I submit"
+   ]
+  },
+  {
+   "source": "Primary Combine Accounts AWD Ticket",
+   "phrases": [
+    "need to merge two accounts after marriage and research is unavailable",
+    "two federal employees got married and need their accounts merged"
+   ]
+  },
+  {
+   "source": "Primary Create Enrollment AWD Ticket",
+   "phrases": [
+    "system won't let me enroll the customer, what ticket",
+    "cs system gives error every time i try to enroll the customer"
+   ]
+  },
+  {
+   "source": "Primary Disenrollment AWD Ticket",
+   "phrases": [
+    "belated cancellation was approved, how do I remove them from the plan",
+    "what ticket do I submit for a 24 hour rule cancellation",
+    "belated cancellation got approved, what ticket"
+   ]
+  },
+  {
+   "source": "Primary Enrollee vs Sponsor",
+   "phrases": [
+    "what is the difference between the sponsor and the primary enrollee"
+   ]
+  },
+  {
+   "source": "Primary Inactivation & Disenrollment AWD Ticket",
+   "phrases": [
+    "should I submit an inactivation or a disenrollment ticket",
+    "spouse leaving for active duty wants to cancel both dental and vision"
+   ]
+  },
+  {
+   "source": "Primary Inactivation AWD Ticket",
+   "phrases": [
+    "family member reporting the death of the enrollee, what ticket do I create"
+   ]
+  },
+  {
+   "source": "Primary Reinstate Enrollment AWD Ticket",
+   "phrases": [
+    "payment posted but the account is still inactive for nonpayment",
+    "enrollment was inactivated with the wrong deceased code, need to reinstate it with a ticket",
+    "member's coverage was inactivated as exhausted but he says he paid, get it back"
+   ]
+  },
+  {
+   "source": "Processing ACH Payments",
+   "phrases": [
+    "how do I take a bank payment over the phone for a direct bill",
+    "process an ACH payment for a past due bill"
+   ]
+  },
+  {
+   "source": "Processing an ACH Payment L1",
+   "phrases": [
+    "how do I take a bank payment over the phone for a direct bill",
+    "process an ACH payment for a past due bill"
+   ]
+  },
+  {
+   "source": "QA Call Checks",
+   "phrases": [
+    "what is a call check and how is it different from an official evaluation"
+   ]
+  },
+  {
+   "source": "QA Incident Reporting",
+   "phrases": [
+    "I think personal information was given to the wrong person, who do I call",
+    "i accidentally gave account info to the wrong person, what now",
+    "how do i tell if a botched verification is just a crit error or something that needs reported as a privacy breach",
+    "supervisor here - how do i report that one of my agents may be sharing member SSNs"
+   ]
+  },
+  {
+   "source": "QA Reminders - Official Evaluations and Call Checks",
+   "phrases": [
+    "how many official evaluations do I score per agent each day"
+   ]
+  },
+  {
+   "source": "QA Resources",
+   "phrases": [
+    "where do I find call recordings to listen to",
+    "where are QA resources like the critical error tracker and agent assignment spreadsheet",
+    "where do I go to listen to call recordings for scoring"
+   ]
+  },
+  {
+   "source": "RTA Strategy for OS Admins",
+   "phrases": [
+    "agent is over their break by more than 10 minutes, what do I do",
+    "agent is out of adherence in RTA, what action do I take"
+   ]
+  },
+  {
+   "source": "Reasons Direct Bills are Sent",
+   "phrases": [
+    "why is the customer getting a bill in the mail instead of deductions",
+    "why would a customer be direct billed"
+   ]
+  },
+  {
+   "source": "Receiving a Transferred Call",
+   "phrases": [
+    "how should I greet a caller transferred to me from level 1",
+    "I received a transferred call what do I say",
+    "got a cold transfer from a level 1, what do i say when i pick up"
+   ]
+  },
+  {
+   "source": "Refund Request Premium AWD Ticket",
+   "phrases": [
+    "customer wants their credit balance refunded",
+    "what ticket do I use for a refund request",
+    "when do I submit a refund request ticket",
+    "member has a big credit sitting on the account and wants the money back"
+   ]
+  },
+  {
+   "source": "Reinstatement for Non Pay",
+   "phrases": [
+    "enrollee was terminated for nonpayment, can they be reinstated within 30 days",
+    "customer got a DV35 letter, how long do they have to pay to get reinstated",
+    "fed civ non pay reinstatement letter",
+    "non-pay inactivation for usm how long to reinstate",
+    "retired army member terminated for non pay how many days to reinstate",
+    "military retiree terminated for nonpayment 2 weeks ago wants coverage back",
+    "fed employee termed for nonpay while on LWOP, back in pay status now, can we reinstate"
+   ]
+  },
+  {
+   "source": "Repeat Offenders",
+   "phrases": [
+    "what happens after an agent gets a third critical error",
+    "how many critical errors before someone is let go from the project",
+    "what happens when an agent racks up a third crit error"
+   ]
+  },
+  {
+   "source": "Reporting Suspected Fraud",
+   "phrases": [
+    "caller thinks someone is committing fraud with their account, how do I report it",
+    "what is the fraud hotline number",
+    "caller said he dialed us and got some other company asking for credit card",
+    "caller says they dialed us and got some other company, where do they report it",
+    "i think this guy is lying about his kids to get coverage",
+    "caller thinks someone opened a dental plan using her late husbands identity, she doesnt want to call anyone herself"
+   ]
+  },
+  {
+   "source": "Reporting an Incident in Employee Service Center",
+   "phrases": [
+    "my computer software stopped working, how do I report an IT issue",
+    "how do I submit an IT incident in the employee center",
+    "my computer keeps freezing where do i put in a ticket with IT"
+   ]
+  },
+  {
+   "source": "Requesting Voluntary Time Off",
+   "phrases": [
+    "how do I sign up for VTO"
+   ]
+  },
+  {
+   "source": "Reset SharePoint Image Password (Vendor Agents)",
+   "phrases": [
+    "I'm a vendor agent locked out of Image after three tries, how do I change my password"
+   ]
+  },
+  {
+   "source": "Resetting LEARN Password",
+   "phrases": [
+    "forgot my password for the training site LEARN",
+    "how do I reset my learn password",
+    "lern pasword",
+    "forgot my login for the training site where job aids live"
+   ]
+  },
+  {
+   "source": "Scheduling Adjustment Responsibilities",
+   "phrases": [
+    "by what time do previous day schedule adjustments need to be done"
+   ]
+  },
+  {
+   "source": "Searching Agent CSAT Reports",
+   "phrases": [
+    "how do I pull survey results for one specific agent",
+    "filter CSAT reports by agent name in feedback management"
+   ]
+  },
+  {
+   "source": "Security Information Location",
+   "phrases": [
+    "where in CSS do I find the date of birth and SSN to verify the caller",
+    "where do I find the caller's security information in CSS",
+    "where in CSS do i see the fehb plan name to verify the caller"
+   ]
+  },
+  {
+   "source": "Security Verification",
+   "phrases": [
+    "how many pieces of security do I need before discussing the account",
+    "how many pieces of security do I need for a caller not authenticated in the IVR",
+    "IVR said authenticated full but sounds like a different person",
+    "caller only did partial in the IVR, what else do i need",
+    "how many times do i ask for name if i think its third party",
+    "primary wants to make an ach payment, how much security",
+    "what is the greeting when the caller is not authenticated",
+    "caller says shes the member but sounds like a man, what now"
+   ]
+  },
+  {
+   "source": "Security Verification Direct Hit",
+   "phrases": [
+    "caller is calling from the phone number on the account, does that count as security",
+    "what is a direct hit",
+    "call came in fully authed w ssn and dob and phone number matches what we have, do i still need to ask anything"
+   ]
+  },
+  {
+   "source": "Setup ABW Information",
+   "phrases": [
+    "customer wants premiums taken automatically from their checking account, how do I add the bank",
+    "how do I set up ABW on the vision plan",
+    "wants vision on auto withdrawal from checking but keep dental pulling from a different bank"
+   ]
+  },
+  {
+   "source": "Slack Best Practices",
+   "phrases": [
+    "how should I post a question to floor support in the chat channel",
+    "best practices for asking SMEs questions in Slack",
+    "how do I answer someones question in a thread in the floor support chat app"
+   ]
+  },
+  {
+   "source": "Spanish Authorization of ABW",
+   "phrases": [
+    "I need to read the automatic bank withdrawal authorization to a Spanish speaking caller",
+    "Spanish ABW script",
+    "spanish ABW authorization script"
+   ]
+  },
+  {
+   "source": "Spanish Certification Eligibility",
+   "phrases": [
+    "where is the eligibility certification statement in Spanish"
+   ]
+  },
+  {
+   "source": "Spanish Certification of Family Members",
+   "phrases": [
+    "family member certification script in Spanish",
+    "spanish version of what i read before adding the dependents"
+   ]
+  },
+  {
+   "source": "Spanish Dialects & Keywords",
+   "phrases": [
+    "what is the Spanish word for carriers or retirement",
+    "caller keeps saying jubilacion what does that mean"
+   ]
+  },
+  {
+   "source": "Sponsor Roles in the FEDVIP",
+   "phrases": [
+    "can an active duty service member enroll themselves in FEDVIP",
+    "wife of an active duty soldier wants vision, does the soldier have to be the one enrolling"
+   ]
+  },
+  {
+   "source": "Submitting an Approved Plan Year Belated Action",
+   "phrases": [
+    "customer says their late enrollment request was approved, what do I do now",
+    "submit approved plan year belated action"
+   ]
+  },
+  {
+   "source": "Survivor Annuitant Lump Sum vs Coupon Program",
+   "phrases": [
+    "survivor got a one time death benefit and no monthly annuity, are they eligible",
+    "widow of a federal employee who got a lump sum basic employee death benefit, can she enroll",
+    "widow got a one-time death payment, no monthly annuity, how does she pay her premiums"
+   ]
+  },
+  {
+   "source": "System Down Checklist for Admins and SMEs",
+   "phrases": [
+    "agent can't receive calls in CXone, what should I check",
+    "troubleshooting checklist when agents go into system down status",
+    "system down checklist",
+    "agent cant get calls, headset might be muted, troubleshooting steps"
+   ]
+  },
+  {
+   "source": "System Down Procedures",
+   "phrases": [
+    "my CS system is locked and I can't work, what do I do",
+    "what to do when systems are down during a call",
+    "the cs system is down",
+    "the system is down what do I do"
+   ]
+  },
+  {
+   "source": "Termination or Separation from Federal or USM Services",
+   "phrases": [
+    "federal employee quit their job without retiring, what happens to their dental coverage",
+    "federal civilian employee resigned, do I submit an inactivation ticket",
+    "left the army, on ABW, separated not retired"
+   ]
+  },
+  {
+   "source": "The DNA of Customer Service",
+   "phrases": [
+    "what are the steps to connect with the customer and build rapport",
+    "engage clarify build customer service model",
+    "tips for building rapport and showing the caller im actually listening"
+   ]
+  },
+  {
+   "source": "Third Party Callers",
+   "phrases": [
+    "the caller is the enrollee's daughter, what can I tell her",
+    "someone other than the enrollee is calling about the account, what can I disclose",
+    "caller has power of attorney",
+    "dentist office calling about a member",
+    "veterans service officer calling for a member",
+    "daughter calling for her mom, mom is not on the line",
+    "hr person from agency calling about an employee's enrollment"
+   ]
+  },
+  {
+   "source": "Time Off Requests in IEX WebStation",
+   "phrases": [
+    "how do I request planned time off more than 48 hours ahead"
+   ]
+  },
+  {
+   "source": "Time Off Requests in SharePoint",
+   "phrases": [
+    "my schedule isn't available in IEX yet, how do I request a day off",
+    "submit time off request in SharePoint when IEX schedule isn't posted",
+    "need a day off next month but my schedule isnt published yet, where do i ask"
+   ]
+  },
+  {
+   "source": "Transfer Notes",
+   "phrases": [
+    "what do I need to put in the notes when I cold transfer a call",
+    "what do I put in transfer notes",
+    "how fast do i need to greet the caller",
+    "what info do I gotta type in before i cold transfer to a senior"
+   ]
+  },
+  {
+   "source": "USM Delayed Retirement Log",
+   "phrases": [
+    "military retiree says DEERS hasn't confirmed their retirement yet and it's been over 60 days",
+    "usm retired 2 months ago deers not showing retired"
+   ]
+  },
+  {
+   "source": "USM Dependents Process for Reactivation",
+   "phrases": [
+    "military retiree's child aged off but is a full time student, can we reactivate them",
+    "navy retirees kid aged off but shes full time in college, can we put her back on retro"
+   ]
+  },
+  {
+   "source": "USM Divorce",
+   "phrases": [
+    "military sponsor got divorced and wants to remove the ex spouse's enrollment",
+    "USM sponsor divorced wants to remove ex spouse",
+    "member divorced, does the ex spouse lose coverage USM",
+    "ex wife was married to a marine for 25 years can she get coverage on her own  (also: \"ex wife wants coverage\", \"ex-wife of a marine wants vision\", \"ex wife was married to him 25 years\")",
+    "sponsor wants to drop his ex off the plan without her ok",
+    "where does the sponsor send the divorce decree"
+   ]
+  },
+  {
+   "source": "USM Eligibility Codes",
+   "phrases": [
+    "what does eligibility code GAR mean",
+    "what does GAR mean as an eligibility code"
+   ]
+  },
+  {
+   "source": "Unable to Hear",
+   "phrases": [
+    "I can't hear the caller, how many times do I try before disconnecting",
+    "unable to hear the caller",
+    "cant hear anyone on the line",
+    "what if no one answers after i greet three times"
+   ]
+  },
+  {
+   "source": "Understanding LEARN Icons",
+   "phrases": [
+    "what does the blue bulb mean on a resource",
+    "what do the icons in LEARN mean",
+    "what do the icons in learn mean"
+   ]
+  },
+  {
+   "source": "Understanding the BENEFEDS Service Portal Dashboard (CSS)",
+   "phrases": [
+    "what shows on the overview tab when I open the account",
+    "what are the tabs on the customer dashboard in CSS"
+   ]
+  },
+  {
+   "source": "Understanding the Direct Bill Process",
+   "phrases": [
+    "what is the sequence from billing the payroll office to termination warning"
+   ]
+  },
+  {
+   "source": "Unlocking an Agent Schedule",
+   "phrases": [
+    "agent schedule is locked in webstation, how do I release it"
+   ]
+  },
+  {
+   "source": "Updating CSAT Reports Date Range",
+   "phrases": [
+    "how do I change the dates on the CSAT dashboard",
+    "change the date range for CSAT reports"
+   ]
+  },
+  {
+   "source": "Updating Customer Account Information",
+   "phrases": [
+    "customer wants to use a PO box as their home address",
+    "can the residential address be a PO box"
+   ]
+  },
+  {
+   "source": "Using Microsoft Teams to Communicate",
+   "phrases": [
+    "which Teams channel do I use for attendance updates"
+   ]
+  },
+  {
+   "source": "Using the Data Retrieval Tool",
+   "phrases": [
+    "account is archived, how do I retrieve the data to add a family member",
+    "cant find her acct, she swears she had one like 8 years ago and wants to drop her ex husband"
+   ]
+  },
+  {
+   "source": "Using the Manage APO Locations Tool",
+   "phrases": [
+    "how do I look up when a payroll office runs deductions",
+    "where do I find an agency payroll office's deduction schedule",
+    "member asking what date her next payroll deduction hits"
+   ]
+  },
+  {
+   "source": "VA Benefits Inactivation",
+   "phrases": [
+    "enrollee was approved for VA dental benefits and wants to cancel",
+    "approved for va benefits cancel vision",
+    "hes a vet with VA dental can he drop fedvip"
+   ]
+  },
+  {
+   "source": "Vendor Agent Credentialing Process",
+   "phrases": [
+    "vendor needs to activate new agents, how do they request credentials",
+    "we got a new hire starting at our vendor site next week, how do we get them system access"
+   ]
+  },
+  {
+   "source": "Vendor HelpTicket",
+   "phrases": [
+    "a FedPoint system is down for my vendor agents, how do I report it",
+    "how do I submit a vendor help ticket",
+    "image is down for our whole site, how do we let fedpoint know"
+   ]
+  },
+  {
+   "source": "Viewing Alerts in LEARN",
+   "phrases": [
+    "where do I see the latest alerts",
+    "where are the FEDVIP alerts in LEARN"
+   ]
+  },
+  {
+   "source": "Viewing Screen in LEARN",
+   "phrases": [
+    "how do I download a resource or view it full screen in the training site"
+   ]
+  },
+  {
+   "source": "Workforce Changes Resource Compilation",
+   "phrases": [
+    "caller took the deferred resignation, what happens to their FEDVIP",
+    "got RIF'd last year, coverage got cut, can we reinstate"
+   ]
+  }
+ ]
+}

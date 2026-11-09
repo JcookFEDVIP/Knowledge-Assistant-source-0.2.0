@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>ARIA · Agent Resource and Information Assistant</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="band">
+  <svg class="band-stars" aria-hidden="true" viewBox="0 0 200 200"><polygon points="100,10 124,76 194,76 138,118 158,186 100,146 42,186 62,118 6,76 76,76"/></svg>
+  <div class="band-inner">
+    <div class="companion-slot" id="companion" aria-hidden="true"></div>
+    <div class="band-main">
+      <p class="eyebrow">Get quick answers and find the right job aids</p>
+      <h1 class="title">ARIA: Agent Resource and Information Assistant</h1>
+      <span class="underline" aria-hidden="true"></span>
+      <form class="search" id="search-form" role="search" autocomplete="off">
+        <label class="visually-hidden" for="q">Ask a question</label>
+        <input id="q" name="q" type="search" placeholder="Ask a question or use keywords" spellcheck="false" autofocus>
+      </form>
+      <div class="profile" role="group" aria-label="Your situation">
+        <span class="profile-label">Your role</span>
+        <button type="button" class="chip-toggle" data-facet="audience" data-value="L1" aria-pressed="true">L1 agent</button>
+        <button type="button" class="chip-toggle" data-facet="audience" data-value="SR" aria-pressed="false">Senior rep</button>
+        <button type="button" class="chip-toggle" data-facet="audience" data-value="SME" aria-pressed="false">SME</button>
+        <span class="profile-label">Season</span>
+        <button type="button" class="chip-toggle" data-facet="season" data-value="STEADY_STATE" aria-pressed="true">Outside open season</button>
+        <button type="button" class="chip-toggle" data-facet="season" data-value="OPEN_SEASON" aria-pressed="false">Open season</button>
+      </div>
+      <div class="profile call" role="group" aria-label="This call">
+        <span class="profile-label">This call</span>
+        <span class="call-context" id="call-context"></span>
+        <button type="button" class="new-call" id="new-call">New call</button>
+      </div>
+    </div>
+  </div>
+  <div class="synthetic-banner" role="note" id="content-banner"></div>
+</header>
+<main class="layout">
+  <section class="results" aria-label="Results">
+    <p class="status" id="status" aria-live="polite"></p>
+    <div id="results"></div>
+  </section>
+  <aside class="viewer" id="viewer" aria-label="Source viewer" hidden></aside>
+</main>
+<footer class="footer">
+  <span id="kv"></span> · Loaded locally · No search text is saved or sent (recent searches stay in this window until it closes) ·
+  <button type="button" class="linklike" id="companion-toggle">Hide ARIA</button> ·
+  Keys: <kbd>/</kbd> search, <kbd>↑</kbd><kbd>↓</kbd> move, <kbd>Enter</kbd> open source, <kbd>?</kbd> why, <kbd>Esc</kbd> close
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="companion.js"></script>
+</body>
+</html>

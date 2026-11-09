@@ -1,0 +1,5 @@
+{
+  "_help": "Where the original job-aid files live on THIS computer. Change jobAidsDir after copying the project to a new machine. Paths are relative to this folder or absolute.",
+  "jobAidsDir": "../FEDVIP Job Aids",
+  "transcriptionsDir": "content/real/transcriptions"
+}

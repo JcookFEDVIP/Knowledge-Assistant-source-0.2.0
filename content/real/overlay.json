@@ -1,0 +1,778 @@
+{
+ "_notice": "Known, verified content issues (see _planning/knowledge_assistant/13_CONTENT_ESCALATION_REPORT.md and the job-aid Review Guide). Conflicts are shown as 'Sources disagree' until the content owner decides. Nothing here decides which rule is correct.",
+ "_conflictPolicy": "Owner decision (Jeremy, 2026-11-06): when job aids disagree, show the most recently revised one (by the printed Revised/Reviewed/Last Updated date) instead of 'Sources disagree'. A dated job aid counts as newer than an undated one. If none is dated, or two share the newest date, both are still shown side by side. Each role compares only the job aids in its own folders. To keep one conflict side by side anyway, add \"keepSideBySide\": true to its group below.",
+ "conflictPolicy": "newest-revision",
+ "_quickAnswers": "Quick answer box above the results (src/engine/answer.ts): facts = phone/fax numbers, emails, time frames, ages, counts; steps = the numbered steps for 'how do I' questions; sentences = the best-matching job-aid sentence. Set either to false (or delete quickAnswers) to turn it off, then rebuild.",
+ "quickAnswers": { "facts": true, "steps": true, "sentences": true },
+ "conflictGroups": [
+  {
+   "id": "CG-DEATH-SECURITY",
+   "concept": "DEATH_REPORT",
+   "status": "open",
+   "note": "Job aids give different security requirements for a caller reporting a death before an L1 transfer (none, 2 pieces, or 3 pieces). Pending owner decision (escalation memo item 1).",
+   "members": [
+    {
+     "source": "Handling Report of Death Calls",
+     "contains": "at least 2 pieces of security"
+    },
+    {
+     "source": "Security Verification",
+     "contains": "must gather 3 pieces of security before transferring to a SR"
+    },
+    {
+     "source": "Transfer Notes",
+     "contains": "3 pieces of security AND include the Member ID"
+    },
+    {
+     "source": "Deceased and 3rd Party Callers",
+     "contains": "relation to the primary"
+    }
+   ],
+   "requires": [
+    "DEATH_REPORT",
+    "SECURITY_VERIFICATION"
+   ]
+  },
+  {
+   "id": "CG-THIRD-PARTY-ACH",
+   "concept": "THIRD_PARTY_PAYMENT",
+   "status": "open",
+   "note": "Job aids disagree on whether an unauthorized third party must give security pieces to make an ACH payment. Pending owner decision (escalation memo item 2).",
+   "members": [
+    {
+     "source": "Security Verification",
+     "contains": "ACH payments may be processed without authorization"
+    },
+    {
+     "source": "Third Party Callers",
+     "contains": "Two pieces of security are needed from third-parties when providing ACH"
+    },
+    {
+     "source": "Processing ACH Payments",
+     "contains": "ACH payment information may be provided by an unauthorized third party"
+    },
+    {
+     "source": "Processing an ACH Payment L1",
+     "contains": "ACH payment information may be provided by an unauthorized third party"
+    }
+   ],
+   "requires": [
+    "ACH_PAYMENT|THIRD_PARTY_PAYMENT",
+    "THIRD_PARTY_PAYMENT|THIRD_PARTY_AUTH|@callerRole=THIRD_PARTY"
+   ]
+  },
+  {
+   "id": "CG-OUTBOUND-SECURITY",
+   "concept": "OUTBOUND_CALL",
+   "status": "open",
+   "note": "Job aids disagree on how many security pieces to verify on outbound calls (two additional vs three). Pending owner decision (escalation memo item 3).",
+   "members": [
+    {
+     "source": "Outbound Call Scripting",
+     "contains": "Verify two additional pieces of security"
+    },
+    {
+     "source": "CXone Disconnected Calls",
+     "contains": "Verify three pieces of security"
+    }
+   ],
+   "requires": [
+    "OUTBOUND_CALL",
+    "SECURITY_VERIFICATION"
+   ]
+  },
+  {
+   "id": "CG-HOLD-CHECKBACK",
+   "concept": "HOLD",
+   "status": "open",
+   "note": "The Open Season QA guide says check back after 4 minutes on hold; the hold procedure and the Steady State QA guide say 2 minutes (the hold procedure also has a warm-transfer footnote). Pending owner decision.",
+   "members": [
+    {
+     "source": "BENEFEDS Open Season QA Companion Guide",
+     "contains": "on hold for 4 minutes"
+    },
+    {
+     "source": "Hold and Transfer Procedures and Scripting",
+     "contains": "Before two minutes (2)"
+    },
+    {
+     "source": "BENEFEDS Steady State QA Companion Guide",
+     "contains": "on hold for 2 minutes"
+    }
+   ],
+   "requires": [
+    "HOLD",
+    "HOLD_TIMING"
+   ]
+  },
+  {
+   "id": "CG-QA-COMMENTS",
+   "concept": "CALL_CLOSING",
+   "status": "open",
+   "note": "The Open Season QA guide scores the content of account comments; the current call-closing job aid says QA no longer scores comment content. Pending owner decision (escalation memo item 6).",
+   "members": [
+    {
+     "source": "BENEFEDS Open Season QA Companion Guide",
+     "contains": "The reason they called, key information provided"
+    },
+    {
+     "source": "Call Closing Process - Inbound Calls",
+     "contains": "QA will no longer scores the content of comments"
+    }
+   ],
+   "requires": [
+    "ACCOUNT_COMMENTS",
+    "QA"
+   ]
+  },
+  {
+   "id": "CG-USM-ISS-DEERS",
+   "concept": "INCAPABLE_SELF_SUPPORT",
+   "status": "open",
+   "note": "For USM dependents, one job aid accepts a sponsor 'in the process of updating DEERS' while another requires the dependent to be approved in DEERS. Pending owner decision (E1 worksheet C-06).",
+   "members": [
+    {
+     "source": "Dependent Eligibility Age 21 or 23 – USM",
+     "contains": "in the process of upd"
+    },
+    {
+     "source": "Dependent Eligibility Incapable of Self Support",
+     "contains": "must be approved in DEERS"
+    }
+   ],
+   "requires": [
+    "INCAPABLE_SELF_SUPPORT|FULL_TIME_STUDENT",
+    "DEERS"
+   ]
+  },
+  {
+   "id": "CG-WORKFORCE-REINSTATE",
+   "concept": "WORKFORCE",
+   "status": "open",
+   "note": "One workforce-changes job aid says to reinstate previous coverage; a later one says reinstatements are no longer allowed. Pending owner decision.",
+   "members": [
+    {
+     "source": "Workforce Changes Resource Compilation",
+     "contains": "Reinstate their previous dental/vision coverage"
+    },
+    {
+     "source": "Inquiries Regarding Workforce Changes",
+     "contains": "no longer allowing reinstatements"
+    }
+   ],
+   "requires": [
+    "WORKFORCE",
+    "NON_PAY|REINSTATEMENT"
+   ]
+  },
+  {
+   "id": "CG-SPANISH-ABW",
+   "concept": "ABW",
+   "status": "open",
+   "note": "The Spanish ABW script authorizes a single withdrawal; the English ABW script authorizes recurring withdrawals. Pending owner confirmation (escalation memo item 7).",
+   "members": [
+    {
+     "source": "Spanish Authorization of ABW",
+     "contains": "un solo retiro"
+    },
+    {
+     "source": "ABW Scripting",
+     "contains": "recurring withdrawal"
+    }
+   ],
+   "requires": [
+    "ABW",
+    "LANGUAGE|ABW_SCRIPT"
+   ]
+  },
+  {
+   "id": "CG-ISS-EMAIL",
+   "concept": "INCAPABLE_SELF_SUPPORT",
+   "status": "open",
+   "requires": [
+    "INCAPABLE_SELF_SUPPORT",
+    "CONTACT_INFO|SEND_DOCS"
+   ],
+   "note": "Job aids give different email addresses for ISS approvals (fedvipadministration@benefeds.gov vs FEDVIPadministration@ltcpartners.com; two aids also misspell it). Pending owner decision.",
+   "members": [
+    {
+     "source": "FEDVIP Phone and Contact Information",
+     "contains": "FEDVIPadministration@ltcpartners.com"
+    },
+    {
+     "source": "Dependent Eligibility Incapable of Self Support",
+     "contains": "fedvipadministration@benefeds.gov"
+    }
+   ]
+  },
+  {
+   "id": "CG-PAT-EMAIL",
+   "concept": "PAT",
+   "status": "open",
+   "requires": [
+    "CONTACT_INFO|SEND_DOCS",
+    "PAT|ABW"
+   ],
+   "note": "The PAT email address differs: the Excel contact sheet says benefedsadministration@ltcpartners.com; the PowerPoint contact sheet, Edit ABW Information and others say benefedsadministration@benefeds.gov. Pending owner decision.",
+   "members": [
+    {
+     "source": "FEDVIP Phone and Contact Information",
+     "contains": "benefedsadministration@ltcpartners.com"
+    },
+    {
+     "source": "FEDVIP Phone and Contact Information",
+     "contains": "benefedsadministration@benefeds.gov"
+    },
+    {
+     "source": "Edit ABW Information",
+     "contains": "benefedsadministration@benefeds.gov"
+    }
+   ]
+  },
+  {
+   "id": "CG-ACW-TARGET",
+   "concept": "ACW",
+   "status": "open",
+   "requires": [
+    "ACW",
+    "HOLD_TIMING"
+   ],
+   "note": "Call Closing says the ACW goal is under 30 seconds; CXone Cold Transfers (External) says agents are expected to finish ACW within 1 minute 45 seconds. Pending owner decision.",
+   "members": [
+    {
+     "source": "Call Closing Process - Inbound Calls",
+     "contains": "The goal to finish ACW is under 30 seconds"
+    },
+    {
+     "source": "CXone Cold Transfers (External)",
+     "contains": "finish ACW within 1 minute and 45 seconds"
+    }
+   ]
+  },
+  {
+   "id": "CG-DIVORCE-DECREE",
+   "concept": "DIVORCE",
+   "status": "open",
+   "requires": [
+    "DIVORCE",
+    "SEND_DOCS|CONTACT_INFO"
+   ],
+   "note": "Where a divorce decree goes differs: USM Divorce says email Benefedsadministration@benefeds.gov or mail PO Box 797; the divorce job aid says email service@benefeds.gov with subject ATTN: Research. Pending owner decision.",
+   "members": [
+    {
+     "source": "USM Divorce",
+     "contains": "Email to: Benefedsadministration@benefeds.gov"
+    },
+    {
+     "source": "Enrollment or Inactivation Due to Divorce",
+     "contains": "divorce decree to service@benefeds.gov"
+    }
+   ]
+  }
+ ],
+ "advisories": [
+  {
+   "source": "Open Season Current Plan Year Call",
+   "note": "Contains 2025 Open Season dates (11/10/25 – 12/08/25). Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "Belated Open Season Actions (L1)",
+   "note": "States a March 8th, 2026 deadline that has passed. Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "Belated Open Season Actions (L2)",
+   "note": "States a March 8th, 2026 deadline that has passed. Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "GEHA and Common Customer Questions",
+   "note": "Refers to the 2025 plan year. Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "Carrier Communication After Open Season",
+   "note": "Refers to 2026 enrollment dates. Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "Open Season Exception Enrollment Steps",
+   "note": "Script says 'December 9th, 2025'. Flagged for update (escalation memo item 9)."
+  },
+  {
+   "source": "Dependent Eligibility Age 22 – CIV Employee or USPS",
+   "note": "The ISS email address is misspelled ('adminstration') in this job aid (escalation memo item 8)."
+  },
+  {
+   "source": "Eligibility of USM Dependents",
+   "note": "The ISS email address is misspelled ('adminstration') in this job aid (escalation memo item 8)."
+  },
+  {
+   "source": "FEDVIP Ineligible vs Never Eligible Dependents",
+   "note": "Training-materials review flags that this aid implies full-time students over 21 stay covered without naming the affiliation; that is not true for Federal Civilian enrollees. Verify against the affiliation-specific job aids."
+  },
+  {
+   "source": "FEDVIP Primary Enrollee Eligibility",
+   "note": "Review Guide flags its USM retiree dental/vision statement as inconsistent with Eligibility of USM (vision requires a TRICARE health plan). Pending owner decision."
+  },
+  {
+   "source": "ACED Chart (Senior Representative) (v2)",
+   "note": "Two versions of the Senior Rep ACED chart are live and differ (e.g. active-duty cancellation; Open Season Cancellations row; row cross-references). Pending owner decision on which is current."
+  },
+  {
+   "source": "FEDVIP Phone and Contact Information",
+   "note": "Two versions of this contact list exist (PowerPoint reviewed 10/21/26 and an Excel copy) and they differ for some carriers (Aetna Dental/Vision, EmblemHealth Dental, Triple-S). Confirm the number before giving it out. Pending owner decision."
+  },
+  {
+   "source": "FEDVIP Credits & Refunds",
+   "note": "This job aid gives different hold times for ACH money: 5 business days for an ACH overpayment (slide 1) vs 10 business days (slide 2 table) and a 10 day hold on checks and ACH (slide 3). Pending owner decision; confirm before quoting a date."
+  }
+ ],
+ "facetOverrides": [
+  {
+   "source": "Processing ACH Payments",
+   "facets": {
+    "audience": [
+     "SR"
+    ]
+   },
+   "reason": "Full version; 'Processing an ACH Payment L1' is the L1 version."
+  },
+  {
+   "source": "Dual Eligibility",
+   "facets": {},
+   "reason": "Applies to customers eligible as both Federal Civilian and USM."
+  },
+  {
+   "source": "Time Off Requests in IEX WebStation",
+   "facets": {},
+   "reason": "Written to agents."
+  },
+  {
+   "source": "QA Reminders - Official Evaluations and Call Checks",
+   "facets": {
+    "audience": [
+     "ADMIN"
+    ]
+   },
+   "reason": "Written to QA scorers."
+  },
+  {
+   "source": "QA Call Checks",
+   "facets": {
+    "audience": [
+     "ADMIN"
+    ]
+   },
+   "reason": "Written to QA scorers."
+  },
+  {
+   "source": "FEDVIP Eligibility - Dependents (FED CIV)",
+   "facets": {
+    "affiliation": [
+     "FED_CIV",
+     "USPS"
+    ]
+   },
+   "reason": "USPS employees follow the civilian dependent rules (see Dependent Eligibility Age 22 – CIV Employee or USPS)."
+  },
+  {
+   "source": "Leave Without Pay (LWOP)",
+   "facets": {
+    "affiliation": [
+     "FED_CIV",
+     "USPS"
+    ]
+   },
+   "reason": "'Only Federal or U.S Postal employees may take a leave without pay'."
+  },
+  {
+   "source": "CXone Softphone Changing Agent State",
+   "facets": {
+    "audience": [
+     "SR",
+     "ADMIN"
+    ]
+   },
+   "reason": "Text: 'It may be necessary for ADMIN/TL/SME to manually change an agent's CXone state'."
+  },
+  {
+   "source": "CXone Unrecorded Outbound Calls",
+   "facets": {
+    "audience": [
+     "SR",
+     "ADMIN"
+    ]
+   },
+   "reason": "Text: 'allow TL and managers to place an unrecorded outbound call'."
+  },
+  {
+   "source": "OS Vendor Help Desk Support Ticket",
+   "facets": {
+    "audience": [
+     "SR",
+     "ADMIN"
+    ]
+   },
+   "reason": "Admin/TL procedure."
+  },
+  {
+   "source": "New Survivor Enrollment",
+   "facets": {
+    "audience": [
+     "SR"
+    ]
+   },
+   "reason": "Senior Rep steps; 'New Survivor L1' is the L1 version."
+  },
+  {
+   "source": "Belated Enrollments",
+   "facets": {
+    "audience": [
+     "SR"
+    ]
+   },
+   "reason": "Text: 'For Senior Representative use'."
+  },
+  {
+   "source": "Receiving a Transferred Call",
+   "facets": {
+    "audience": [
+     "SR"
+    ]
+   },
+   "reason": "Written to agents receiving escalations (Senior Reps)."
+  },
+  {
+   "source": "Edit FEHB",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "FEHB is the federal civilian health program."
+  },
+  {
+   "source": "Intermittent Payors",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "Text: 'Deductions are considered intermittent (Federal Civilian only)'."
+  },
+  {
+   "source": "Deferred vs. Postponed Annuitants",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "OPM annuitant types."
+  },
+  {
+   "source": "Discontinued Service Retirement (DSR)",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "Civil-service retirement type."
+  },
+  {
+   "source": "OPM Claim Numbers and Where to Locate Them",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "OPM claim numbers (CSA/CSF) are civilian annuities."
+  },
+  {
+   "source": "Non-OPM Annuity Locations",
+   "facets": {
+    "affiliation": [
+     "FED_CIV"
+    ]
+   },
+   "reason": "Civilian retirement systems other than OPM."
+  },
+  {
+   "source": "Handling a Leave Without Pay Call",
+   "facets": {
+    "affiliation": [
+     "FED_CIV",
+     "USPS"
+    ]
+   },
+   "reason": "LWOP: 'Only Federal or U.S Postal employees'."
+  },
+  {
+   "source": "FEDVIP Eligibility - Federal Civilian (FED CIV)",
+   "facets": {
+    "affiliation": [
+     "FED_CIV",
+     "USPS"
+    ]
+   },
+   "reason": "Civilian eligibility (USPS follows civilian rules)."
+  }
+ ],
+ "rankAdjust": [
+  {
+   "source": "Authorization (ADI) - Denial Letters",
+   "factor": 0.75,
+   "unless": [
+    "letter",
+    "letters",
+    "denial",
+    "denied",
+    "deny",
+    "nigo",
+    "ax"
+   ],
+   "reason": "About ADI denial letters; not the general third-party rules."
+  },
+  {
+   "source": "Non-English Speaking TeleInterpreter Tips",
+   "contains": "language other than English or Spanish",
+   "factor": 0.7,
+   "unless": [
+    "interpreter",
+    "teleinterpreter",
+    "language",
+    "languages",
+    "french",
+    "chinese",
+    "mandarin",
+    "cantonese",
+    "vietnamese",
+    "korean",
+    "russian",
+    "tagalog",
+    "arabic",
+    "creole",
+    "portuguese",
+    "other"
+   ],
+   "reason": "Routing for languages other than Spanish must not outrank the Spanish routing for Spanish callers."
+  },
+  {
+   "source": "Non-Appropriated Funds",
+   "factor": 0.7,
+   "unless": [
+    "naf",
+    "non",
+    "appropriated",
+    "nonappropriated"
+   ],
+   "reason": "Only about NAF employees."
+  },
+  {
+   "source": "Open Season Exception Enrollment Steps",
+   "factor": 0.7,
+   "unless": [
+    "exception",
+    "december",
+    "dec"
+   ],
+   "reason": "One-day Open Season event; must not win steady-state belated questions."
+  },
+  {
+   "source": "Agencies That Offer Their Own Dental and Vision",
+   "factor": 0.7,
+   "unless": [
+    "agency",
+    "agencies",
+    "own",
+    "transfer",
+    "transferred",
+    "transferring",
+    "50",
+    "percent",
+    "tva",
+    "reserve"
+   ],
+   "reason": "Only relevant when the caller's agency offers its own dental/vision; must not win general cancel/drop questions."
+  },
+  {
+   "source": "AWD Creating a Work Item",
+   "factor": 0.75,
+   "unless": [
+    "create",
+    "creating",
+    "created",
+    "new",
+    "quick",
+    "start",
+    "make",
+    "open",
+    "submit",
+    "toolbar"
+   ],
+   "reason": "How-to for creating a work item; should not outrank other AWD aids when creating isn't asked."
+  },
+  {
+   "source": "AWD Cancelling a Work Item",
+   "factor": 0.75,
+   "unless": [
+    "cancel",
+    "cancelling",
+    "canceling",
+    "cancelled",
+    "canceled",
+    "delete",
+    "rid",
+    "mistake",
+    "remove",
+    "er"
+   ],
+   "reason": "How-to for cancelling a work item; should not outrank other AWD aids when cancelling isn't asked."
+  },
+  {
+   "source": "AWD Locking Work Items",
+   "factor": 0.75,
+   "unless": [
+    "lock",
+    "locked",
+    "locking",
+    "locks",
+    "unlock",
+    "grey",
+    "gray",
+    "red",
+    "circle"
+   ],
+   "reason": "About work-item locks only."
+  },
+  {
+   "source": "AWD Commenting on a Work Item",
+   "factor": 0.75,
+   "unless": [
+    "comment",
+    "commenting",
+    "comments",
+    "note",
+    "notes",
+    "respond",
+    "reply"
+   ],
+   "reason": "About commenting on a work item only."
+  },
+  {
+   "source": "AWD Document Splitter",
+   "factor": 0.8,
+   "unless": [
+    "split",
+    "splitter",
+    "splitting",
+    "separate",
+    "separating",
+    "pages",
+    "page",
+    "divide"
+   ],
+   "reason": "About splitting one attachment into several; should not outrank Creating and Linking Attachments for plain attach/upload questions."
+  }
+ ],
+ "unitFacetOverrides": [
+  {
+   "source": "FEDVIP Phone and Contact Information",
+   "contains": "ISS Approvals (from HR/Agency or USM",
+   "clear": [
+    "affiliation"
+   ],
+   "reason": "Contact row used by HR (civilian) and USM alike."
+  },
+  {
+   "source": "FEDVIP Phone and Contact Information",
+   "contains": "FEDVIP Billing Address",
+   "clear": [
+    "affiliation"
+   ],
+   "reason": "Billing address applies to everyone."
+  },
+  {
+   "source": "Primary AWD Work Item Overview",
+   "contains": "Update a FEDCIV agency",
+   "clear": [
+    "affiliation"
+   ],
+   "reason": "A list of ticket uses, not a civilian-only rule."
+  },
+  {
+   "source": "Pre and Post Tax Deductions",
+   "contains": "Pre-Tax Deductions | Post-Tax Deductions",
+   "clear": [
+    "affiliation"
+   ],
+   "reason": "Compares both groups."
+  },
+  {
+   "source": "Method and Frequency of Pay",
+   "contains": "Un-remarried Former Spouse (UFS)",
+   "facets": {
+    "affiliation": [
+     "USM"
+    ]
+   },
+   "reason": "UFS is a USM eligibility category."
+  },
+  {
+   "source": "Financial Document Requests",
+   "contains": "only be used for Military Affiliations",
+   "facets": {
+    "affiliation": [
+     "USM"
+    ]
+   },
+   "reason": "Text: 'This option should only be used for Military Affiliations'."
+  },
+  {
+   "source": "Fed Civ to USM Change Employment Status",
+   "contains": "Uniformed Service employment statuses",
+   "facets": {
+    "affiliation": [
+     "USM"
+    ]
+   },
+   "reason": "USM employment status table."
+  },
+  {
+   "source": "BENEFEDS.gov Can and Cannot Do",
+   "slide": 1,
+   "facets": {
+    "season": [
+     "STEADY_STATE"
+    ]
+   },
+   "reason": "Slide 1: outside Open Season."
+  },
+  {
+   "source": "BENEFEDS.gov Can and Cannot Do",
+   "slide": 2,
+   "facets": {
+    "season": [
+     "OPEN_SEASON"
+    ]
+   },
+   "reason": "Slide 2: DURING Open Season."
+  },
+  {
+   "source": "Open Season Current Plan Year Call",
+   "slide": 1,
+   "facets": {
+    "season": [
+     "OPEN_SEASON"
+    ]
+   },
+   "reason": "Slide 1: during Open Season."
+  },
+  {
+   "source": "Open Season Current Plan Year Call",
+   "slide": 2,
+   "facets": {
+    "season": [
+     "STEADY_STATE"
+    ]
+   },
+   "reason": "Slide 2: 'after Open Season has ended'."
+  }
+ ]
+}
